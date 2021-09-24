@@ -1,19 +1,22 @@
 {
-  "name": "portfolio",
+  "name": "luchetti-portfolio",
   "version": "1.0.0",
-  "description": "My own portfolio! I'll try to keep this constantly updated.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gusluchetti/portfolio.git"
-  },
+  "private": true,
+  "description": "luchetti-portfolio",
   "author": "Gustavo Luchetti",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gusluchetti/portfolio/issues"
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "homepage": "https://github.com/gusluchetti/portfolio#readme"
+  "dependencies": {
+    "gatsby": "^3.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
