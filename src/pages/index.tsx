@@ -4,11 +4,9 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 const IndexPage = () => {
   return (
-    <React.StrictMode>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-    </React.StrictMode>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   );
 };
 
