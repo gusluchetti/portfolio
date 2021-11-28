@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.2",
     "gatsby": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-sharp": "^4.2.0",

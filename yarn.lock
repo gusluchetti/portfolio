@@ -1051,6 +1051,11 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
+"@chakra-ui/gatsby-plugin@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/gatsby-plugin/-/gatsby-plugin-2.0.2.tgz#cb13d7be2107b85e9e5e234025cc7b48d76b612d"
+  integrity sha512-M8Ks5xjoyHa5pppH4wKyJ/SIVJi+d4y59PRityuWVzLPjtyMjBvbH95oxbFWJ0rLGtA/8khcc7HSQTx5NOxWGw==
+
 "@endemolshinegroup/cosmiconfig-typescript-loader@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@endemolshinegroup/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-3.0.2.tgz#eea4635828dde372838b0909693ebd9aafeec22d"
