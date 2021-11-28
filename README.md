@@ -2,4 +2,6 @@ Hello!
 
 This is my portfolio repository!
 
-I'm hosting the website with Firebase, and it's built using React/Gatsby.
+It's hosted with Firebase, and it's built using Gatsby, Chakra for the UI components and Framer Motion for animating everything.
+
+Please bear in mind that this is a constant work-in-progress! 
