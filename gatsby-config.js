@@ -4,6 +4,7 @@ module.exports = {
     title: "luchetti",
   },
   plugins: [
+    "@chakra-ui/gatsby-plugin",
     "gatsby-plugin-typescript",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
@@ -16,6 +17,5 @@ module.exports = {
       },
       __key: "images",
     },
-    "@chakra-ui/gatsby-plugin",
   ],
 };
