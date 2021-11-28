@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-luchetti",
+  "name": "luchetti.dev",
   "version": "1.0.0",
   "private": true,
-  "description": "portfolio-luchetti",
+  "description": "This is my portfolio website.",
   "author": "Gustavo Luchetti",
   "keywords": [
     "gatsby"
@@ -15,10 +15,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^3.13.1",
-    "gatsby-plugin-theme-ui": "^0.11.3",
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-image": "^2.2.0",
+    "gatsby-plugin-sharp": "^4.2.0",
+    "gatsby-source-filesystem": "^4.2.0",
+    "gatsby-transformer-sharp": "^4.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "theme-ui": "^0.11.3"
+    "react-dom": "^17.0.1"
   }
 }
