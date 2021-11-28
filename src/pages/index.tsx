@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { App } from '../pages/App';
+import { ChakraProvider } from '@chakra-ui/react';
 
 const IndexPage = () => {
   return (
     <React.StrictMode>
-      <App />
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
     </React.StrictMode>
   );
 };
