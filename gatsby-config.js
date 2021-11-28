@@ -1,7 +1,21 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "portfolio-luchetti",
+    siteUrl: 'https://www.luchetti.dev',
+    title: 'luchetti',
   },
-  plugins: ["gatsby-plugin-theme-ui"],
+  plugins: [
+    '@chakra-ui/gatsby-plugin',
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+  ],
 };
