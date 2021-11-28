@@ -2,18 +2,6 @@ import * as React from 'react';
 import { Container, Heading, Text, Flex } from '@chakra-ui/react';
 
 export const App = () => (
-  //   <main style={pageStyles}>
-  //     <title>Luchetti</title>
-  //     <h1 style={headingStyles}>
-  //       Hi!
-  //       <br />
-  //       <span style={headingAccentStyles}>This is my portfolio website!</span>
-  //     </h1>
-  //     <p style={paragraphStyles}>
-  //       I'm working on my graduation thesis but I'm getting around to updating
-  //       this website! soon!ᵗᵐ
-  //     </p>
-  //   </main>
   <Container maxW="container.xl" p={0}>
     <Flex direction="column">
       <Heading>Luchetti - Developer</Heading>
