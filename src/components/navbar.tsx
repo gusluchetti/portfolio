@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Flex, Box, Heading, Spacer, Button } from '@chakra-ui/react'
 
-export const Navbar = () => (
+const Navbar = () => (
   <Flex>
     <Box p="2">
       <Heading size="md">luchetti.dev</Heading>
@@ -18,3 +18,5 @@ export const Navbar = () => (
     </Box>
   </Flex>
 )
+
+export default Navbar

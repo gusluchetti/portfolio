@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Container, Heading, Text, Flex, Divider } from '@chakra-ui/react'
-import { Navbar } from '../components/navbar'
+import Navbar from '../components/navbar'
 
 export const App = () => (
   <Container py={4} maxW="container.xl">
