@@ -1,14 +1,7 @@
-import * as React from 'react'
-import { App } from '../pages/App'
+import React from 'react'
+import App from '../pages/App'
 import { ChakraProvider } from '@chakra-ui/react'
-import { extendTheme, ThemeConfig } from '@chakra-ui/react'
-
-const config: ThemeConfig = {
-  initialColorMode: 'dark',
-  useSystemColorMode: true,
-}
-
-const theme = extendTheme({ config })
+import theme from '../../theme'
 
 const IndexPage = () => {
   return (
