@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Flex, Box, Heading, Spacer, Button } from '@chakra-ui/react'
 
 export const Navbar = () => (
