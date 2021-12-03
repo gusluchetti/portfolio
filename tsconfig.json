@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
     "module": "system",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "outFile": "../../built/local/tsc.js",
-    "sourceMap": true
+    "sourceMap": true,
+    "target": "es6",
+    "jsx": "react-jsx"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
