@@ -3,7 +3,7 @@ import { Container, Heading, Text, Flex, Divider } from '@chakra-ui/react'
 import { Navbar } from '../components/navbar'
 
 export const App = () => (
-  <Container maxW="container.xl" py={4} px={[2, 4, 8]}>
+  <Container py={4} maxW="container.xl">
     <Navbar />
     <Divider />
     <Flex direction="column">
