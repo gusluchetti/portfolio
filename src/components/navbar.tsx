@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Flex, Box, Heading, Spacer, Button } from '@chakra-ui/react'
 
 export const Navbar = () => (
@@ -8,10 +8,13 @@ export const Navbar = () => (
     </Box>
     <Spacer />
     <Box>
-      <Button colorScheme="teal" mr="4">
+      <Button colorScheme="red" mr="4">
+        Projects
+      </Button>
+      <Button colorScheme="red" mr="4">
         About
       </Button>
-      <Button colorScheme="teal">Contact</Button>
+      <Button colorScheme="red">Contact</Button>
     </Box>
   </Flex>
 )
