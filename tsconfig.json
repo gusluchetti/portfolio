@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "system",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,

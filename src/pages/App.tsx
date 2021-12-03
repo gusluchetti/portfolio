@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Container, Heading, Text, Flex } from '@chakra-ui/react';
 
 export const App = () => (
