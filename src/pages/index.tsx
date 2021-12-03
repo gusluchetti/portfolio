@@ -1,7 +1,14 @@
 import * as React from 'react'
 import { App } from '../pages/App'
 import { ChakraProvider } from '@chakra-ui/react'
-import theme from '../../theme'
+import { extendTheme, ThemeConfig } from '@chakra-ui/react'
+
+const config: ThemeConfig = {
+  initialColorMode: 'dark',
+  useSystemColorMode: true,
+}
+
+const theme = extendTheme({ config })
 
 const IndexPage = () => {
   return (
