@@ -1,10 +1,11 @@
 import * as React from 'react'
-import { Container, Heading, Text, Flex } from '@chakra-ui/react'
+import { Container, Heading, Text, Flex, Divider } from '@chakra-ui/react'
 import { Navbar } from '../components/navbar'
 
 export const App = () => (
   <Container maxW="container.xl" p={0}>
     <Navbar />
+    <Divider />
     <Flex direction="column">
       <Heading>Luchetti - Developer</Heading>
       <Text>Hi!</Text>
