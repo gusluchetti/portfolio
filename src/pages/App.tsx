@@ -12,7 +12,7 @@ const App = () => (
       <Text>This is my portfolio website.</Text>
       <Text>
         I'll be working on this for the next couple of weeks, so if there's anything incomplete,
-        please check back in a few days!
+        please check back later!
       </Text>
     </Flex>
   </Container>
