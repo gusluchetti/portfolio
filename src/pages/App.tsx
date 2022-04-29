@@ -11,7 +11,7 @@ const App = () => (
       <Text>Hi!</Text>
       <Text>This is my portfolio website.</Text>
       <Text>
-        I'll be working on this for the next couple of weeks, so if there's anything incomplete,
+        I'll be working on this for the next couple of months, so if there's anything incomplete,
         please check back later!
       </Text>
     </Flex>
