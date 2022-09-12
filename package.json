@@ -1,8 +1,8 @@
 {
-  "name": "testys",
-  "version": "1.0.0",
+  "name": "luchetti.dev",
+  "version": "1.0.1",
   "private": true,
-  "description": "testys",
+  "description": "This is my portfolio website",
   "author": "Gustavo Luchetti",
   "keywords": [
     "gatsby"
