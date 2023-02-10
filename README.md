@@ -1,8 +1,7 @@
 # [luchetti.dev](https://luchetti.dev)
 
 Hello!
-This is my portfolio website repository!
-
-It's hosted with Firebase, and it's built using Gatsby, Chakra for the UI components and Framer Motion for animating everything.
+This is my blog/portfolio website repository!
+It is hosted using Firebase, and build statically with Zola.
 
 Please bear in mind that this is a constant work-in-progress!
