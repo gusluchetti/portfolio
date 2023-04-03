@@ -39,9 +39,10 @@
 - jr data scientist (serasa experian) // status: applied
 
 - 31/03
-- jr data scientist (red asset) // status: applied
-- application fullstack developer (ibm) // status: applied
-- data engineer (dxc) // status: applied
+- jr data scientist (red asset) // status: applied (?)
+- application fullstack developer (ibm) // status: applied (ibm jobs)
+- data engineer (dxc) // status: applied (?)
 
 - 03/04
-- jr data engineer (cogna) // status: applied
+- jr data engineer (cogna) // status: applied (kenoby)
+- data engineer (kanastra) // status: applied (easy apply)
