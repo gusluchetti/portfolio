@@ -47,3 +47,6 @@
 - jr data engineer (cogna) // status: applied (kenoby)
 - data engineer (kanastra) // status: applied (easy apply)
 - jr data engineer (suhai seguradora) // status: applied (gupy), did sql test through microsoft forms
+
+- 05/04
+- dev intern (tarken, bh) // status: applied (tarken talentlyft)
