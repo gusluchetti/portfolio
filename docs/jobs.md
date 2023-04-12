@@ -18,7 +18,7 @@
 
 - junior python developer (beyond/btg) // status: applied (email)
 - junior data scientist (modal bank)  // status: applied (gupy)
-- junior python developer (waycarbon) // status : applied (gupy)
+- junior python developer (waycarbon) // status : REJECTED 11/04 (not a good fit)
 
 - 28/03
 - software engineer (google) // status: applied (google careers)
@@ -27,7 +27,7 @@
 - 29/03
 - failed turing python coding challenge, deleted account, will try again
 - junior data scientist (bip?) // status: REJECTED (i wasn't a match)
-- engenheiro de dados pleno (linx) // status: applied (dev email)
+- engenheiro de dados pleno (linx) // status: REJECTED (position was frozen)
 - junior data scientist (casa e video) // status: REJECTED (no info)
 - new grad software engineer (texas) // status: applied (linkedin easy apply)
 - **software engineer / data systems engineer (ny) // status: REJECTED (unexperienced)
@@ -50,3 +50,7 @@
 
 - 05/04
 - dev intern (tarken, bh) // status: applied (tarken talentlyft)
+- jr software engineer (celcoin) // status: applied (email?)
+
+- 12/04
+- rivalry interest // status: applied (registered on job database)
