@@ -34,7 +34,7 @@
 - new dat science intern (geocarbonite) // status: applied
 
 - 30/03
-- junior data engineer (k2 parnering solutions) // status: applied
+- junior data engineer (k2 parnering solutions) // status: REJECTED (no info)
 - data engineer (wildlife) // status: REJECTED (no info)
 - jr data scientist (serasa experian) // status: applied
 
@@ -54,3 +54,6 @@
 
 - 12/04
 - rivalry interest // status: applied (registered on job database)
+
+- 13/04
+- yodo1 python engineer (full-stack) // status: applied (email?, waiting on auto reply)
