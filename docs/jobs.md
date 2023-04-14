@@ -65,3 +65,4 @@ i'll try and be more explicit when it comes to qualifications so I can see what 
 - smart fit engenheiro de dados jr (HYBRID), sql python spark, etc. // status: applied
 - condoconta python dev remoto, python, django, flask, sql, html, etc. // status: applied
 - registered at geek hunter
+- niteo analista dev jr, python, ingles fluente // status: applied
