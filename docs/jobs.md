@@ -17,7 +17,7 @@
 - contacted pedro (old BTG boss) // status: sent CV, answered
 
 - junior python developer (beyond/btg) // status: applied (email)
-- junior data scientist (modal bank)  // status: applied (gupy)
+- junior data scientist (modal bank)  // status: REJECTED (not compatible with the position?)
 - junior python developer (waycarbon) // status : REJECTED 11/04 (not a good fit)
 
 - 28/03
@@ -54,6 +54,14 @@
 
 - 12/04
 - rivalry interest // status: applied (registered on job database)
+- tickr full stack dev // status: got in contact (think i'll get ghosted)
 
 - 13/04
-- yodo1 python engineer (full-stack) // status: applied (email?, waiting on auto reply)
+- yodo1 python engineer (full-stack) // status: REJECTED (super quick at least)
+
+i'll try and be more explicit when it comes to qualifications so I can see what I'm missing
+- 14/04
+- dev fullstack jr remote nexti, java experience, apis, front-end basics, ssql, angular, scrum, etc. // status: applied
+- smart fit engenheiro de dados jr (HYBRID), sql python spark, etc. // status: applied
+- condoconta python dev remoto, python, django, flask, sql, html, etc. // status: applied
+- registered at geek hunter
