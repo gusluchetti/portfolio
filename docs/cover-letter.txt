@@ -1,4 +1,4 @@
--- cover letter?
+DON'T FORGET TO THANK THEM FOR THEIR TIME! - en/us
 
 Hi! I'm Gustavo, 22, and I'd love to be considered as a candidate for the Python Engineer position.
 
@@ -8,10 +8,20 @@ I felt a bit burned out with all the theory, and I'm looking forward to diving d
 
 I'm passionate about gaming, and Yodo1 seems like a great combination of my personal and work-related interests.. I don't give up easy and I enjoy a good challenge, so I'm sure I'll succeed in the team, especially given my past work experiences. I'll be upfront and also mention that I loved working remotely and the past, and I'd like to keep doing it; I felt free on my own time, and focused while working.
 
--- skills
-
+- skills:
 I'll try and be brief and outline my strengths and relevant experiences based on your expectations for this position.
  
 I feel very capable using Python and its APIs, especially because of my latest job, and academically in the past year. I'm knowledgeable when it comes to web crawling and data scraping. I've worked with AWS extensively, I'm very fond of microservices, which is something I worked a lot on in my bachelor thesis project (also used AWS then). I have a great grasp of database management (bachelors and work experience). I have worked a bit with monitoring tools, but not very often.
 
 I'm always on the lookout for optimizations and I pride myself in attempting to maintain and write clean code.
+
+---
+
+- pt/br
+Oi! Meu nome é Gustavo, tenho 22 anos, e gostaria de ser considerado para a posição de Pessoa Desenvolvedora de Software.
+
+Acabo de voltar para o Brasil depois de um semestre de trabalho na Holanda como Analista de Implementação, e um ano de mestrado em I.A., e estou procurando por mais expêrencia prática no setor de desenvolvimento de software.
+
+Sempre fui uma pessoa que repara nos mínimos detalhes, então gosto e tenho muito costume de discutir/otimizar processos sempre que possível. Estou bem animado pra ir a fundo em um projeto e ve-lo melhorar e crescer ao lado de um time remoto de qualidade. 
+
+Tenho o tempo de expêriencia necessário, trabalhei por +2 anos como desenvolvedor full-stack, e já tive bastante contato com as linguages/frameworks mencionados, especialmente Python, NodeJS e PostgreSQL.

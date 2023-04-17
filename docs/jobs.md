@@ -61,8 +61,16 @@
 
 i'll try and be more explicit when it comes to qualifications so I can see what I'm missing
 - 14/04
-- dev fullstack jr remote nexti, java experience, apis, front-end basics, ssql, angular, scrum, etc. // status: applied
-- smart fit engenheiro de dados jr (HYBRID), sql python spark, etc. // status: applied
-- condoconta python dev remoto, python, django, flask, sql, html, etc. // status: applied
+- dev fullstack jr remote nexti, java experience, apis, front-end basics, ssql, angular, scrum, etc. // status: applied (gupy?)
+- smart fit engenheiro de dados jr (HYBRID), sql python spark, etc. // status: applied (smartfit jobs)
+- condoconta python dev remoto, python, django, flask, sql, html, etc. // status: applied (gupy)
 - registered at geek hunter
-- niteo analista dev jr, python, ingles fluente // status: applied
+- niteo analista dev jr, python, ingles fluente // status: applied (gupy)
+- dit software developer remote, c#, .net, front-end // status: applied (email?)
+
+-17/04
+- trybe software developer - nodejs, postgresql, elixir, react, python, 2+ experience // status: applied (hire lever)
+- JPMorgan software engineer - java, microservices, lots of things, might not have enough experience // status: applied (jp morgan jobs)
+- unimed junior software developer - java, clean code, postgres, etc. (kenoby)
+- unimed analista dev jr - java, typescript, git, ingles, linux, arquiteturas, banco de dados // status: applied (kenoby)
+- pleno dev remoto US - angular, c#? experience might be an issue // status: applied (huntit)
