@@ -18,10 +18,13 @@ I'm always on the lookout for optimizations and I pride myself in attempting to 
 ---
 
 - pt/br
-Oi! Meu nome é Gustavo, tenho 22 anos, e gostaria de ser considerado para a posição de Pessoa Desenvolvedora de Software.
+Oi! Meu nome é Gustavo, tenho 22 anos, e gostaria de ser considerado para a posição de Desenvolvedor Back-End.
 
-Acabo de voltar para o Brasil depois de um semestre de trabalho na Holanda como Analista de Implementação, e um ano de mestrado em I.A., e estou procurando por mais expêrencia prática no setor de desenvolvimento de software.
+Acabo de voltar para o Brasil depois de um semestre de trabalho na Holanda como Analista de Implementação, e um ano de mestrado em I.A., e estou procurando por mais expêrencia prática como desenvolvedor de software, especificamente, em back-end.
 
-Sempre fui uma pessoa que repara nos mínimos detalhes, então gosto e tenho muito costume de discutir/otimizar processos sempre que possível. Estou bem animado pra ir a fundo em um projeto e ve-lo melhorar e crescer ao lado de um time remoto de qualidade. 
+Acredito ser bem qualificado para a posição, tenho 2+ anos de expêriencia como desenvolvedor full-stack, trabalhei em startups e grandes bancos, e tenho conhecimento pleno das tecnologias necessárias ; trabalhei com C#/.NET Core no desenvolvimento do back-end do meu penúltimo trabalho, tenho noções das metodologias e práticas de software (Agile, SOLID, etc.), não tenho muita expêriencia com event-sourcing, mas tinha contato com esse time com frequência.
 
-Tenho o tempo de expêriencia necessário, trabalhei por +2 anos como desenvolvedor full-stack, e já tive bastante contato com as linguages/frameworks mencionados, especialmente Python, NodeJS e PostgreSQL.
+Sempre fui uma pessoa que repara nos mínimos detalhes, então gosto e tenho muito costume de discutir/otimizar processos sempre que possível. Estou bem animado pra ir a fundo em um projeto e vê-lo melhorar e crescer ao lado de um time remoto de qualidade.
+
+Fico a disposição qualquer dúvida, muito obrigado pela oportunidade desde já,
+Gustavo Luís Rodrigues Luchetti
