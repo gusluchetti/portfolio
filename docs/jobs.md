@@ -44,7 +44,7 @@
 - data engineer (dxc) // status: applied (?)
 
 - 03/04
-- jr data engineer (cogna) // status: applied (kenoby)
+- jr data engineer (cogna) // status: REJECTED 18/04 (kenoby no info) 
 - data engineer (kanastra) // status: applied (easy apply)
 - jr data engineer (suhai seguradora) // status: applied (gupy), did sql test through microsoft forms
 
@@ -74,3 +74,6 @@ i'll try and be more explicit when it comes to qualifications so I can see what 
 - unimed junior software developer - java, clean code, postgres, etc. (kenoby)
 - unimed analista dev jr - java, typescript, git, ingles, linux, arquiteturas, banco de dados // status: applied (kenoby)
 - pleno dev remoto US - angular, c#? experience might be an issue // status: applied (huntit)
+
+- 18/04
+- estagio dev full stack (exati, parana, remoto) // status: applied (solides jobs)
