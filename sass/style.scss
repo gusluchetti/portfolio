@@ -1,7 +1,6 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #888888;
+@use 'base';
 
-body {
-  font: 100% $font-stack;
-  background-color: $primary-color;
+.test {
+    background-color: base.$primary-color;
+    color: white;
 }
