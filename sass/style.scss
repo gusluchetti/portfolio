@@ -1,6 +1,5 @@
 @use 'base';
 
-.test {
+div {
     background-color: base.$primary-color;
-    color: white;
 }
