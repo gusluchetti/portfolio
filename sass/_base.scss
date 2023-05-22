@@ -1,9 +1,35 @@
-$primary-dark-background: #333;
+$primary-dark-background: #334;
 $primary-dark-color: #fff;
 
+// setting up self hosted rubik font family
+@font-face {
+    font-family: "Rubik";
+    src: url('../assets/fonts/Rubik-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url('../assets/fonts/Rubik-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url('../assets/fonts/Rubik-Italic.woff2') format('woff2');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url('../assets/fonts/Rubik-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
 * {
-  background-color: $primary-dark-background;
-  color: $primary-dark-color;
-  margin: 0 auto;
-  padding: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: $primary-dark-background;
+    color: $primary-dark-color;
+    margin: 0 auto;
+    padding: 0;
 }
