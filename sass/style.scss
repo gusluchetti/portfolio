@@ -1,5 +1,52 @@
 @use 'base';
-
-div {
-    background-color: base.$primary-color;
+// main
+section { 
+    margin: 2em 0em;
 }
+
+.logo {
+    margin: 1em 0em;
+    padding: 0.2em;
+}
+
+.wrapper {
+    height: 100%;
+    width: 75%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    p {
+        padding: 0.5em 1em;
+    }
+}
+
+a, u {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+// nav bar
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li::before {
+        content: "> "
+    }
+}
+
+.navlinks {
+    list-style-type: none;
+    margin: 1em;
+    display: flex;
+}
+

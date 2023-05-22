@@ -1,7 +1,9 @@
-$primary-color: #333;
-$primary-text-color: #fff;
+$primary-dark-background: #333;
+$primary-dark-color: #fff;
 
 * {
-  background-color: $primary-color;
-  color: $primary-text-color;
+  background-color: $primary-dark-background;
+  color: $primary-dark-color;
+  margin: 0 auto;
+  padding: 0;
 }
