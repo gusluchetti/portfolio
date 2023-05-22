@@ -8,20 +8,26 @@
 </head>
 
 <body>
-    <h1 class="title">
-    <a href="/">luchetti.dev</a>
-    </h1>
-    <ul>
-        <li><a href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
-        <li><a href="{{get_url(path='@/now/_index.md')}}">now</a></li>
-        <li><a href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
-        <li><a href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
-    </ul>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
+    <div class="wrapper"> 
+        <div class="logo">
+            <h1 class="title"><a href="/">luchetti.dev</a></h1>
+        </div>
+        <section>
+            <div class="navbar">
+                <ul class="navlinks">
+                    <li><a href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
+                    <li><a href="{{get_url(path='@/now/_index.md')}}">now</a></li>
+                    <li><a href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
+                    <li><a href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+              {% block content %} {% endblock %}
+            </div>
+      </section>
     </div>
-  </section>
 </body>
 
 </html>
