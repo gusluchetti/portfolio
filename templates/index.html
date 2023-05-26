@@ -4,9 +4,14 @@
 <div class="profile">
     {% set image = resize_image(path="assets/me.jpeg", width=200, height=200, op="fill") %}
     <img src="{{ image.url }}" />
-    <p>
-      welcome to my very own website! 
-      checkout the navigation bar for more information about me, what i'm currently doing, or to see any of my blog posts.
-    </p>
+    <div>
+        <p>
+            Welcome! Feel free to browse for more information about me, what I'm currently doing, or to see any of my blog posts.
+            This website will always be a work in progress, with either style or infrastructure modifications, so check back frequently!
+        </p>
+        <p>
+            You can find me on Linkedin, Github, or through my email, gustavo@luchetti.dev.
+        </p>
+    </div>
 </div>
 {% endblock content %}
