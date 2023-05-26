@@ -9,21 +9,26 @@ section {
     margin: 2em 0em;
 }
 
+a, u {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     font-family: "Rubik Mono One";
     margin: 1em 0em;
-    padding: 0.2em;
 }
 
 .wrapper {
     height: 100%;
-    width: 75%;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 60%;
 }
 
 .profile {
@@ -34,25 +39,17 @@ section {
     }
 }
 
-a, u {
-    text-decoration: none;
-    font-weight: bold;
-
+.page-title-subtitle {
+    margin: 1em 0em;
 }
-// nav bar
-.navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-    li::before {
-        content: "> "
+// nav bar
+.navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    li:before {
+        content: ">"
     }
 }
-
-.navlinks {
-    list-style-type: none;
-    margin: 1em;
-    display: flex;
-}
-
