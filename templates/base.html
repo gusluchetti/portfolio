@@ -14,17 +14,15 @@
             <h1 class="title"><a href="/">luchetti.dev</a></h1>
         </div>
         <section>
-            <div class="navbar">
-                <ul class="navlinks">
-                    <li><a href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
-                    <li><a href="{{get_url(path='@/now/_index.md')}}">now</a></li>
-                    <li><a href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
-                    <li><a href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
-                </ul>
-            </div>
+            <ul class="navlinks">
+                <li><a href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
+                <li><a href="{{get_url(path='@/now/_index.md')}}">now</a></li>
+                <li><a href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
+                <li><a href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
+            </ul>
         </section>
         <section>
-            <div class="container">
+            <div class="flex-column-center">
               {% block content %} {% endblock %}
             </div>
       </section>
