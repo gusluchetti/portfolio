@@ -1,4 +1,4 @@
-@use 'base';
+@use 'base' as b;
 
 body {
     font-family: "Rubik", sans-serif;
@@ -9,50 +9,51 @@ section {
     margin: 2em 0em;
 }
 
-.logo {
-    font-family: "Rubik Mono One";
-    margin: 1em 0em;
-    padding: 0.2em;
+a, u {
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.wrapper {
-    height: 100%;
-    width: 75%;
-}
-
-.container {
+.flex-column-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.logo {
+    font-family: "Rubik Mono One";
+    margin: 1em 0em;
+}
+
+.wrapper {
+    height: 100%;
+    width: 55%;
+}
+
 .profile {
     display: flex;
     flex-direction: row;
+    align-items: center;
     p {
         padding: 0.5em 1em;
     }
 }
 
-a, u {
-    text-decoration: none;
-    font-weight: bold;
-
-}
-// nav bar
-.navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    li::before {
-        content: "> "
+.page-title-subtitle {
+    margin: 1em 0em;
+    h3 {
+        color: b.$dark-text-color;
+        font-weight: 400;
     }
 }
 
+// nav bar
 .navlinks {
-    list-style-type: none;
-    margin: 1em;
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    li:before {
+        content: ">"
+    }
 }
-

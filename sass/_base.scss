@@ -1,9 +1,16 @@
-$primary-dark-background: #222;
-$primary-dark-color: #fff;
+// bgs
+$darkest-background: #222;
+// text colors
+$light-text-color: #fff;
+$dark-text-color: #888;
 
 * {
-    background-color: $primary-dark-background;
-    color: $primary-dark-color;
+    background-color: $darkest-background;
+    color: $light-text-color;
     margin: 0 auto;
     padding: 0;
+}
+
+ul, li {
+    margin: 0;
 }
