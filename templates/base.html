@@ -5,26 +5,29 @@
   <meta charset="utf-8">
   <title>luchetti.dev</title>
   <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
-  <link rel="stylesheet" href="{{get_url(path="style.css", trailing_slash=false)}}">
+  <link rel="stylesheet" href="{{get_url(path="tachyons.css", trailing_slash=false)}}">
 </head>
 
-<body>
-    <div class="wrapper"> 
-        <div class="logo">
-            <h1 class="title"><a href="/">luchetti.dev</a></h1>
-        </div>
+<body class="w-two-thirds bg-near-black near-white">
+    <div class="flex flex-column items-center debug-grid"> 
         <section>
-            <ul class="navlinks">
-                <li><a href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
-                <li><a href="{{get_url(path='@/now/_index.md')}}">now</a></li>
-                <li><a href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
-                <li><a href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
+            <h1 class="title ttu tracked mt0"><a href="/">luchetti.dev</a></h1>
+        </section>
+        <section>
+            <ul class="flex flex-row list p10 justify-between">
+                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
+                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/now/_index.md')}}">now</a></li>
+                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
+                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
             </ul>
         </section>
         <section>
-            <div class="flex-column-center">
+            <div class="flex flex-column items-center">
               {% block content %} {% endblock %}
             </div>
+      </section>
+      <section>
+          <!-- footer? -->
       </section>
     </div>
 </body>

@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="profile">
+<div class="flex flex-row items-center">
     {% set image = resize_image(path="assets/me.jpeg", width=200, height=200, op="fill") %}
     <img src="{{ image.url }}" />
-    <div>
-        <p>
-            Welcome! Feel free to browse for more information about me, what I'm currently doing, or to see any of my blog posts.
-            This website will always be a work in progress, with either style or infrastructure modifications, so check back frequently!
-        </p>
-        <p>
-            You can find me on Linkedin, Github, or through my email, gustavo@luchetti.dev.
-        </p>
-    </div>
+    <p>
+        Welcome! Feel free to browse for more information about me, what I'm currently doing, or to see any of my blog posts.
+        This website will always be a work in progress, with either style or infrastructure modifications, so check back frequently!
+    </p>
+    <p>
+        You can find me on Linkedin, Github, or through my email, gustavo@luchetti.dev.
+    </p>
 </div>
 {% endblock content %}
