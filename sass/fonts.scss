@@ -30,3 +30,12 @@
     font-family: "Rubik Mono One";
     src: url('./fonts/RubikMonoOne-Regular.ttf');
 }
+
+// setting up fonts styles
+body {
+    font-family: "Rubik";
+    .title {
+        font-family: "Rubik Mono One"
+    }
+}
+
