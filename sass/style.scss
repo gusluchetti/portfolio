@@ -1,4 +1,4 @@
-@use 'base';
+@use 'base' as b;
 
 body {
     font-family: "Rubik", sans-serif;
@@ -41,6 +41,10 @@ a, u {
 
 .page-title-subtitle {
     margin: 1em 0em;
+    h3 {
+        color: b.$dark-text-color;
+        font-weight: 400;
+    }
 }
 
 // nav bar
