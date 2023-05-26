@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
+<div class="flex-column-center">
+    <h1 class="title">
+      {{ section.title }}
+    </h1>
+</div>
 
-<p> hi! im gustavo, 22</p>
+<p> I'm Gustavo Luchetti, 22, full-stack dev, tinkerer, and currently looking for work!</p>
+<a href="{{get_url(path='docs/GustavoLuchettiCV(en-us).docx')}}" download>
+    download en-us cv
+</a>
 {% endblock content %}
