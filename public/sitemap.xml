@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://luchetti.dev/</loc>
+    </url>
+    <url>
+        <loc>https://luchetti.dev/about/</loc>
+    </url>
+    <url>
+        <loc>https://luchetti.dev/blog/</loc>
+    </url>
+    <url>
+        <loc>https://luchetti.dev/blog/learning-chezmoi/</loc>
+        <lastmod>2023-05-19</lastmod>
+    </url>
+    <url>
+        <loc>https://luchetti.dev/now/</loc>
+    </url>
+    <url>
+        <loc>https://luchetti.dev/projects/</loc>
+    </url>
+    <url>
+        <loc>https://luchetti.dev/projects/test/</loc>
+        <lastmod>2023-05-18</lastmod>
+    </url>
+</urlset>
