@@ -8,27 +8,27 @@
   <link rel="stylesheet" href="{{get_url(path="tachyons.css", trailing_slash=false)}}">
 </head>
 
-<body class="w-two-thirds bg-near-black near-white">
-    <div class="flex flex-column items-center debug-grid"> 
-        <section>
-            <h1 class="title ttu tracked mt0"><a href="/">luchetti.dev</a></h1>
-        </section>
-        <section>
-            <ul class="flex flex-row list p10 justify-between">
-                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
-                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/now/_index.md')}}">now</a></li>
-                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
-                <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
-            </ul>
-        </section>
-        <section>
-            <div class="flex flex-column items-center">
-              {% block content %} {% endblock %}
+<body class="flex justify-center bg-near-black near-white">
+    <div class="w-80-ns w-90 flex flex-column items-center debug"> 
+        <header>
+            <div>
+                <h1 class="title ttu tracked mt0"><a href="/">luchetti.dev</a></h1>
             </div>
-      </section>
-      <section>
-          <!-- footer? -->
-      </section>
+            <div>
+                <ul class="flex flex-row-ns list pl0 justify-between">
+                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
+                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/now/_index.md')}}">now</a></li>
+                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
+                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="">
+          {% block content %} {% endblock %}
+        </div>
+          <section>
+              <!-- footer? -->
+          </section>
     </div>
 </body>
 

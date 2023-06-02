@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex flex-row items-center">
-    {% set image = resize_image(path="assets/me.jpeg", width=200, height=200, op="fill") %}
-    <img src="{{ image.url }}" />
-    <p>
+<div class="flex flex-column flex-row-l items-center">
+    {% set image = resize_image(path="assets/me.jpeg", width=160, height=160, op="fill") %}
+    <img src="{{ image.url }}" class="mr2-l" />
+    <p class="mr2-l measure-wide">
         Welcome! Feel free to browse for more information about me, what I'm currently doing, or to see any of my blog posts.
         This website will always be a work in progress, with either style or infrastructure modifications, so check back frequently!
     </p>
-    <p>
+    <p class="mr2-l measure-wide">
         You can find me on Linkedin, Github, or through my email, gustavo@luchetti.dev.
     </p>
 </div>
