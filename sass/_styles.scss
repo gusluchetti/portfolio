@@ -4,6 +4,20 @@
 
 // Custom Media Query Variables
 
+// not-small
+@media only screen and (min-width: 30rem) {
+    .debug * { outline: 0.5px solid gold; }
+}
+
+// medium
+@media only screen and (min-width: 30rem) and (max-width: 60rem) {
+    .debug * { outline: 0.5px solid orange; }
+}
+
+// large
+@media only screen and (min-width: 60rem) {
+    .debug * { outline: 0.5px solid red; }
+}
 
 /*
 
