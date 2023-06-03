@@ -1,41 +1,32 @@
 // regular both versions
 @font-face {
     font-family: "Rubik";
-    src: url('./fonts/Rubik-Regular.woff2') format('woff2');
+    src: url('../assets/fonts/Rubik-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Rubik";
-    src: url('./fonts/Rubik-Italic.woff2') format('woff2');
+    src: url('../assets/fonts/Rubik-Italic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
 }
 // bold both versions
 @font-face {
     font-family: "Rubik";
-    src: url('./fonts/Rubik-Bold.woff2') format('woff2');
+    src: url('../assets/fonts/Rubik-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: "Rubik";
-    src: url('./fonts/Rubik-BoldItalic.woff2') format('woff2');
+    src: url('../assets/fonts/Rubik-BoldItalic.woff2') format('woff2');
     font-weight: 700;
     font-style: italic;
 }
 // rubik mono one
 @font-face {
     font-family: "Rubik Mono One";
-    src: url('./fonts/RubikMonoOne-Regular.ttf');
+    src: url('../assets/fonts/RubikMonoOne-Regular.ttf');
 }
-
-// setting up fonts styles
-body {
-    font-family: "Rubik";
-    .title {
-        font-family: "Rubik Mono One"
-    }
-}
-

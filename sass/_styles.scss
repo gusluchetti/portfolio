@@ -1,4 +1,4 @@
-
+@import "https://www.nerdfonts.com/assets/css/webfont.css"
 // Converted Variables
 
 
@@ -20,10 +20,15 @@
 }
 
 /*
-
   STYLES
-
   Add custom styles here.
-
 */
 
+body {
+    font-family: 'Rubik';
+    min-height: 100dvh;
+}
+
+footer {
+    margin-top: auto;
+}
