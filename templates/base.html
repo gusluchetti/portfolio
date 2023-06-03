@@ -9,26 +9,33 @@
 </head>
 
 <body class="flex justify-center bg-near-black near-white">
-    <div class="w-80-ns w-90 flex flex-column items-center debug"> 
-        <header>
+    <div class="w-80-ns w-90 flex flex-column items-center"> 
+        <header class="">
             <div>
-                <h1 class="title ttu tracked mt0"><a href="/">luchetti.dev</a></h1>
+                <h1 class="tracked mt0">
+                    <a class="link b near-white dim"href="/">luchetti.dev</a>
+                </h1>
             </div>
             <div>
                 <ul class="flex flex-row-ns list pl0 justify-between">
-                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
-                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/now/_index.md')}}">now</a></li>
-                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
-                    <li><a class="link near-white hover-bg-light-blue" href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
+                    <li><a class="link near-white dim" href="{{get_url(path='@/about/_index.md')}}">about/cv</a></li>
+                    <li><a class="link near-white dim" href="{{get_url(path='@/now/_index.md')}}">now</a></li>
+                    <li><a class="link near-white dim" href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
+                    <li><a class="link near-white dim" href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
                 </ul>
             </div>
         </header>
-        <div class="">
+        <div class="bt bb b--gray pv2 ph2">
           {% block content %} {% endblock %}
         </div>
-          <section>
-              <!-- footer? -->
-          </section>
+        <footer class="">
+          <a href="mailto:" class="link near-white b f4-ns dim lh-solid">gustavo@luchetti.dev</a>
+          <div class="flex flex-row items-center justify-between mt3">
+              <i class="nf nf-cod-github f2" href="https://github.com/gusluchetti"></i>
+              <i class="nf nf-fa-linkedin f2" href="https://www.linkedin.com/in/gustaluchetti/"></i>
+              <i class="nf nf-cod-mail f2"></i>
+          </div>
+        </footer>
     </div>
 </body>
 
