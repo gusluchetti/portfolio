@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="{{get_url(path="tachyons.css", trailing_slash=false)}}">
 </head>
 
-<body class="flex justify-center bg-near-black near-white">
-    <div class="w-80-ns w-90 flex flex-column items-center"> 
+<body class="flex justify-center bg-near-black near-white pa1">
+    <div class="w-80-ns w-95-m flex flex-column items-center"> 
         <header class="w-two-thirds">
             <div>
                 <h1 class="tracked mt0">
@@ -25,15 +25,15 @@
                 </ul>
             </div>
         </header>
-        <div class="bt bb b--gray pv1 ph3 w-two-thirds">
+        <div class="w-two-thirds-l w-90-m w-95 bt bb b--gray pv1 ph2">
           {% block content %} {% endblock %}
         </div>
-        <footer class="w-33">
-          <a class="link gray i f3-ns lh-solid">find me at</a>
+        <footer class="w-33-ns w-70">
+          <a class="link gray b i f4-ns f2 lh-solid">find me at</a>
           <div class="flex flex-row items-baseline justify-around mt3">
-              <i class="nf nf-oct-mail dim f2" href="mailto:gustavo@luchetti.dev"></i>
-              <i class="nf nf-dev-github_alt dim f2" href="https://github.com/gusluchetti"></i>
-              <i class="nf nf-fa-linkedin_square dim f2" href="https://www.linkedin.com/in/gustaluchetti/"></i>
+              <i class="nf nf-oct-mail dim f2-ns f3-m f3" href="mailto:gustavo@luchetti.dev"></i>
+              <i class="nf nf-dev-github_alt dim f2-ns f3-m f3" href="https://github.com/gusluchetti"></i>
+              <i class="nf nf-fa-linkedin_square dim f2-ns f3-m f3" href="https://www.linkedin.com/in/gustaluchetti/"></i>
           </div>
         </footer>
     </div>
