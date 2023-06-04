@@ -1,4 +1,4 @@
 +++
-title = "about/cv"
+title = "about / cv"
 template = "about.html"
 +++
