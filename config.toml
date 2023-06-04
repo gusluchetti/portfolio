@@ -29,7 +29,16 @@ highlight_code = true
 # You can define language specific config values and translations: 
 # title, description, generate_feed, feed_filename, taxonomies, build_search_index
 # as well as its own search configuration and translations (see above for details on those)
-[languages]
+[languages.br]
+generate_feed = true # there will be a feed for French content
+build_search_index = true
+taxonomies = [
+    {name = "tags"},
+]
+
+[languages.br.translations]
+summary = "blog do luchetti"
+
 # For example
 # [languages.fr]
 # title = "Mon blog"
