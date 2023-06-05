@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex flex-column item-center">
+    <h1 class="title">
+      {{ section.title }}
+    </h1>
+</div>
+
+<p>Meu nome é Gustavo Luchetti, tenho 22 anos, e estou procurando emprego!</p>
+<a href="{{get_url(path='/static/docs/GustavoLuchettiCV(pt-br).docx')}}" download>
+    DOWNLOAD MEU CV (pt-br, .docx)
+</a>
+{% endblock content %}
