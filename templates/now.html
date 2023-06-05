@@ -1,17 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex flex-row items-baseline">
-    <h1 class="title near-white mr2"> {{ section.title }} </h1>
-    <h3 class="gray f5">last updated: 2023-06-03</h3>
-</div>
-<div class="measure-wide-ns lh-copy tj flex flex-column items-center">
-    <p>
-        I'm looking for work, but I'm currently very deep in the recruitment process for an awesome company! Hopefully I'll be able to share more by next week.
+<div class="flex flex-column items-center">
+    <p class="f2 mv3 near-white">
+        {{section.title}}
     </p>
-    <p>
-        In other non-work-related news, I've put in a LOT of work over the past week into my new fedora config (checkout my dots repository!), and this website!
-        I managed to get YUZU working on my PC, but I haven't gotten too far in Zelda TOTK. ACNH is my new go-to when I'm bored.
+    <div class="measure-wide-ns lh-copy tj flex flex-column items-center">
+        <p>
+            I'm looking for work, but I'm currently very deep in the recruitment process for an awesome company! Hopefully I'll be able to share more by next week.
+        </p>
+        <p>
+            In other non-work-related news, I've put in a LOT of work over the past week into my new fedora config (checkout my dots repository!), and this website!
+            I managed to get YUZU working on my PC, but I haven't gotten too far in Zelda TOTK. ACNH is my new go-to when I'm bored.
+        </p>
+    </div>
+    <p class="f5 mv3 gray i">
+        last updated <strong>2023-06-05</strong> | 
+        <a class="link blue dim" href="https://sive.rs/nowff">what's a now page?</a> 
     </p>
 </div>
 {% endblock content %}

@@ -13,20 +13,20 @@
 <body class="flex justify-center bg-near-black near-white pa1">
     <div class="w-80-ns w-95-m flex flex-column items-center">
         <header class="w-two-thirds">
-            <div>
-                <h1 class="tracked mt0">
-                    <a class="link b near-white dim" href="/">luchetti.dev</a>
-                </h1>
+            <div class="flex flex-column items-center">
+                <a class="f1 f2-ns tracked mv1 link b near-white dim" href="/">luchetti.dev</a>
             </div>
             <div>
-                <ul class="pl0 flex flex-row-ns list justify-between near-white dim">
+                <ul class="pl0 flex flex-row-ns list justify-around">
                     <li>
                         {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
-                        <a class="link" href="{{blog.path}}">
+                        <a class="link near-white dim b f2 f3-ns" href="{{blog.path}}">
                             {{blog.title}}
                         </a>
+                    </li>
+                    <li>
                         {% set now = get_section(path="now/_index.md", lang=lang, metadata_only=true) %}
-                        <a class="link" href="{{now}}">
+                        <a class="link near-white dim b f2 f3-ns" href="{{now.path}}">
                             {{now.title}}
                         </a>
                     </li>
