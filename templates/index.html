@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="flex flex-column flex-row-l items-center">
-    {% set image = resize_image(path="assets/me.jpeg", width=160, height=160, op="fill") %}
+    {% set image = resize_image(path="/static/images/profile-pic.jpeg", width=160, height=160, op="fill") %}
     <img src="{{ image.url }}" class="mr2-l" />
     <p class="mr2-l measure-wide">
         Welcome! Feel free to browse for more information about me, what I'm currently doing, or to see any of my blog posts.
