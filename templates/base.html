@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>luchetti.dev</title>
-    <link rel="stylesheet" href="{{get_url(path=" fonts.css", trailing_slash=false)}}">
-    <link rel="stylesheet" href="{{get_url(path=" tachyons.css", trailing_slash=false)}}">
+    <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
+    <link rel="stylesheet" href="{{get_url(path="tachyons.css", trailing_slash=false)}}">
 </head>
 
 <body class="flex justify-center bg-near-black near-white pa1">
@@ -18,10 +18,14 @@
             </div>
             <div>
                 <ul class="pl0 flex flex-row-ns list justify-between">
-                    <li><a class="link near-white dim" href="{{get_url(path='@/about/_index.md')}}"></a></li>
-                    <li><a class="link near-white dim" href="{{get_url(path='@/now/_index.md')}}">now</a></li>
-                    <li><a class="link near-white dim" href="{{get_url(path='@/blog/_index.md')}}">blog</a></li>
-                    <li><a class="link near-white dim" href="{{get_url(path='@/projects/_index.md')}}">projects</a></li>
+                    {% set about = get_url(path="@/about/_index.md") %}
+                    <li><a class="link near-white dim" href="{{about}}">
+                            about in {{lang}}
+                        </a></li>
+                    {% set now = get_url(path="@/now/_index.md") %}
+                    <li><a class="link near-white dim" href="{{now}}">now</a></li>
+                    {% set blog = get_url(path="@/blog/_index.md") %}
+                    <li><a class="link near-white dim" href="{{blog}}">blog</a></li>
                 </ul>
             </div>
         </header>
