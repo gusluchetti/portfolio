@@ -1,7 +1,7 @@
 +++
 title = "chezmoi"
 date = 2023-05-19
-updated = 2023-06-09T13:31:27-03:00 
+updated = 2023-06-05
 +++
 
 So, I like organizing things, and I also like making things easily repeatable. 
