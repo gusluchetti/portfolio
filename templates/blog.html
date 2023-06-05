@@ -1,17 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex-column-center">
-    <h1 class="title">
-      {{ section.title }}
-    </h1>
+<div class="flex flex-column items-center">
+    <h1> {{ section.title }} </h1>
 </div>
-<div>
-    <ul>
-        <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-        {% for page in section.pages %}
-        <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-        {% endfor %}
-    </ul>
+<div class="mh0 mv2">
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+    {% for page in section.pages %}
+        <div class="ba b--dark-gray br1 dim">
+            <h2>{{page.title}}</h2>
+            <p class="mw2 truncate">
+                {{ page.content | safe }}
+            </p>
+
+            <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+        </div>
+    {% endfor %}
 </div>
 {% endblock content %}

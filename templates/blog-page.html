@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class=""> {{ page.title }} </h1>
-<p class="i"> created {{ page.date }}, last updated {{ page.updated }} </p>
-<div>
-    {{ page.content | safe }}
+<div class="flex flex-column items-center">
+    <p class="f2 mv3 near-white">
+        {{page.title}}
+    </p>
+    <div> {{ page.content | safe }} </div>
+    <p class="f5 mv3 gray i">
+        last updated <strong>{{page.updated}}</strong> (drafted {{page.date}})
+    </p>
 </div>
 {% endblock content %}
