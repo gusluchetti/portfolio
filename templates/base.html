@@ -4,6 +4,7 @@
 <head>
     {% block head %}
     <meta charset="utf-8">
+    <meta name="color-scheme" content="dark light">
     <title>luchetti.dev</title>
     <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
     <link rel="stylesheet" href="{{get_url(path="tachyons.css", trailing_slash=false)}}">
@@ -17,7 +18,7 @@
                 <a class="f1 f2-ns tracked mv1 link b near-white dim" href="/">luchetti.dev</a>
             </div>
             <div>
-                <ul class="pl0 flex flex-row-ns list justify-around">
+                <ul class="mh6 pl0 flex flex-row-ns list justify-around">
                     <li>
                         {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
                         <a class="link near-white dim b f2 f3-ns" href="{{blog.path}}">
