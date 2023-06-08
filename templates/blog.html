@@ -2,19 +2,21 @@
 
 {% block content %}
 <div class="flex flex-column items-center">
-    <h1> {{ section.title }} </h1>
+    <p class="f4 fw7 mv3">
+        articles, thoughts, etc.
+    </p>
 </div>
 <div class="mh0 mv2">
     <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
     {% for page in section.pages %}
-        <div class="ba b--dark-gray br1 dim">
-            <h2>{{page.title}}</h2>
-            <p class="mw2 truncate">
-                {{ page.content | safe }}
+    <div class="ba br3 pointer dim bp-bg pa2 ma0" onclick="window.location='{{ page.permalink | safe }}';">
+            <p class="f5 fw7">
+                {{ page.title }}
             </p>
-
-            <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-        </div>
+            <p class="mw20 truncate">
+                {{ page.content }}
+            </p>
+    </div>
     {% endfor %}
 </div>
 {% endblock content %}

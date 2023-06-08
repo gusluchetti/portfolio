@@ -2,11 +2,11 @@
 
 {% block content %}
 <div class="flex flex-column items-center">
-    <p class="f2 mv3 near-white">
+    <p class="f2 mv3">
         {{page.title}}
     </p>
     <div> {{ page.content | safe }} </div>
-    <p class="f5 mv3 gray i">
+    <p class="f5 mv3 bg2 i">
         last updated <strong>{{page.updated}}</strong> (drafted {{page.date}})
     </p>
 </div>
