@@ -1,3 +1,4 @@
+// rubik light, regular, bold and extra bold
 @font-face {
     font-family: "Rubik";
     src: url('fonts/Rubik-Light.woff2') format('woff2');
@@ -10,7 +11,6 @@
     font-weight: 300;
     font-style: italic;
 }
-
 @font-face {
     font-family: "Rubik";
     src: url('fonts/Rubik-Regular.woff2') format('woff2');
@@ -23,7 +23,6 @@
     font-weight: 400;
     font-style: italic;
 }
-
 @font-face {
     font-family: "Rubik";
     src: url('fonts/Rubik-Bold.woff2') format('woff2');
@@ -36,7 +35,6 @@
     font-weight: 700;
     font-style: italic;
 }
-
 
 @font-face {
     font-family: "Rubik";
@@ -51,7 +49,37 @@
     font-style: italic;
 }
 
+// merriweather light, regular and bold
 @font-face {
-    font-family: "Rubik Mono One";
-    src: url('fonts/RubikMonoOne-Regular.ttf');
+    font-family: "Merriweather";
+    font-weight: 300;
+    src: url('fonts/Merriweather-Light.ttf')
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 300;
+    font-style: italic;
+    src: url('fonts/Merriweather-LightItalic.ttf')
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 400;
+    src: url('fonts/Merriweather-Regular.ttf')
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-style: italic;
+    src: url('fonts/Merriweather-Italic.ttf')
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 700;
+    src: url('fonts/Merriweather-Bold.ttf')
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-style: italic;
+    src: url('fonts/Merriweather-BoldItalic.ttf')
 }
