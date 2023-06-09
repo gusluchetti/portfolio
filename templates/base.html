@@ -13,32 +13,31 @@
 
 <body class="flex justify-center pa1">
     <div class="w-80-ns w-95-m flex flex-column items-center">
-        <header class="w-two-thirds">
-            <div class="flex flex-column items-center">
-                <a class="f1 f2-ns tracked mv1 link fw8 dim" href="/">luchetti.dev</a>
-            </div>
-            <div>
-                <ul class="mh6 pl0 flex flex-row-ns list justify-around">
-                    <li>
-                        {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
-                        <a class="link dim fw4 f2 f3-ns" href="{{blog.path}}">
-                            {{blog.title}}
-                        </a>
-                    </li>
-                    <li>
-                        {% set now = get_section(path="now/_index.md", lang=lang, metadata_only=true) %}
-                        <a class="link dim fw4 f2 f3-ns" href="{{now.path}}">
-                            {{now.title}}
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <header class="w-two-thirds flex flex-column items-center justify-center">
+            <h1 class="mv2">
+                <a class="link dim fw8" href="/">luchetti.dev</a>
+            </h1>
+            <ul class="w-80 w-50-ns pl0 flex flex-row-ns list justify-around">
+                <li>
+                    {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
+                    <a class="link dim fw4 f2 f3-ns" href="{{blog.path}}">
+                        {{blog.title}}
+                    </a>
+                </li>
+                <li><a class="fw4 f2 f3-ns">.</a></li>
+                <li>
+                    {% set now = get_section(path="now/_index.md", lang=lang, metadata_only=true) %}
+                    <a class="link dim fw4 f2 f3-ns" href="{{now.path}}">
+                        {{now.title}}
+                    </a>
+                </li>
+            </ul>
         </header>
         <div class="w-two-thirds-l w-90-m w-95 bt bb pv1 ph2">
             {% block content %}
             {% endblock %}
         </div>
-        <footer class="w-33-ns w-70">
+        <footer class="pv2 w-33-ns w-70">
             {% block footer %}
             <a class="link b i f4-ns f2 lh-solid">find me at</a>
             <div class="flex flex-row items-baseline justify-around mt3">
