@@ -10,12 +10,9 @@
     <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
     {% for page in section.pages %}
     <div class="ba br3 pointer dim bp-bg pa2 ma0" onclick="window.location='{{ page.permalink | safe }}';">
-            <p class="f5 fw7">
-                {{ page.title }}
-            </p>
-            <p class="text">
-                {{ page.content | safe }}
-            </p>
+        <p class="f5 fw7">
+            {{ page.title }}
+        </p>
     </div>
     {% endfor %}
 </div>
