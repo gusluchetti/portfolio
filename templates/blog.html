@@ -13,8 +13,8 @@
             <p class="f5 fw7">
                 {{ page.title }}
             </p>
-            <p class="mw20 truncate text">
-                {{ page.content }}
+            <p class="text">
+                {{ page.content | safe }}
             </p>
     </div>
     {% endfor %}

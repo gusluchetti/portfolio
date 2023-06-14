@@ -34,45 +34,36 @@
                 </li>
             </ul>
         </header>
-        <div class="w-two-thirds-l w-90-m w-95 bt bb pv1 ph2">
+        <div class="w-75-l w-90-m w-95 bt bb pv1 ph2">
             {% block content %}
             {% endblock %}
         </div>
-        <footer class="pv2 w-two-thirds-ns w-80-m w-90">
+        <footer class="pv2 w-third-ns w-80-m w-90 flex items-center">
             {% block footer %}
-            <div>
                 <div class="fl w-50 pa2 flex flex-column justify-between br">
-                    <a class="link text f5-ns f4 fw4 mb1">reach me at:</a>
+                    <a class="link text f5 fw4 mb1">reach me at:</a>
                     <div class="flex flex-row items-center justify-between">
                         <i class="nf nf-oct-mail dim f2-ns f3" href="mailto:gustavo@luchetti.dev"></i>
                         <i class="nf nf-dev-github_alt dim f2-ns f3" href="https://github.com/gusluchetti"></i>
                         <i class="nf nf-fa-linkedin_square dim f2-ns f3" href="https://www.linkedin.com/in/gustaluchetti/"></i>
                     </div>
                 </div>
-                <div class="fl w-50 pa2 flex flex-column justify-between">
-                    <label class="text theme-switch" for="theme">
-                        theme: <input id="theme" type="checkbox">
-                    </label>
-                    <label class="text lang-switch" for"lang">
-                        lang: <input id="lang" type="select">
-                    </label>
+                <div class="fl w-50 pa2">
+                    <button class="theme-switch">
+                        toggle dark/light-mode!
+                    </button>
                 </div>
-            </div>
             {% endblock %}
         </footer>
-
     <script>
-        const btn = document.querySelector(".theme-switch input");
+        const themeBtn = document.querySelector(".theme-switch");
         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-        const currentTheme = localStorage.getItem("theme");
+        const curTheme = localStorage.getItem("theme");
 
-        if (currentTheme == "dark") {
-          document.body.classList.toggle("dark-theme");
-        } else if (currentTheme == "light") {
-          document.body.classList.toggle("light-theme");
-        }
+        if (curTheme == "dark") { document.body.classList.toggle("dark-theme");
+        } else if (curTheme == "light") { document.body.classList.toggle("light-theme"); }
 
-        btn.addEventListener("click", function () {
+        themeBtn.addEventListener("click", (event) => {
           if (prefersDarkScheme.matches) {
             document.body.classList.toggle("light-theme");
             var theme = document.body.classList.contains("light-theme")
@@ -84,10 +75,10 @@
               ? "dark"
               : "light";
           }
-
           localStorage.setItem("theme", theme);
         });
     </script>
+
     </main>
 </body>
 
