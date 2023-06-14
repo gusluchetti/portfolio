@@ -15,13 +15,6 @@ highlight_theme = "gruvbox-dark"
 # You can define language specific config values and translations: 
 # title, description, generate_feed, feed_filename, taxonomies, build_search_index
 # as well as its own search configuration and translations (see above for details on those)
-[languages.br]
-generate_feed = true # there will be a feed for French content
-build_search_index = true
-
-[languages.br.translations]
-title = "blog do luchetti"
-description = "um lugar onde compartilho estudos e descobertas"
 
 # You can put any kind of data here. The data
 # will be accessible in all templates
