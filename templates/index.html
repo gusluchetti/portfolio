@@ -2,19 +2,19 @@
 
 {% block content %}
 <div class="flex flex-column items-center">
-    <p class="f4 fw7 mv3 serif-text">
-        about me
+    <p class="f4 fw7 mv3 text">
+        Who am I?
     </p>
 </div>
 <div class="flex flex-column flex-row-l items-center justify-center">
     {% set image = resize_image(path="static/images/profile-pic.jpeg", width=160, height=160, op="fill") %}
     <img src="{{ image.url }}" class="mr2-l" />
-    <p class="mr2-l measure-wide serif-text">
+    <p class="mr2-l measure-wide text">
         Hi! I'm Gustavo Luchetti, 22, and this is my website. I'd like this to be something
         I can always refer to when someone asks for my CV, or wants to know what I'm currently doing,
         be it work or fun-related.
     </p>
-    <p class="mr2-l measure-wide serif-text">
+    <p class="mr2-l measure-wide text">
         I have 2+ years experience as a full-stack dev, and am currently looking for work!
         I would like to broaden my knowledge in the data-science field, but do get in touch
         if you're looking for someone driven and ready to take on interesting projects!
