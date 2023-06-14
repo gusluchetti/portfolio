@@ -11,6 +11,7 @@
     {% endblock %}
 </head>
 
+
 <body class="flex justify-center pa1">
     <main class="w-95 flex flex-column items-center">
         <header class="w-two-thirds-ns w-80-m w-90 flex flex-column items-center justify-center">
@@ -49,18 +50,44 @@
                     </div>
                 </div>
                 <div class="fl w-50 pa2 flex flex-column justify-between">
-                    <label class="text switch">
-                        theme: <input type="checkbox">
-                        <span class="slider"></span>
+                    <label class="text theme-switch" for="theme">
+                        theme: <input id="theme" type="checkbox">
                     </label>
-                    <label class="text switch">
-                        lang: <input type="select">
-                        <span class="slider"></span>
+                    <label class="text lang-switch" for"lang">
+                        lang: <input id="lang" type="select">
                     </label>
                 </div>
             </div>
             {% endblock %}
         </footer>
+
+    <script>
+        const btn = document.querySelector(".theme-switch input");
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme == "dark") {
+          document.body.classList.toggle("dark-theme");
+        } else if (currentTheme == "light") {
+          document.body.classList.toggle("light-theme");
+        }
+
+        btn.addEventListener("click", function () {
+          if (prefersDarkScheme.matches) {
+            document.body.classList.toggle("light-theme");
+            var theme = document.body.classList.contains("light-theme")
+              ? "light"
+              : "dark";
+          } else {
+            document.body.classList.toggle("dark-theme");
+            var theme = document.body.classList.contains("dark-theme")
+              ? "dark"
+              : "light";
+          }
+
+          localStorage.setItem("theme", theme);
+        });
+    </script>
     </main>
 </body>
 
