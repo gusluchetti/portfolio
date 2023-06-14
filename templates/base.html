@@ -39,18 +39,19 @@
         </div>
         <footer class="pv2 w-33-ns w-70">
             {% block footer %}
-            <div class="flex flex-column mt3">
-                <div>
+            <div class="flex flex-row">
+                <div class="flex flex-column br">
                     <a class="link b i f4-ns f2 lh-solid">find me at</a>
+                    <ul>
+                        <i class="nf nf-oct-mail dim f2-ns f3-m f3" href="mailto:gustavo@luchetti.dev"></i>
+                        <i class="nf nf-dev-github_alt dim f2-ns f3-m f3" href="https://github.com/gusluchetti"></i>
+                        <i class="nf nf-fa-linkedin_square dim f2-ns f3-m f3" href="https://www.linkedin.com/in/gustaluchetti/"></i>
+                    </ul>
                 </div>
-                <div>
-                    <i class="nf nf-oct-mail dim f2-ns f3-m f3" href="mailto:gustavo@luchetti.dev"></i>
-                    <i class="nf nf-dev-github_alt dim f2-ns f3-m f3" href="https://github.com/gusluchetti"></i>
-                    <i class="nf nf-fa-linkedin_square dim f2-ns f3-m f3" href="https://www.linkedin.com/in/gustaluchetti/"></i>
+                <div class="flex flex-column">
+                    <p> Current Theme: <i class="nf nf-oct-moon ba br2 f4-ns pa1"></i> </p>
+                    <p> Current Language: <i></i> </p>
                 </div>
-            </div>
-            <div>
-
             </div>
             {% endblock %}
         </footer>
