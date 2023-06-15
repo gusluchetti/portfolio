@@ -2,16 +2,55 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>luchetti.dev</title>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="dark light">
+    <title>luchetti.dev</title>
+    <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
+    <link rel="stylesheet" href="{{get_url(path="tachyons.css", trailing_slash=false)}}">
+    {% endblock %}
 </head>
 
-<body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
-    </div>
-  </section>
+
+<body class="flex justify-center pa1">
+    <main class="w-90 flex flex-column items-center">
+        <header class="w-two-thirds-ns w-80-m w-90 flex flex-column items-center justify-center">
+            <h1 class="mv2">
+                <a class="link dim fw8" href="/">luchetti.dev</a>
+            </h1>
+            <ul class="w-80 w-40-ns pl0 flex flex-row-ns list justify-around">
+                <li>
+                    {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
+                    <a class="link dim fw7 f3 text" href="{{blog.path}}">
+                        {{blog.title}}
+                    </a>
+                </li>
+                <li><a class="fw4 f3 text">.</a></li>
+                <li>
+                    {% set now = get_section(path="now/_index.md", lang=lang, metadata_only=true) %}
+                    <a class="link dim fw7 f3 text" href="{{now.path}}">
+                        {{now.title}}
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="w-80-l w-90-m w-95 bt bb pv1 ph2">
+            {% block content %}
+            {% endblock %}
+        </div>
+        {% block footer %}
+        <footer class="pv2 w-third-ns w-80-m w-90 flex justify-center items-center">
+                <div class="w-100 pa2 flex flex-column items-center">
+                    <a class="link text f5 fw4 mb1">reach me at:</a>
+                    <div class="w-50 flex flex-row justify-between">
+                        <i class="nf nf-oct-mail dim f2-ns f3" href="mailto:gustavo@luchetti.dev"></i>
+                        <i class="nf nf-dev-github_alt dim f2-ns f3" href="https://github.com/gusluchetti"></i>
+                        <i class="nf nf-fa-linkedin_square dim f2-ns f3" href="https://www.linkedin.com/in/gustaluchetti/"></i>
+                    </div>
+                </div>
+        </footer>
+        {% endblock %}
+    </main>
 </body>
 
 </html>
