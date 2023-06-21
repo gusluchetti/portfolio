@@ -1,7 +1,5 @@
 # [luchetti.dev](https://luchetti.dev)
 
-WORK-IN-PROGRESS (CHECK DEVELOP BRANCH)
-
 Hi! After some procrastinating, I've finally gotten around to building my own website. I fiddled with different frameworks and hosting services, and I settled on
 Github Pages (using my custom domain) and Zola, a static site engine. Should be more than enough for my needs, and who knows, I might make a full-on app in the (far) future.
 
