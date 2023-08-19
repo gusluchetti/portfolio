@@ -1,0 +1,74 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+// custom core styles
+body {
+    font-family: Rubik, sans-serif;
+    min-height: 100dvh;
+}
+
+.text {
+    font-family: IBM Plex Mono, monospace;
+}
+
+a { color: inherit }
+footer { margin-top: auto }
+
+// media queries
+@media (prefers-color-scheme: dark) {
+    // modded gruvbox dark
+    $bg: #1d2021;
+    $bg1: #3c3836;
+    $bg0: #282828;
+    $bg2: #504945;
+    $fg: #ebdbb2;
+    $fg0: #fbf1c7;
+    $gray: #a89984;
+    $blue: #458588;
+
+    body {
+        background-color: $bg;
+        color: $fg !important;
+    }
+
+    * { border-color: $bg2 }
+    .blue { color: $blue }
+    .bg2 { color: $bg2 }
+    .bp-bg { background-color: $bg0 }
+}
+
+@media (prefers-color-scheme: light) {
+    // modded gruvbox light
+    $bg: #fbf1c7;
+    $bg0: #f9f5d7;
+    $bg1: #ebdbb2;
+    $bg2: #d5c4a1;
+    $fg: #3c3836;
+    $fg0: #282828;
+    $gray: #7c6f64;
+    $blue: #458588;
+
+    body {
+        background-color: $bg;
+        color: $fg !important;
+    }
+
+    * { border-color: $bg2 }
+    .blue { color: $blue }
+    .bg2 { color: $bg2 }
+    .bp-bg { background-color: $bg0 }
+}
+
+// not-small
+@media only screen and (min-width: 30rem) {
+    .debug * { outline: 0.5px solid gold; }
+}
+
+// medium
+@media only screen and (min-width: 30rem) and (max-width: 60rem) {
+    .debug * { outline: 0.5px solid orange; }
+}
+
+// large
+@media only screen and (min-width: 60rem) {
+    .debug * { outline: 0.5px solid red; }
+}
