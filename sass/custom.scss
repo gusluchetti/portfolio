@@ -1,17 +1,30 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
-// custom core styles
 body {
-    font-family: Rubik, sans-serif;
+    font-family: 'Bitter', sans-serif;
     min-height: 100dvh;
 }
 
-.text {
-    font-family: IBM Plex Mono, monospace;
-}
+// neutrals
+$main-black: hsla(36, 11%, 9%, 1);
+$main-lightblack: hsla(39, 10%, 27%, 1);
+$main-mid: hsla(38, 9%, 46%, 1);
+$main-darkwhite: hsla(39, 17%, 64%, 1);
+$main-white: hsla(39, 44%, 82%, 1);
 
-a { color: inherit }
-footer { margin-top: auto }
+// accents
+$accent-blue: hsla(181, 17%, 52%, 1);
+$accent-lightblue: hsla(182, 36%, 85%, 1);
+$accent-purple: hsla(244, 17%, 52%, 1);
+$accent-lightpurple: hsla(246, 50%, 80%, 1);
+$accent-green: hsla(89, 17%, 52%, 1);
+
+// (semantic) colors
+$success: hsla(89, 43%, 38%, 1);
+$warning: hsla(41, 43%, 38%, 1);
+$error: hsla(8, 43%, 38%, 1);
+$info: hsla(198, 43%, 38%, 1);
+$other: hsla(288, 43%, 38%, 1);
 
 // media queries
 @media (prefers-color-scheme: dark) {
