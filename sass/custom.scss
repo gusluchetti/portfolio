@@ -1,59 +1,93 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 // neutrals
-$primary-900: hsla(36, 11%, 9%, 1);
+$primary-900: hsla(36, 11%, 9%, 1); //main bg color
+$primary-850: hsla(36, 11%, 15%, 1);
 $primary-700: hsla(39, 10%, 27%, 1);
 $primary-500: hsla(38, 9%, 46%, 1);
 $primary-300: hsla(39, 17%, 64%, 1);
-$primary-100: hsla(39, 44%, 82%, 1);
+$primary-200: hsla(39, 44%, 82%, 1); //main text color
+$primary-100: hsla(38, 44%, 12%, 1);
 
 // accents
 $accent-blue: hsla(181, 17%, 52%, 1);
 $accent-lightblue: hsla(182, 36%, 85%, 1);
 $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
+
 $accent-green: hsla(89, 17%, 52%, 1);
+.accent {
+    color: $accent-green;
+}
 
 // (semantic) colors
 $success: hsla(89, 43%, 38%, 1);
+.success {
+    color: $success;
+}
 $warning: hsla(41, 43%, 38%, 1);
+.warning {
+    color: $warning;
+}
 $error: hsla(8, 43%, 38%, 1);
+.error {
+    color: $error;
+}
 $info: hsla(198, 43%, 38%, 1);
+.info {
+    color: $info;
+}
 $other: hsla(288, 43%, 38%, 1);
+.other {
+    color: $other;
+}
+
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: 'Bitter', sans-serif;
-    min-height: 100dvh;
+    height: 100dvh;
+}
 
-    .link {
-        color: inherit;
-    }
+.monofont {
+    font-family: 'IBM Plex Mono';
+}
 
-    .blue {
-        color: $accent-blue;
+.link {
+    color: inherit;
+}
+
+
+.list {
+    li, li:before {
+        padding: 0rem 1rem;
     }
+}
+
+.list li:not(:first-child) {
+    border-left: solid .5px $primary-850;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: $primary-900;
-        color: $primary-100;
+        color: $primary-200;
     }
 
-    * { border-color: $primary-700 }
-    .blue { color: $accent-blue }
+    * { border-color: $primary-850 }
     .bg2 { color: $primary-700 }
-    .bp-bg { background-color: $primary-700 }
+    .bp-bg { background-color: $primary-850 }
 }
 
 @media (prefers-color-scheme: light) {
     body {
-        background-color: $primary-100;
+        background-color: $primary-200;
         color: $primary-900;
     }
 
-    * { border-color: $primary-700 }
-    .blue { color: $accent-blue }
+    * { border-color: $primary-300 }
     .bg2 { color: $primary-700 }
     .bp-bg { background-color: $primary-300 }
 }

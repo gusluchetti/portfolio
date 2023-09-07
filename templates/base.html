@@ -3,45 +3,49 @@
 
 <head>
     {% block head %}
-    <title>luchetti.dev</title>
+    <title>luche(tti).dev</title>
     <meta charset="utf-8">
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="{{get_url(path="custom.css", trailing_slash=false)}}">
     <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
+    <link rel="stylesheet" href="{{get_url(path="custom.css", trailing_slash=false)}}">
     {% endblock %}
 </head>
 
 
 <body class="flex justify-center pa1">
-    <main class="w-90 flex flex-column items-center">
-        <header class="w-two-thirds-ns w-80-m w-90 flex flex-column items-center justify-center">
-            <h1 class="mv2">
-                <a class="link dim fw8" href="/">luchetti.dev</a>
+    <main class="w-50 flex flex-column items-center bl br">
+        {% block header %}
+        <header class="ph5 w-100 flex items-center justify-between monofont">
+            <h1>
+                <a class="link dim f1 fw4" href="/" style="letter-spacing: -1.15rem;">
+                    <span>t<span>
+                    <span style="letter-spacing: 0rem;">ti</span>
+                </a>
             </h1>
-            <ul class="w-80 w-40-ns pl0 flex flex-row-ns list justify-around">
+            <ul class="flex list">
                 <li>
                     {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
-                    <a class="link dim fw7 f3 text" href="{{blog.path}}">
+                    <a class="link accent dim f3 text" href="{{blog.path}}">
                         {{blog.title}}
                     </a>
                 </li>
-                <li><a class="fw4 f3 text">.</a></li>
                 <li>
                     {% set now = get_section(path="now/_index.md", lang=lang, metadata_only=true) %}
-                    <a class="link dim fw7 f3 text" href="{{now.path}}">
+                    <a class="link accent dim f3 text" href="{{now.path}}">
                         {{now.title}}
                     </a>
                 </li>
             </ul>
         </header>
-        <div class="w-80-l w-90-m w-95 bt bb pv1 ph2">
+        {% endblock %}
+        <div class="w-100-l w-90-m w-95 pv1 ph5 bt bb ">
             {% block content %}
             {% endblock %}
         </div>
         {% block footer %}
-        <footer class="pv2 w-third-ns w-80-m w-90 flex justify-center items-center">
+        <footer class="w-70 ph5 flex justify-center items-center">
                 <div class="w-100 pa2 flex flex-column items-center">
                     <p class="text f5 fw4 mb1">reach me at:</p>
                     <div class="w-50 flex flex-row justify-between">
