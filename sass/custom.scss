@@ -1,16 +1,11 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
-body {
-    font-family: 'Bitter', sans-serif;
-    min-height: 100dvh;
-}
-
 // neutrals
-$main-black: hsla(36, 11%, 9%, 1);
-$main-lightblack: hsla(39, 10%, 27%, 1);
-$main-mid: hsla(38, 9%, 46%, 1);
-$main-darkwhite: hsla(39, 17%, 64%, 1);
-$main-white: hsla(39, 44%, 82%, 1);
+$primary-900: hsla(36, 11%, 9%, 1);
+$primary-700: hsla(39, 10%, 27%, 1);
+$primary-500: hsla(38, 9%, 46%, 1);
+$primary-300: hsla(39, 17%, 64%, 1);
+$primary-100: hsla(39, 44%, 82%, 1);
 
 // accents
 $accent-blue: hsla(181, 17%, 52%, 1);
@@ -26,50 +21,43 @@ $error: hsla(8, 43%, 38%, 1);
 $info: hsla(198, 43%, 38%, 1);
 $other: hsla(288, 43%, 38%, 1);
 
-// media queries
-@media (prefers-color-scheme: dark) {
-    // modded gruvbox dark
-    $bg: #1d2021;
-    $bg1: #3c3836;
-    $bg0: #282828;
-    $bg2: #504945;
-    $fg: #ebdbb2;
-    $fg0: #fbf1c7;
-    $gray: #a89984;
-    $blue: #458588;
+body {
+    font-family: 'Bitter', sans-serif;
+    min-height: 100dvh;
 
-    body {
-        background-color: $bg;
-        color: $fg !important;
+    .link {
+        color: inherit;
     }
 
-    * { border-color: $bg2 }
-    .blue { color: $blue }
-    .bg2 { color: $bg2 }
-    .bp-bg { background-color: $bg0 }
+    .blue {
+        color: $accent-blue;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $primary-900;
+        color: $primary-100;
+    }
+
+    * { border-color: $primary-700 }
+    .blue { color: $accent-blue }
+    .bg2 { color: $primary-700 }
+    .bp-bg { background-color: $primary-700 }
 }
 
 @media (prefers-color-scheme: light) {
-    // modded gruvbox light
-    $bg: #fbf1c7;
-    $bg0: #f9f5d7;
-    $bg1: #ebdbb2;
-    $bg2: #d5c4a1;
-    $fg: #3c3836;
-    $fg0: #282828;
-    $gray: #7c6f64;
-    $blue: #458588;
-
     body {
-        background-color: $bg;
-        color: $fg !important;
+        background-color: $primary-100;
+        color: $primary-900;
     }
 
-    * { border-color: $bg2 }
-    .blue { color: $blue }
-    .bg2 { color: $bg2 }
-    .bp-bg { background-color: $bg0 }
+    * { border-color: $primary-700 }
+    .blue { color: $accent-blue }
+    .bg2 { color: $primary-700 }
+    .bp-bg { background-color: $primary-300 }
 }
+
 
 // not-small
 @media only screen and (min-width: 30rem) {
