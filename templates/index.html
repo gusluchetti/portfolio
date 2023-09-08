@@ -1,31 +1,23 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %} {% set first_post =
+get_url(path="@/blog/getting_over_it.md") %}
 
-{% set image = resize_image(path="static/images/profile-pic.jpeg", width=160, height=160, op="fill") %}
-{% set first_post = get_url(path="@/blog/getting_over_it.md") %}
-
-<div class="flex flex-column items-center">
-</div>
 <div class="flex flex-column items-center justify-center">
-    <p class="mr2-l measure-wide text i warning">
-        Disclaimer: This is still a <span class="b">WIP</span>. 
-        Let me know If something doesn't look right! 
+  <div class="flex flex-column">
+    <h2 class="fw9 mv2 b text tc">Who?</h2>
+    <p class="measure-wide text">
+      Hi! My name is Gustavo Luchetti, a full-stack developer based in Brazil.
     </p>
-    <img src="{{ image.url }}" class="fl" />
-    <div class="flex flex-column">
-        <p class="f4 b mv3 text tc">
-            Who am I?
-        </p>
-        <p class="mr2-l measure-wide text">
-            Hi! I'm Gustavo Luchetti, 23. I'd like this website to be something
-            I can always refer to when someone asks wants to know more about me, or what I'm currently up to.
-        </p>
-        <p class="mr2-l measure-wide text">
-            Speaking of, I have 2+ years experience as a full-stack dev, and am currently working at 
-            <span class="i b">Nitro Química</span>, based in Brazil! 
-            I'm looking to broaden my knowledge in the data-science field, but do get in touch
-            if you're looking for someone driven and ready to take on interesting projects!
-        </p>
-    </div>
+    <h2 class="fw9 mv2 b text tc">Why?</h2>
+    <p class="measure-wide text">
+      I'd like this website to be something I can always refer to when someone wants to know more
+      about me, or what I'm currently up to. I feel like it’s very easy to consume content (or code)
+      and never give back, so this is my way of remeding that.
+    </p>
+    <h2 class="fw9 mv2 b text tc">When?</h2>
+    <p class="measure-wide text">
+      My current goal is writing a blog post once a month (at the very least)! I’ll try my best to
+      stick to that schedule (be warned, topics will vary a lot).
+    </p>
+  </div>
 </div>
 {% endblock content %}
