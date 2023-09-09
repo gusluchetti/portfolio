@@ -1,19 +1,15 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="flex flex-column items-center">
-    <p class="f4 fw7 mv3">
-        Articles, thoughts, etc.
-    </p>
+  <h2 class="fw7 mv2">Articles, thoughts, etc.</h2>
 </div>
 <div class="mh0 mv2">
-    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-    {% for page in section.pages %}
-    <div class="ba br3 pointer dim bp-bg pa2 ma0" onclick="window.location='{{ page.permalink | safe }}';">
-        <p class="f5 fw7">
-            {{ page.title }}
-        </p>
-    </div>
-    {% endfor %}
+  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+  {% for page in section.pages %}
+  <div
+    class="ba br3 pointer dim bp-bg pa2 ma0"
+    onclick="window.location='{{ page.permalink | safe }}';">
+    <p class="f5 fw7">{{ page.title }}</p>
+  </div>
+  {% endfor %}
 </div>
 {% endblock content %}

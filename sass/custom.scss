@@ -14,10 +14,10 @@ $accent-blue: hsla(181, 17%, 52%, 1);
 $accent-lightblue: hsla(182, 36%, 85%, 1);
 $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
-
 $accent-green: hsla(89, 17%, 52%, 1);
+
 .accent {
-  color: $accent-green;
+  color: $accent-green !important;
 }
 
 // (semantic) colors
