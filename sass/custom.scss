@@ -71,8 +71,21 @@ body {
   border-left: solid 0.5px $primary-850;
 }
 
+// measure wide + nice value for padding
 .main {
-  width: 48rem;
+  width: calc(34em + 6rem);
+}
+
+// TODO: how do I decrease page.summary otherwise?
+.summary p {
+  margin: 0 auto;
+}
+
+.single-blog:after {
+  content: '___';
+  position: relative;
+  // middle of div calculation
+  left: calc(50% - 8.5925rem - 0.7428125rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,9 +99,6 @@ body {
   }
   .bg2 {
     color: $primary-700;
-  }
-  .bp-bg {
-    background-color: $primary-850;
   }
 }
 
@@ -104,11 +114,9 @@ body {
   .bg2 {
     color: $primary-700;
   }
-  .bp-bg {
-    background-color: $primary-300;
-  }
 }
 
+// debug preferences
 // not-small
 @media only screen and (min-width: 30rem) {
   .debug * {

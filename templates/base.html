@@ -12,9 +12,9 @@
   </head>
 
   <body class="flex justify-center">
-    <div class="main flex flex-column items-center bl br">
+    <div class="main flex flex-column items-center">
       {% block header %}
-      <header class="w-100 ph5 flex items-center justify-between monofont">
+      <header class="w-100 ph5 flex items-center justify-between monofont br bl">
         <h1>
           <a class="link dim f1 fw4" href="/" style="letter-spacing: -1.15rem">
             <span>t</span>
@@ -33,9 +33,9 @@
         </ul>
       </header>
       {% endblock %}
-      <main class="pv3 ph3 w-100 h-100 bt bb">{% block content %} {% endblock %}</main>
+      <main class="pv3 ph3 w-100 h-100 ba">{% block content %} {% endblock %}</main>
       {% block footer %}
-      <footer class="pv3 ph5 w-100 flex flex-column monofont">
+      <footer class="pv3 ph5 w-100 flex flex-column monofont br bl">
         <p class="mv1 f6 text i warning tc">
           Disclaimer: This is still a <span class="b">WIP!</span>
           I'll be updating this frequently.
