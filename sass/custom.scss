@@ -1,11 +1,13 @@
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
 
 // neutrals
-$primary-900: hsla(36, 11%, 9%, 1);
+$primary-900: hsla(36, 11%, 9%, 1); //main bg color
+$primary-850: hsla(36, 11%, 15%, 1);
 $primary-700: hsla(39, 10%, 27%, 1);
 $primary-500: hsla(38, 9%, 46%, 1);
 $primary-300: hsla(39, 17%, 64%, 1);
-$primary-100: hsla(39, 44%, 82%, 1);
+$primary-200: hsla(39, 44%, 82%, 1); //main text color
+$primary-100: hsla(38, 44%, 12%, 1);
 
 // accents
 $accent-blue: hsla(181, 17%, 52%, 1);
@@ -14,6 +16,10 @@ $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
+.accent {
+  color: $accent-green !important;
+}
+
 // (semantic) colors
 $success: hsla(89, 43%, 38%, 1);
 $warning: hsla(41, 43%, 38%, 1);
@@ -21,55 +27,113 @@ $error: hsla(8, 43%, 38%, 1);
 $info: hsla(198, 43%, 38%, 1);
 $other: hsla(288, 43%, 38%, 1);
 
+.success {
+  color: $success;
+}
+.warning {
+  color: $warning;
+}
+.error {
+  color: $error;
+}
+.info {
+  color: $info;
+}
+.other {
+  color: $other;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
-    font-family: 'Bitter', sans-serif;
-    min-height: 100dvh;
+  font-family: 'Bitter', sans-serif;
+  height: 100dvh;
+}
 
-    .link {
-        color: inherit;
-    }
+.monofont {
+  font-family: 'IBM Plex Mono';
+}
 
-    .blue {
-        color: $accent-blue;
-    }
+.link {
+  color: inherit;
+}
+
+.list {
+  li,
+  li:before {
+    padding: 0rem 1rem;
+  }
+}
+
+.list li:not(:first-child) {
+  border-left: solid 0.5px $primary-850;
+}
+
+// measure wide + nice value for padding
+.main {
+  width: calc(34em + 6rem);
+}
+
+// TODO: how do I decrease page.summary otherwise?
+.summary p {
+  margin: 0 auto;
+}
+
+.single-blog:after {
+  content: '___';
+  position: relative;
+  // middle of div calculation
+  left: calc(50% - 8.5925rem - 0.7428125rem);
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: $primary-900;
-        color: $primary-100;
-    }
+  body {
+    background-color: $primary-900;
+    color: $primary-200;
+  }
 
-    * { border-color: $primary-700 }
-    .blue { color: $accent-blue }
-    .bg2 { color: $primary-700 }
-    .bp-bg { background-color: $primary-700 }
+  * {
+    border-color: $primary-850;
+  }
+  .bg2 {
+    color: $primary-700;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: $primary-100;
-        color: $primary-900;
-    }
+  body {
+    background-color: $primary-200;
+    color: $primary-900;
+  }
 
-    * { border-color: $primary-700 }
-    .blue { color: $accent-blue }
-    .bg2 { color: $primary-700 }
-    .bp-bg { background-color: $primary-300 }
+  * {
+    border-color: $primary-300;
+  }
+  .bg2 {
+    color: $primary-700;
+  }
 }
 
-
+// debug preferences
 // not-small
 @media only screen and (min-width: 30rem) {
-    .debug * { outline: 0.5px solid gold; }
+  .debug * {
+    outline: 0.5px solid gold;
+  }
 }
 
 // medium
 @media only screen and (min-width: 30rem) and (max-width: 60rem) {
-    .debug * { outline: 0.5px solid orange; }
+  .debug * {
+    outline: 0.5px solid orange;
+  }
 }
 
 // large
 @media only screen and (min-width: 60rem) {
-    .debug * { outline: 0.5px solid red; }
+  .debug * {
+    outline: 0.5px solid red;
+  }
 }

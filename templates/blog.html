@@ -1,19 +1,19 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="flex flex-column items-center">
-    <p class="f4 fw7 mv3">
-        Articles, thoughts, etc.
-    </p>
+  <h2 class="fw9 mv1 b text tc">Blog posts</h2>
 </div>
-<div class="mh0 mv2">
-    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-    {% for page in section.pages %}
-    <div class="ba br3 pointer dim bp-bg pa2 ma0" onclick="window.location='{{ page.permalink | safe }}';">
-        <p class="f5 fw7">
-            {{ page.title }}
-        </p>
+<div class="mv2">
+  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+  {% for page in section.pages %}
+  <div class="mv2 pa1 single-blog">
+    <!-- {{ __tera_context }} -->
+    <div class="mv2 flex justify-between monofont">
+      <p class="mv0 fw7">> {{ page.title | lower }}</p>
+      <p class="mv0 bg2 b">{{page.date}}</p>
     </div>
-    {% endfor %}
+    <div class="pv2 summary measure-wide">{{page.summary | safe}}</div>
+    <a class="link accent dim" href="{{ page.permalink }}#continue-reading">continue reading...</a>
+  </div>
+  {% endfor %}
 </div>
 {% endblock content %}

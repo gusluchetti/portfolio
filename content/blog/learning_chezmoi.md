@@ -5,14 +5,16 @@ updated = 2023-06-05
 draft = true
 +++
 
-So, I like organizing things, and I also like making things easily repeatable. 
-chezmoi is the answer to my problems!
+So, I like organizing things, and I also like making things easily repeatable.
+chezmoi was the answer to my problems!
+
+<!-- more -->
 
 my ultimate goal is to be able to setup a new linux boot (fedora preferrably) in less than 20 min.
-to do so, I store most of my config files in chezmoi, some details are still missing but 
+to do so, I store most of my config files in chezmoi, some details are still missing but
 it's already pretty organized.
 
-what I haven't figured out is how I'm supposed to work with it on a daily manner. 
+what I haven't figured out is how I'm supposed to work with it on a daily manner.
 this blog post is more of a learning exercise than me explaining how it works.
 
 command references:

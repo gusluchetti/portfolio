@@ -1,33 +1,24 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %} {% set first_post =
+get_url(path="@/blog/getting_over_it.md") %}
 
-{% set image = resize_image(path="static/images/profile-pic.jpeg", width=160, height=160, op="fill") %}
-{% set post = get_url(path="@/blog/getting_over_it.md") %}
-
-<div class="flex flex-column items-center">
-    <p class="f4 fw7 mv3 text">
-        Who am I?
+<div class="flex flex-column items-center justify-center">
+  <div class="flex flex-column">
+    <h2 class="fw9 mv1 b text tc">Who are you?</h2>
+    <p class="mt1 mb3 measure-wide text">
+      Hi! My name is Gustavo Luchetti, a full-stack developer based in Brazil.
     </p>
-</div>
-<div class="flex flex-column flex-row-l items-center justify-center">
-    <img src="{{ image.url }}" class="mr2-l fl" />
-    <p class="mr2-l measure-wide text">
-    <span class="fw7">This is still VERY much WIP.</span> 
-    <br>
-        I thought that, by deploying it while it's still "unfinished",
-        I would be more motivated to work on it as to not keep something poorly-made up for too long. 
-        If something is SUPER wonky/out-of-place, let me know! 
-        <br>
-        If you'd like to know more, please read 
-        <a class="link fw7 blue" href="{{post}}">this blog post</a>.
+    <h2 class="fw9 mv1 b text tc">Why do this?</h2>
+    <p class="mt1 mb3 measure-wide text">
+      I'd like this website to be something I can always refer to when someone wants to know more
+      about me, or what I'm currently up to. I feel like it’s very easy to consume content (or code)
+      and never give back, so this is my way of remeding that.
     </p>
-    <p class="mr2-l measure-wide text">
-        Hi! I'm Gustavo Luchetti, 23. I'd like this website to be something
-        I can always refer to when someone asks wants to know more about me, or what I'm currently up to.
-        <br>
-        I have 2+ years experience as a full-stack dev, and am currently looking for work!
-        I would like to broaden my knowledge in the data-science field, but do get in touch
-        if you're looking for someone driven and ready to take on interesting projects!
+    <h2 class="fw9 mv1 b text tc">Should I come back often?</h2>
+    <p class="mt1 mb3 measure-wide text">
+      My current goal is writing a blog post once a month (at the very least)!
+      <br />
+      I’ll try my best to stick to that schedule (be warned, topics will vary a lot).
     </p>
+  </div>
 </div>
 {% endblock content %}
