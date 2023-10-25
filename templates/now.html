@@ -1,19 +1,11 @@
 {% extends "base.html" %} {% block content %}
 <div class="flex flex-column items-center">
-  <h2 class="fw9 mv1 b text tc">Nowadays</h2>
+  <h2 class="fw9 mv1 b text tc">{{page.title}}</h2>
   <div class="measure-wide-ns lh-copy tj flex flex-column items-center">
-    <p class="text">
-      I'm looking for work, but I'm currently very deep in the recruitment process for an awesome
-      company! Hopefully I'll be able to share more by next week.
-    </p>
-    <p class="text">
-      In other non-work-related news, I've put in a LOT of work over the past week into my new
-      fedora config (checkout my dots repository!), and this website! I managed to get YUZU working
-      on my PC, but I haven't gotten too far in Zelda TOTK. ACNH is my new go-to when I'm bored.
-    </p>
+    {{page.content | safe}}
   </div>
   <p class="bg2 f5 mv3 i text monofont">
-    last updated <strong>2023-06-05</strong> |
+    last updated <strong>{{page.updated}}</strong> |
     <a class="link dim accent b" href="https://sive.rs/nowff">what's a now page?</a>
   </p>
 </div>

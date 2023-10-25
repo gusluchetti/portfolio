@@ -27,7 +27,7 @@
             <a class="link accent dim f3 text" href="{{blog.path}}"> {{blog.title}} </a>
           </li>
           <li>
-            {% set now = get_section(path="now/_index.md", lang=lang, metadata_only=true) %}
+            {% set now = get_page(path="now.md", lang=lang, metadata_only=true) %}
             <a class="link accent dim f3 text" href="{{now.path}}"> {{now.title}} </a>
           </li>
         </ul>
