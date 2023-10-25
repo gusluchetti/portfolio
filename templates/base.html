@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% block head %}
+    {% block head %} <link rel="stylesheet" href="{{get_url(path="fonts.css",
+    trailing_slash=false)}}">
     <title>luche(tti).dev</title>
     <meta charset="utf-8" />
     <meta name="color-scheme" content="dark light" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
-    <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}"> <link
-    rel="stylesheet" href="{{get_url(path="custom.css", trailing_slash=false)}}"> {% endblock %}
+    <link rel="stylesheet" href="{{get_url(path="custom.css", trailing_slash=false)}}"> {% endblock
+    %}
   </head>
 
   <body class="flex justify-center">
     <div class="main flex flex-column items-center">
       {% block header %}
-      <header class="w-100 flex items-center justify-between monofont br bl ph5-ns ph3">
-        <h1 class="f3-ns f4">
-          <!-- TODO: this letter spacing wont always work, find permanent solution -->
-          <a class="link dim fw4" href="/" style="letter-spacing: -0.55rem">
+      <header class="w-100 flex items-center justify-between monofont ph5-ns ph3 ba">
+        <h1 class="f2-ns f3">
+          <a class="link fw4" href="/" style="letter-spacing: -0.37em">
             <span>t</span>
-            <span style="letter-spacing: 0rem">ti</span>
+            <span style="letter-spacing: 0em">ti</span>
           </a>
         </h1>
-        <ul class="flex list accent">
-          <li class="ph2">
+        <ul class="flex list accent justify-center f3-ns f4">
+          <li>
             {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
-            <a class="link accent dim text f3-ns f4" href="{{blog.path}}"> {{blog.title}} </a>
+            <a class="link accent ph2" href="{{blog.path}}"> {{blog.title}} </a>
           </li>
-          <li class="ph2">
+          <li>|</li>
+          <li>
             {% set now = get_page(path="now.md", lang=lang, metadata_only=true) %}
-            <a class="link accent dim text f3-ns f4" href="{{now.path}}"> {{now.title}} </a>
+            <a class="link accent ph2" href="{{now.path}}"> {{now.title}} </a>
           </li>
         </ul>
       </header>
       {% endblock %}
-      <main class="pv3 ph3 ba w-100">{% block content %} {% endblock %}</main>
+
+      <main class="h-100 w-100 pv3 ph3 bl br">{% block content %} {% endblock %}</main>
+
       {% block footer %}
-      <footer class="w-100 flex flex-column monofont br bl pv2 ph5-ns ph3">
-        <p class="mv1 text i warning tc f7 f6-ns">
-          Disclaimer: This is still a <span class="b">WIP!</span>
+      <footer class="w-100 flex flex-column monofont pv2 ph5-ns ph3 ba">
+        <p class="mv1 i warning tc f7 f6-ns">
+          Disclaimer: This is still a <strong>WIP!</strong>
           I'll be updating this frequently.
         </p>
-        <div class="flex justify-between f4-ns f6">
-          <p class="text">reach me at:</p>
-          <ul class="flex list ph0">
+        <div class="flex justify-between f4-ns f6 items-center">
+          <p>reach me at:</p>
+          <ul class="flex list justify-center items-center">
             <li>
-              <a class="link dim ph2" href="mailto:gustavo@luchetti.dev">mail</a>
+              <a class="link ph2" href="mailto:gustavo@luchetti.dev">mail</a>
             </li>
+            <li>|</li>
             <li>
-              <a class="link dim ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+              <a class="link ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
             </li>
           </ul>
         </div>

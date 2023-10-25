@@ -16,6 +16,28 @@ $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
+a {
+  transition: opacity 0.1s ease-in !important;
+}
+
+// needed for page content in markdown
+main {
+  a {
+    color: $accent-green;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: $accent-purple;
+  }
+
+  a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
 .accent {
   color: $accent-green !important;
 }
@@ -45,11 +67,17 @@ $other: hsla(288, 43%, 38%, 1);
 
 html {
   font-size: 16px;
+  line-height: normal;
 }
 
 body {
   font-family: 'Bitter', sans-serif;
-  height: 100dvh;
+  min-height: 100dvh;
+}
+
+ul {
+  margin-block: 0;
+  padding-inline: 0;
 }
 
 .monofont {
@@ -60,14 +88,8 @@ body {
   color: inherit;
 }
 
-.list {
-  li:before {
-    padding: 0rem 1rem;
-  }
-}
-
-.list li:not(:first-child) {
-  border-left: solid 0.5px $primary-850;
+.link:hover {
+  opacity: 0.5;
 }
 
 // measure wide + nice value for padding
@@ -75,7 +97,7 @@ body {
   width: calc(34em + 6rem);
 }
 
-// TODO: how do I decrease page.summary otherwise?
+// TODO: how do I decrease page.summary margin otherwise?
 .summary p {
   margin: 0 auto;
 }
@@ -108,24 +130,23 @@ body {
   }
 }
 
-// debug preferences
-// not-small
+// small
 @media only screen and (min-width: 30rem) {
   .debug * {
-    outline: 0.5px solid gold;
+    outline: 0.25px solid gold;
   }
 }
 
 // medium
 @media only screen and (min-width: 30rem) and (max-width: 60rem) {
   .debug * {
-    outline: 0.5px solid orange;
+    outline: 0.25px solid orange;
   }
 }
 
 // large
 @media only screen and (min-width: 60rem) {
   .debug * {
-    outline: 0.5px solid red;
+    outline: 0.25px solid red;
   }
 }

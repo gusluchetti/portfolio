@@ -1,24 +1,19 @@
-{% extends "base.html" %} {% block content %} {% set first_post =
-get_url(path="@/blog/getting_over_it.md") %}
-
-<div class="flex flex-column items-center justify-center">
-  <div class="flex flex-column">
-    <h2 class="fw9 mv1 b text tc">Who are you?</h2>
-    <p class="mt1 mb3 measure-wide text">
-      Hi! My name is Gustavo Luchetti, a full-stack developer based in Brazil.
-    </p>
-    <h2 class="fw9 mv1 b text tc">Why do this?</h2>
-    <p class="mt1 mb3 measure-wide text">
-      I'd like this website to be something I can always refer to when someone wants to know more
-      about me, or what I'm currently up to. I feel like it’s very easy to consume content (or code)
-      and never give back, so this is my way of remeding that.
-    </p>
-    <h2 class="fw9 mv1 b text tc">Should I come back often?</h2>
-    <p class="mt1 mb3 measure-wide text">
-      My current goal is writing a blog post once a month (at the very least)!
-      <br />
-      I’ll try my best to stick to that schedule (be warned, topics will vary a lot).
-    </p>
-  </div>
+{% extends "base.html" %} {% block content %}
+<div class="flex flex-column items-center justify-center tj">
+  <h2 class="fw9 mv1 b text tc">Who are you?</h2>
+  <p class="mt1 mb3 measure-wide text">
+    Hi! My name is Gustavo Luchetti, a 23 year-old full-stack developer based in Brazil.
+  </p>
+  <h2 class="fw9 mv1 b text tc">Why do this?</h2>
+  <p class="mt1 mb3 measure-wide text">
+    I'd like this website to be something I can always refer to when someone wants to know more
+    about me, or what I'm currently up to. I feel like it’s very easy to consume content (or code)
+    and never give back, so this is my way of remeding that.
+  </p>
+  <h2 class="fw9 mv1 b text tc">Should I come back often?</h2>
+  <p class="mt1 mb3 measure-wide text">
+    My current goal is writing a blog post once a month (at the very least)! I’ll try my best to
+    stick to that schedule (be warned, topics will vary a lot).
+  </p>
 </div>
 {% endblock content %}
