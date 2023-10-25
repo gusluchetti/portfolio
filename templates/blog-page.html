@@ -2,6 +2,8 @@
 <div class="flex flex-column items-center">
   <h2 class="fw9 mv1 b text tc">{{page.title}}</h2>
   <div class="text measure-wide">{{ page.content | safe }}</div>
-  <p class="f5 mv3 bg2 i">last updated <strong>{{page.updated}}</strong> (drafted {{page.date}})</p>
+  <p class="bg2 f5 ma0 mt1 i text monofont fr" style="align-self: end">
+    posted <strong>{{page.date}}</strong>
+  </p>
 </div>
 {% endblock content %}
