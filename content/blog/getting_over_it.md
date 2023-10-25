@@ -5,13 +5,15 @@ date = 2023-06-14
 updated = 2023-06-14
 +++
 
-So you're working on a project, and you're almost done! Great work. 
+So you're working on a project, and you're almost done! Great work.
 Just need to touch this up, review this piece of code, update this css file, test a new font...
 
-Ah, the dreaded [ninety-ninety rule](https://en.wikipedia.org/wiki/Ninety%e2%80%93ninety_rule). 
+<!-- more -->
+
+Ah, the dreaded [ninety-ninety rule](https://en.wikipedia.org/wiki/Ninety%e2%80%93ninety_rule).
 How can you feel so close to your goal, yet feel like you're days away at the same time?
 
-I think that's how I'm feeling at the moment, after riding the high of rebuilding this website. 
+I think that's how I'm feeling at the moment, after riding the high of rebuilding this website.
 I had tried Gatsby/Firebase before as the main framework and host, respectively, but I couldn't quite get the hang of the UI framework, which was Chakra, so I dropped the project after a couple of days (this was in late 2021!).
 
 After two LONG years, and with a newfound interest in coding as a hobby, looking to get back into the job market, I thought that I'd be a great idea to finally get back and complete my blog/website project, a place where I could publish my own articles, let people know how to find me, how things were going, etc.
