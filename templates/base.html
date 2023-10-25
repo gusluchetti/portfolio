@@ -12,31 +12,32 @@
   </head>
 
   <body class="flex justify-center">
-    <div class="main flex flex-column items-center">
+    <div class="debug main flex flex-column items-center br bl">
       {% block header %}
-      <header class="w-100 flex items-center justify-between monofont br bl ph5-ns ph3">
-        <h1 class="f3-ns f4">
-          <!-- TODO: this letter spacing wont always work, find permanent solution -->
-          <a class="link dim fw4" href="/" style="letter-spacing: -0.55rem">
+      <header class="w-100 flex items-center justify-between monofont ph5-ns ph3">
+        <h1 class="f2-ns f3">
+          <a class="link fw4" href="/" style="letter-spacing: -0.37em">
             <span>t</span>
-            <span style="letter-spacing: 0rem">ti</span>
+            <span style="letter-spacing: 0em">ti</span>
           </a>
         </h1>
         <ul class="flex list accent">
           <li class="ph2">
             {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
-            <a class="link accent dim text f3-ns f4" href="{{blog.path}}"> {{blog.title}} </a>
+            <a class="link accent text f3-ns f4" href="{{blog.path}}"> {{blog.title}} </a>
           </li>
           <li class="ph2">
             {% set now = get_page(path="now.md", lang=lang, metadata_only=true) %}
-            <a class="link accent dim text f3-ns f4" href="{{now.path}}"> {{now.title}} </a>
+            <a class="link accent text f3-ns f4" href="{{now.path}}"> {{now.title}} </a>
           </li>
         </ul>
       </header>
       {% endblock %}
-      <main class="pv3 ph3 ba w-100">{% block content %} {% endblock %}</main>
+
+      <main class="pv3 ph3 bt bb w-100">{% block content %} {% endblock %}</main>
+
       {% block footer %}
-      <footer class="w-100 flex flex-column monofont br bl pv2 ph5-ns ph3">
+      <footer class="fixed bottom-0 w-inherit flex flex-column monofont pv2 ph5-ns ph3">
         <p class="mv1 text i warning tc f7 f6-ns">
           Disclaimer: This is still a <span class="b">WIP!</span>
           I'll be updating this frequently.
@@ -45,10 +46,10 @@
           <p class="text">reach me at:</p>
           <ul class="flex list ph0">
             <li>
-              <a class="link dim ph2" href="mailto:gustavo@luchetti.dev">mail</a>
+              <a class="link ph2" href="mailto:gustavo@luchetti.dev">mail</a>
             </li>
             <li>
-              <a class="link dim ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+              <a class="link ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
             </li>
           </ul>
         </div>
