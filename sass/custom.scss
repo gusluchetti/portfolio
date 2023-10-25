@@ -61,7 +61,6 @@ body {
 }
 
 .list {
-  li,
   li:before {
     padding: 0rem 1rem;
   }
@@ -79,13 +78,6 @@ body {
 // TODO: how do I decrease page.summary otherwise?
 .summary p {
   margin: 0 auto;
-}
-
-.single-blog:after {
-  content: '___';
-  position: relative;
-  // middle of div calculation
-  left: calc(50% - 8.5925rem - 0.7428125rem);
 }
 
 @media (prefers-color-scheme: dark) {
