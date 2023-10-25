@@ -1,13 +1,14 @@
 +++
 title = "Nowadays"
 template = "now.html"
-date = 2023-10-24
+date = 2023-06-05
 updated = 2023-10-24
 +++
 
-I'm looking for work, but I'm currently very deep in the recruitment process for an awesome
-company! Hopefully I'll be able to share more by next week.
+So, I'm employed now (yay!). I've joined [Nitro Agro](https://agro.nitro.com.br/) as a 'Data and Digital Business Analyst',
+which is a very fancy title for 'doing full-stack work'. It's been very rewarding to work on something at a company that doesn't have
+lots of (internal) IT infrastructure set in place, so hopefully I can work on designing said systems in the future!
 
-In other non-work-related news, I've put in a LOT of work over the past week into my new
-fedora config (checkout my dots repository!), and this website! I managed to get YUZU working
-on my PC, but I haven't gotten too far in Zelda TOTK. ACNH is my new go-to when I'm bored.
+Unfortunately, I haven't done much programming since last time. Work hasn't been insanely rough but I still end up just gaming, watching TV
+or just scrolling on my phone instead of coding any of my side projects (side ideas at this point).
+Current game of choice is [Factorio](https://www.factorio.com/). Nothing comes close when it comes to automation.
