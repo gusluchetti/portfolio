@@ -17,7 +17,7 @@ $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
 a {
-  transition: all 0.1s ease-in !important;
+  transition: opacity 0.1s ease-in !important;
 }
 
 // needed for page content in markdown
@@ -67,11 +67,17 @@ $other: hsla(288, 43%, 38%, 1);
 
 html {
   font-size: 16px;
+  line-height: normal;
 }
 
 body {
   font-family: 'Bitter', sans-serif;
-  height: 100dvh;
+  min-height: 100dvh;
+}
+
+ul {
+  margin-block: 0;
+  padding-inline: 0;
 }
 
 .monofont {
@@ -84,10 +90,6 @@ body {
 
 .link:hover {
   opacity: 0.5;
-}
-
-.list li:not(:first-child) {
-  border-left: solid 0.5px $primary-850;
 }
 
 // measure wide + nice value for padding
