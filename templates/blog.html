@@ -5,10 +5,9 @@
 <div class="mv2">
   <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
   {% for page in section.pages %}
-  <div class="mv2 pa1 single-blog">
-    <!-- {{ __tera_context }} -->
+  <div class="blog-post mv2 pa1">
     <div class="mv2 flex-m flex-column-s justify-between monofont">
-      <p class="mv0 fw7 f5-ns f6">> {{ page.title | lower }}</p>
+      <p class="mv0 fw7 f5-ns f6">{{ page.title | lower }}</p>
       <p class="mv0 bg2 b f6-ns f7">{{page.date}}</p>
     </div>
     <div class="pv2 summary measure-wide">{{page.summary | safe}}</div>
