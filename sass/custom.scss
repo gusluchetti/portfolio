@@ -17,11 +17,18 @@ $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
 a {
-  transition: opacity 0.1s ease-in !important;
+    transition: opacity 0.1s ease-in !important;
+    color: inherit;
+    text-decoration: none;
+}
+
+div.pointer:hover {
+    transition: all 0.4s ease !important;
+    box-shadow: inset 0px 0px 3px 2px hsla(36, 11%, 15%, 0.6);
 }
 
 // needed for page content in markdown
-main {
+.markdown {
   a {
     color: $accent-green;
     text-decoration: none;
