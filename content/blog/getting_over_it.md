@@ -1,5 +1,5 @@
 +++
-title = "Getting over it (this website)"
+title = "getting over it (this website)"
 subtitle = "Or how I'm already looking for an excuse to take a break"
 date = 2023-06-14
 updated = 2023-06-14
