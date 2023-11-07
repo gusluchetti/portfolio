@@ -1,8 +1,9 @@
 +++
-title = "getting over it (this website)"
-subtitle = "Or how I'm already looking for an excuse to take a break"
+title = "getting over it"
+description = "or how I finally got this website working"
 date = 2023-06-14
 updated = 2023-06-14
+draft = false
 +++
 
 So you're working on a project, and you're almost done! Great work.

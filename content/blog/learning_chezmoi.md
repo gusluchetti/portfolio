@@ -1,6 +1,6 @@
 +++
 title = "learning chezmoi"
-subtitle = "Or how I now write down every app I like in a config file"
+description = "or why you should have a dotfiles repo"
 date = 2023-05-19
 updated = 2023-11-03
 draft = true
