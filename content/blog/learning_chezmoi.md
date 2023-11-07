@@ -1,21 +1,34 @@
 +++
-title = "chezmoi"
+title = "learning chezmoi"
+description = "or why you should have a dotfiles repo"
 date = 2023-05-19
-updated = 2023-06-05
+updated = 2023-11-03
 draft = true
 +++
 
-So, I like organizing things, and I also like making things easily repeatable.
-chezmoi was the answer to my problems!
+As one does, I got tired of redownloaading and reconfiguring all of my programs 
+whenever I formatted my Windows machine. Even worse, since I got into [dual-booting](https://en.wikipedia.org/wiki/Multi-booting)
+I had two machines with vastly different configuration setups, so I never managed to get
+a workspace that I was confortable with. 
 
 <!-- more -->
 
-my ultimate goal is to be able to setup a new linux boot (fedora preferrably) in less than 20 min.
-to do so, I store most of my config files in chezmoi, some details are still missing but
-it's already pretty organized.
+After some research, I found [chezmoi](https://www.chezmoi.io) out, and wanted to give it a try.
+_(a new [dotfiles repo](https://github.com/gusluchetti/dots) rises!)_
 
-what I haven't figured out is how I'm supposed to work with it on a daily manner.
-this blog post is more of a learning exercise than me explaining how it works.
+My first goal was simple: be able to setup a new linux boot (at that time, using Fedora) 
+in less than 20 min. That would mean:
+- setting up a window manager + eye candy (wallpaper and lockscreen)
+- installing my essential programs
+- configuring my shell environment and neovim
+all with one command!
+
+chezmmoi's documentatiaon is very nicelly written out, but I thought I'd go through
+some issues I hada while setting up my own dotfiles repository.
+
+ssh is not the default for cloning the repo, so you'll have to specify that argument.
+the command I use nowadays to apply my chezmoi's configurations in a new machine is
+`chezmoi init gusluchetti/dots --apply`
 
 command references:
 chezmoi add - add file from home directory to working copy
@@ -27,3 +40,4 @@ chezmoi update - PULL changes from repo and apply
 day to day, if I want to add a new file to my chezmoi config, I chezmoi add it.
 chezmoi cd + git push to save said changes to the remote repository.
 if I made a mistake, I can chezmoi remove to remove said configs locallly and from the repo.
+
