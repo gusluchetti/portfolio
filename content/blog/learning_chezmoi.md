@@ -1,17 +1,16 @@
 +++
 title = "learning chezmoi"
-description = "or why you should have a dotfiles repo"
-date = 2023-05-19
+description = "or why everyone should have a dotfiles repo"
+date = 2023-06-19
 updated = 2023-11-03
-draft = true
+draft = false
 +++
 
-As one does, I got tired of redownloaading and reconfiguring all of my programs 
-whenever I formatted my Windows machine. Even worse, since I got into [dual-booting](https://en.wikipedia.org/wiki/Multi-booting)
-I had two machines with vastly different configuration setups, so I never managed to get
-a workspace that I was confortable with. 
-
-<!-- more -->
+As one does, I got tired of redownloading and reconfiguring all of my programs 
+whenever I formatted my Windows machine. To make thing even more complicated,
+since I got into [dual-booting](https://en.wikipedia.org/wiki/Multi-booting)<!-- more -->
+, I had two machines with vastly different configuration setups, so I never managed 
+to build a workspace that I was truly confortable with. 
 
 After some research, I found [chezmoi](https://www.chezmoi.io) out, and wanted to give it a try.
 _(a new [dotfiles repo](https://github.com/gusluchetti/dots) rises!)_

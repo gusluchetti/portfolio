@@ -10,9 +10,11 @@
         <p class="mv0 fw7 f5-ns f6"> &gt; {{ page.title | lower }}</p>
       <p class="mv0 bg2 b f6-ns f7">{{page.date}}</p>
     </div>
-    <div class="pv2 summary tj">{{page.summary | safe}}</div>
+    <div class="pv2 summary">
+        {{page.summary | safe}}
+    </div>
     <a class="f5-ns f6 link accent monofont dib mv1" href="{{ page.permalink }}#continue-reading">
-        <i>Continue reading...</i>
+        <i>...continue reading</i>
     </a>
   </div>
   {% endfor %}

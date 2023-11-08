@@ -8,7 +8,7 @@ updated = 2023-10-24
 Not super recent news, but I figured I'd catch everyone up to speed in case we haven't had the
 chance to chat in a while.
 
-Back in college, I became very fond of A.I., which led to my pursuit of an A.I. masters
+Back in college (2018-2021), I became very fond of A.I., which led to my pursuit of an A.I. masters
 degree in the Netherlands, at Utrecht University (whole year of 2022). Although, 
 I had to pause my studies, I had the pleasure of working at [source.ag](https://source.ag),
 an incredible A.I. startup that focused on increasing productivity for growers. 

@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% block head %} 
-    <title>luche(tti).dev</title>
-    <meta charset="utf-8" />
-    <meta name="color-scheme" content="dark light" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
-    <link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
-    <link rel="stylesheet" href="{{get_url(path="custom.css", trailing_slash=false)}}"> 
-    {% endblock %}
-  </head>
 
-  <body class="flex justify-center">
-    <div class="main flex flex-column items-center">
-      <header class="w-100 flex items-center justify-between monofont ph5-ns ph3 ba">
-      {% block header %}
-        <h1 class="f2-ns f3">
-          <a class="link fw4" href="/" style="letter-spacing: -0.37em">
-            <span>t</span>
-            <span style="letter-spacing: 0em">ti</span>
-          </a>
-        </h1>
-        <ul class="flex list accent justify-center f3-ns f4">
-          <li>
-            {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
-            <a class="link accent ph2" href="{{blog.path}}"> {{blog.title}} </a>
-          </li>
-          <li>|</li>
-          <li>
-            {% set now = get_page(path="now.md", lang=lang, metadata_only=true) %}
-            <a class="link accent ph2" href="{{now.path}}"> {{now.title}} </a>
-          </li>
-        </ul>
-      {% endblock %}
-      </header>
+<head>
+{% block head %} 
+<title>luche(tti).dev</title>
+<meta charset="utf-8" />
+<meta name="color-scheme" content="dark light" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+<link rel="stylesheet" href="{{get_url(path="fonts.css", trailing_slash=false)}}">
+<link rel="stylesheet" href="{{get_url(path="custom.css", trailing_slash=false)}}"> 
+{% endblock %}
+</head>
 
-      <main class="h-100 w-100 pv3 ph3 bl br">{% block content %} {% endblock %}</main>
+<body class="flex justify-center">
+<div class="main flex flex-column items-center">
+  <header class="w-100 flex items-center justify-between monofont ph5-ns ph3 ba">
+  {% block header %}
+    <h1 class="f2-ns f3">
+      <a class="link fw4" href="/" style="letter-spacing: -0.37em">
+        <span>t</span>
+        <span style="letter-spacing: 0em">ti</span>
+      </a>
+    </h1>
+    <ul class="flex list accent justify-center f3-ns f4">
+      <li>
+        {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
+        <a class="link accent ph2" href="{{blog.path}}"> {{blog.title}} </a>
+      </li>
+      <li>|</li>
+      <li>
+        {% set now = get_page(path="now.md", lang=lang, metadata_only=true) %}
+        <a class="link accent ph2" href="{{now.path}}"> {{now.title}} </a>
+      </li>
+    </ul>
+  {% endblock %}
+  </header>
 
-      <footer class="w-100 flex flex-column monofont pv2 ph4-ns ph3 ba">
-      {% block footer %}
-        <div class="flex flex-row-ns flex-column justify-between f5-ns f6 items-center">
-        <p class="mv1">other places:</p>
-          <ul class="mv1 flex list justify-center items-center">
-            <li>
-              <a class="link ph2" href="https://github.com/gusluchetti">github</a>
-            </li>
-            <li>|</li>
-            <li>
-              <a class="link ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
-            </li>
-            <li>|</li>
-            <li>
-              <a class="link ph2" href="mailto:gustavo@luchetti.dev">email</a>
-            </li>
-          </ul>
-        </div>
-      {% endblock %}
-      </footer>
+  <main class="h-100 w-100 pv3 ph3 bl br">{% block content %} {% endblock %}</main>
+
+  <footer class="w-100 flex flex-column monofont pv2 ph4-ns ph3 ba">
+  {% block footer %}
+    <div class="flex flex-row-ns flex-column justify-between f5-ns f6 items-center">
+    <p class="mv1">other places:</p>
+      <ul class="mv1 flex list justify-center items-center">
+        <li>
+          <a class="link ph2" href="https://github.com/gusluchetti">github</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a class="link ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a class="link ph2" href="mailto:gustavo@luchetti.dev">email</a>
+        </li>
+      </ul>
     </div>
-  </body>
+  {% endblock %}
+  </footer>
+</div>
+</body>
+
 </html>
