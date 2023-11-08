@@ -22,7 +22,7 @@ in less than 20 min. That would mean:
 - configuring my shell environment and neovim
 all with one command!
 
-chezmmoi's documentatiaon is very nicelly written out, but I thought I'd go through
+chezmmoi's documentation is very nicely written out, but I thought I'd go through
 some issues I hada while setting up my own dotfiles repository.
 
 ssh is not the default for cloning the repo, so you'll have to specify that argument.

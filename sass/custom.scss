@@ -26,13 +26,14 @@ a {
 }
 
 .blog-post {
-    transition: all 0.3s ease-in !important;
-    box-shadow: inset 0px 0px 3px 2px hsla(39, 10%, 27%, 0.15);
+    border-radius: 0.25rem;
+    transition: all 0.1s ease-in !important;
+    box-shadow: inset 0px 0px 2px 1px hsla(39, 10%, 27%, 0.20);
 }
 
-div.pointer:hover {
-    transition: all 0.3s ease-in !important;
-    box-shadow: inset 0px 0px 3.5px 2.5px hsla(39, 10%, 27%, 0.30);
+.blog-post.pointer:hover {
+    transition: all 0.1s ease-in !important;
+    box-shadow: inset 0px 0px 2px 3px hsla(39, 10%, 27%, 0.40);
 }
 
 // needed for page content in markdown
