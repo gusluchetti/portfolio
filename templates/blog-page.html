@@ -1,11 +1,11 @@
 {% extends "base.html" %} {% block content %}
 <div class="flex flex-column items-center">
     <a href="../" class="bg2 f5 ma0 mt1 i b text monofont self-start pointer">
-        &lt;- back to posts
+        &lt;- back
     </a>
-        <h2 class="text fw9 mv1 tc">{{ page.title }}</h2>
-        <h4 class="monofont i fw7 mv1 tc bg2">{{ page.description }}</h4>
-        <h4 class="monofont i fw4 mv0 mb2 bg2 te">
+        <h2 class="text fw9 mb0 mt3 tc">{{ page.title }}</h2>
+        <h4 class="monofont i fw7 mv2 tc bg2">{{ page.description }}</h4>
+        <h4 class="monofont i fw4 mb3 mt0 bg2 te">
             <strong>
                 {{ page.reading_time }} min read
             </strong> -- {{ page.word_count }} word(s)
