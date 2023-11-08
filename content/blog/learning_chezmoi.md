@@ -1,13 +1,13 @@
 +++
 title = "learning chezmoi"
 description = "or why everyone should have a dotfiles repo"
-date = 2023-06-19
-updated = 2023-11-03
+date = 2023-11-07
+updated = 2023-11-07
 draft = false
 +++
 
 As one does, I got tired of redownloading and reconfiguring all of my programs 
-whenever I formatted my Windows machine. To make thing even more complicated,
+whenever I formatted my Windows machine. Not only that,
 since I got into [dual-booting](https://en.wikipedia.org/wiki/Multi-booting)<!-- more -->
 , I had two machines with vastly different configuration setups, so I never managed 
 to build a workspace that I was truly confortable with. 
@@ -23,20 +23,20 @@ in less than 20 min. That would mean:
 all with one command!
 
 chezmmoi's documentation is very nicely written out, but I thought I'd go through
-some issues I hada while setting up my own dotfiles repository.
+some issues I had while setting up my own dotfiles repository.
 
 ssh is not the default for cloning the repo, so you'll have to specify that argument.
-the command I use nowadays to apply my chezmoi's configurations in a new machine is
-`chezmoi init gusluchetti/dots --apply`
+the command I currently use to update my configurations in a new machine is:
 
-command references:
-chezmoi add - add file from home directory to working copy
-chezmoi status - what would change if chezmoi apply ran
+```zsh,linenos
+sh -c "$(curl -fsLS get.chezmoi.io)" \
+-- init -a --ssh gusluchetti/dots
+```
 
-chezmoi apply - updates LOCAL files with source directory
-chezmoi update - PULL changes from repo and apply
+in one swoop, I download chezmoi, my repo (at .local/share/chezmoi) and insert/update
+my files accordingly!
 
-day to day, if I want to add a new file to my chezmoi config, I chezmoi add it.
-chezmoi cd + git push to save said changes to the remote repository.
-if I made a mistake, I can chezmoi remove to remove said configs locallly and from the repo.
-
+And it all just works! In my opinion, one of chezmoi's best features is being able
+to template files (just like this website's templating language) to work in different
+ways depending on the OS. I managed to write a single script, that according to my
+current OS, runs different commands to setup a new machine!

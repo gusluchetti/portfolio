@@ -118,6 +118,18 @@ ul {
   margin: 0 auto;
 }
 
+pre {
+  padding: 0.25rem;
+  overflow: auto;
+}
+
+// The line number cells
+pre table td:nth-of-type(1) {
+  text-align: center;
+  user-select: none;
+  padding-right: 0.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $primary-900;
