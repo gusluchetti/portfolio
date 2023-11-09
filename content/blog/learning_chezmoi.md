@@ -3,7 +3,7 @@ title = "learning chezmoi"
 description = "or why everyone should have a dotfiles repo"
 date = 2023-11-07
 updated = 2023-11-07
-draft = false
+draft = true
 +++
 
 As one does, I got tired of redownloading and reconfiguring all of my programs 
@@ -24,12 +24,6 @@ all with one command!
 
 chezmoi's documentation is very nicely written out, but I thought I'd go through
 some issues I had while setting up my own dotfiles repository.
-
-```python
-def fib():
-    # this is my very long winded code, sorry! i need to be very eloquent
-    return false;
-```
 
 ssh is not the default for cloning the repo, so you'll have to specify that argument.
 the command I currently use to update my configurations in a new machine is:
