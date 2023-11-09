@@ -25,6 +25,14 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-position: inside;
+}
+
+.main {
+    width: min(100%, 40em);
+}
+
 .blog-post {
     border-radius: 0.25rem;
     transition: all 0.1s ease-in !important;
@@ -108,10 +116,6 @@ ul {
   opacity: 0.5;
 }
 
-// measure wide + nice value for padding
-.main {
-  width: calc(34em + 6rem);
-}
 
 // TODO: how do I decrease page.summary margin otherwise?
 .summary p {
@@ -119,7 +123,7 @@ ul {
 }
 
 pre {
-  padding: 0.25rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
   overflow: auto;
 }
 
@@ -128,6 +132,10 @@ pre table td:nth-of-type(1) {
   text-align: center;
   user-select: none;
   padding-right: 0.5rem;
+}
+
+pre code {
+    font-size: 0.875rem !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -159,10 +167,10 @@ pre table td:nth-of-type(1) {
 }
 
 // small
-@media only screen and (min-width: 30rem) {
-  .debug * {
-    outline: 0.25px solid gold;
-  }
+@media only screen and (max-width: 30rem) {
+    .debug * {
+        outline: 0.25px solid gold;
+    }
 }
 
 // medium

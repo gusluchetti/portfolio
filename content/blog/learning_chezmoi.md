@@ -22,16 +22,17 @@ in less than 20 min. That would mean:
 - configuring my shell environment and neovim
 all with one command!
 
-chezmmoi's documentation is very nicely written out, but I thought I'd go through
+chezmoi's documentation is very nicely written out, but I thought I'd go through
 some issues I had while setting up my own dotfiles repository.
+
+```python
+def fib():
+    # this is my very long winded code, sorry! i need to be very eloquent
+    return false;
+```
 
 ssh is not the default for cloning the repo, so you'll have to specify that argument.
 the command I currently use to update my configurations in a new machine is:
-
-```zsh,linenos
-sh -c "$(curl -fsLS get.chezmoi.io)" \
--- init -a --ssh gusluchetti/dots
-```
 
 in one swoop, I download chezmoi, my repo (at .local/share/chezmoi) and insert/update
 my files accordingly!
