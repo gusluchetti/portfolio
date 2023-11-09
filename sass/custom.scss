@@ -16,6 +16,29 @@ $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
+// (semantic) colors
+$success: hsla(89, 43%, 38%, 1);
+$warning: hsla(41, 43%, 38%, 1);
+$error: hsla(8, 43%, 38%, 1);
+$info: hsla(198, 43%, 38%, 1);
+$other: hsla(288, 43%, 38%, 1);
+
+.success {
+  color: $success;
+}
+.warning {
+  color: $warning;
+}
+.error {
+  color: $error;
+}
+.info {
+  color: $info;
+}
+.other {
+  color: $other;
+}
+
 html {
     transition: all 0.1s ease-in-out;
 }
@@ -25,12 +48,44 @@ a {
     text-decoration: none;
 }
 
+h2,
+h4 {
+    align-self: flex-start;
+}
+
 li {
     list-style-position: inside;
 }
 
+body {
+  min-height: 100dvh;
+  font-family: 'Bitter', sans-serif;
+  line-height: normal;
+}
+
+ul {
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+pre {
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+  overflow: auto;
+}
+
+// The line number cells
+pre table td:nth-of-type(1) {
+  text-align: center;
+  user-select: none;
+  padding-right: 0.5rem;
+}
+
+pre code {
+    font-size: 0.875rem !important;
+}
+
 .main {
-    width: min(100%, 40em);
+    width: min(100%, 34em + 4rem);
 }
 
 .blog-post {
@@ -66,44 +121,6 @@ li {
   color: $accent-green !important;
 }
 
-// (semantic) colors
-$success: hsla(89, 43%, 38%, 1);
-$warning: hsla(41, 43%, 38%, 1);
-$error: hsla(8, 43%, 38%, 1);
-$info: hsla(198, 43%, 38%, 1);
-$other: hsla(288, 43%, 38%, 1);
-
-.success {
-  color: $success;
-}
-.warning {
-  color: $warning;
-}
-.error {
-  color: $error;
-}
-.info {
-  color: $info;
-}
-.other {
-  color: $other;
-}
-
-html {
-  font-size: 16px;
-  line-height: normal;
-}
-
-body {
-  font-family: 'Bitter', sans-serif;
-  min-height: 100dvh;
-}
-
-ul {
-  margin-block: 0;
-  padding-inline: 0;
-}
-
 .monofont {
   font-family: 'IBM Plex Mono';
 }
@@ -120,22 +137,6 @@ ul {
 // TODO: how do I decrease page.summary margin otherwise?
 .summary p {
   margin: 0 auto;
-}
-
-pre {
-  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
-  overflow: auto;
-}
-
-// The line number cells
-pre table td:nth-of-type(1) {
-  text-align: center;
-  user-select: none;
-  padding-right: 0.5rem;
-}
-
-pre code {
-    font-size: 0.875rem !important;
 }
 
 @media (prefers-color-scheme: dark) {
