@@ -3,13 +3,13 @@
     <a href="../" class="bg2 f5 ma0 mt1 i b text monofont self-start link pointer">
         &lt;- back
     </a>
-        <h2 class="text fw9 mb0 mt3 tc">{{ page.title }}</h2>
-        <h4 class="monofont i fw7 mv2 tc bg2">{{ page.description }}</h4>
+        <h2 class="text fw9 mb0 mt3">{{ page.title }}</h2>
+        <h4 class="monofont i fw7 mv2 bg2">{{ page.description }}</h4>
         <h4 class="monofont i fw4 mb3 mt0 bg2 te">
             <strong>{{ page.reading_time }} min read </strong>
             / {{ page.word_count }} word(s)
         </h4>
-    <div class="markdown text lh-copy measure-wide-ns w-100">
+    <div class="markdown text lh-copy w-100">
         {{ page.content | safe }}
     </div>
     <p class="bg2 f5 ma0 mt1 i text monofont self-end">
