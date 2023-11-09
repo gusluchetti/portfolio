@@ -1,13 +1,13 @@
 +++
 title = "getting over it"
-description = "or how I finally got this website working"
+description = "or how I finally got this website off the ground"
 date = 2023-06-14
 updated = 2023-06-14
 draft = false
 +++
 
 So you're working on a project, and you're almost done! Great work.
-Just need to touch this up, review this piece of code, update this css file, test a new font...
+Just need to touch this up, review this piece of code, update this css file, test a new font, etc.
 
 <!-- more -->
 
@@ -25,4 +25,4 @@ Feels exactly like when you're two achievements away of getting 100% in a game, 
 
 In any case, nothing that can't be solved. I won't force myself to do something I don't want to, but I'm also not going to drop the project (obviously). While I'm not employed, I'll use my free time to work on building better habits, and I'll keep working on this website until I am completely happy with it (might never happen, but still).
 
-This is my very first blog post, so thank you for reading! Hopefully the next ones will be better written/more informative, but we all have to start somewhere.
+This is my first blog post ever, so thank you very much for reading!

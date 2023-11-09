@@ -25,14 +25,23 @@ a {
     text-decoration: none;
 }
 
-.blog-post {
-    transition: all 0.3s ease-in !important;
-    box-shadow: inset 0px 0px 3px 2px hsla(39, 10%, 27%, 0.15);
+li {
+    list-style-position: inside;
 }
 
-div.pointer:hover {
-    transition: all 0.3s ease-in !important;
-    box-shadow: inset 0px 0px 3.5px 2.5px hsla(39, 10%, 27%, 0.30);
+.main {
+    width: min(100%, 40em);
+}
+
+.blog-post {
+    border-radius: 0.25rem;
+    transition: all 0.1s ease-in !important;
+    box-shadow: inset 0px 0px 2px 1px hsla(39, 10%, 27%, 0.20);
+}
+
+.blog-post.pointer:hover {
+    transition: all 0.1s ease-in !important;
+    box-shadow: inset 0px 0px 2px 3px hsla(39, 10%, 27%, 0.40);
 }
 
 // needed for page content in markdown
@@ -107,14 +116,26 @@ ul {
   opacity: 0.5;
 }
 
-// measure wide + nice value for padding
-.main {
-  width: calc(34em + 6rem);
-}
 
 // TODO: how do I decrease page.summary margin otherwise?
 .summary p {
   margin: 0 auto;
+}
+
+pre {
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+  overflow: auto;
+}
+
+// The line number cells
+pre table td:nth-of-type(1) {
+  text-align: center;
+  user-select: none;
+  padding-right: 0.5rem;
+}
+
+pre code {
+    font-size: 0.875rem !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -146,10 +167,10 @@ ul {
 }
 
 // small
-@media only screen and (min-width: 30rem) {
-  .debug * {
-    outline: 0.25px solid gold;
-  }
+@media only screen and (max-width: 30rem) {
+    .debug * {
+        outline: 0.25px solid gold;
+    }
 }
 
 // medium
