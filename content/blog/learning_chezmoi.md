@@ -1,37 +1,40 @@
 +++
 title = "learning chezmoi"
-description = "or why everyone should have a dotfiles repo"
+description = "or why organization is addicting"
 date = 2023-11-07
-updated = 2023-11-07
+updated = 2023-11-13
 draft = true
 +++
 
-As one does, I got tired of redownloading and reconfiguring all of my programs 
-whenever I formatted my Windows machine. Not only that,
-since I got into [dual-booting](https://en.wikipedia.org/wiki/Multi-booting)<!-- more -->
-, I had two machines with vastly different configuration setups, so I never managed 
-to build a workspace that I was truly confortable with. 
+I enjoy consistency. When we strive to do our best, the less you have to think about it,
+the easier it is to focus on what actually matters.
 
-After some research, I found [chezmoi](https://www.chezmoi.io) out, and wanted to give it a try.
-_(a new [dotfiles repo](https://github.com/gusluchetti/dots) rises!)_
+I've come to love the 'keyboard-centric' way of life, and I do believe that your computer
+(and your files) are an extension of yourself. 
+In that vein, I'd like to share how I've come to setup my own dotfiles, why you should care,
+and how to get started on your own journey.
 
-My first goal was simple: be able to setup a new linux boot (at that time, using Fedora) 
-in less than 20 min. That would mean:
-- setting up a window manager + eye candy (wallpaper and lockscreen)
-- installing my essential programs
-- configuring my shell environment and neovim
-all with one command!
+Let's backtrack a bit. What are dotfiles anyway?
+Dot files are user-specific configuration files, and they, unsurprisingly, usually start
+with a dot.
+Think `.gitconfig`, the `.config` directory, or even VSCode's `settings.json`.
+These are all files that are pretty much define how a user might experience a certain
+program or command line utility.
 
-chezmoi's documentation is very nicely written out, but I thought I'd go through
-some issues I had while setting up my own dotfiles repository.
+Unfortunately, not all programs have sensible defaults, and when they do, we might not agree
+with them, which is totally fine. Everytime I boot a new game, I go straight to 'settings' 
+to configure things the way I like them, and so if I end up using a program long enough,
+it ends up getting the honor of having its config file(s) saved on source control.
 
-ssh is not the default for cloning the repo, so you'll have to specify that argument.
-the command I currently use to update my configurations in a new machine is:
+For me, the following steps are essential when setting up a new machine:
+- Installing programs (preferably with the OS's package manager `[brew, apt, dnf, scoop, etc.]`)
+Should include programming languages `[rust, python, etc.]`.
+- Setting up shell (zsh) and terminal (alacritty), along with any plugins/extensions (oh-my-zsh).
+- Setting up neovim and its configuration. 
+- Eyecandy. Home and lockscreen + custom cursor (posy's black cursor).
 
-in one swoop, I download chezmoi, my repo (at .local/share/chezmoi) and insert/update
-my files accordingly!
+(Windows has some limitations with which programs run natively on it, and how much can be achieved in the CLI,
+but the flow is mostly the same)
 
-And it all just works! In my opinion, one of chezmoi's best features is being able
-to template files (just like this website's templating language) to work in different
-ways depending on the OS. I managed to write a single script, that according to my
-current OS, runs different commands to setup a new machine!
+My dotfiles manager of choice is [chezmoi](https://www.chezmoi.io/). 
+It touts itself as a 'personal home directory' manager, and comes with a LOT of bells and whistles.
