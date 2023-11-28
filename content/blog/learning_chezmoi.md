@@ -1,16 +1,17 @@
 +++
 title = "learning chezmoi"
-description = "or why organization is addicting"
+description = "or why organizing dotfiles is still procrastination"
 date = 2023-11-07
-updated = 2023-11-13
+updated = 2023-11-28
 draft = true
 +++
 
-I enjoy consistency. When we strive to do our best, the less you have to think about it,
+I enjoy consistency. When we strive to do our best, the less you have to worry about,
 the easier it is to focus on what actually matters.
 
-I've come to love the 'keyboard-centric' way of life, and I do believe that your computer
-(and your files) are an extension of yourself. 
+I've come to love the 'keyboard-centric' ways, and I do believe that your computer
+(and your files) can become an extension of yourself, in the sense that all relevant
+actions become almost second nature.
 In that vein, I'd like to share how I've come to setup my own dotfiles, why you should care,
 and how to get started on your own journey.
 
@@ -21,8 +22,8 @@ Think `.gitconfig`, the `.config` directory, or even VSCode's `settings.json`.
 These are all files that are pretty much define how a user might experience a certain
 program or command line utility.
 
-Unfortunately, not all programs have sensible defaults, and when they do, we might not agree
-with them, which is totally fine. Everytime I boot a new game, I go straight to 'settings' 
+Unfortunately, not all programs have sensible defaults, and when they do, you might
+not like them, which is totally fine. Everytime I boot a new game, I go straight to 'settings' 
 to configure things the way I like them, and so if I end up using a program long enough,
 it ends up getting the honor of having its config file(s) saved on source control.
 
