@@ -1,8 +1,8 @@
 +++
 title = "getting over it"
 description = "or how I finally got this website off the ground"
-date = 2023-06-14
-updated = 2023-06-14
+date = 2023-11-13
+updated = 2023-12-05
 draft = false
 +++
 
