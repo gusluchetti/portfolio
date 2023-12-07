@@ -3,7 +3,7 @@
 // neutrals
 $primary-900: hsla(36, 11%, 9%, 1); //main bg color
 $primary-850: hsla(36, 11%, 15%, 1);
-$primary-700: hsla(39, 10%, 27%, 1);
+$primary-700: hsla(37, 10%, 31%, 1);
 $primary-500: hsla(38, 9%, 46%, 1);
 $primary-300: hsla(39, 17%, 64%, 1);
 $primary-200: hsla(39, 44%, 82%, 1); //main text color
@@ -16,27 +16,18 @@ $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
-// (semantic) colors
-$success: hsla(89, 43%, 38%, 1);
-$warning: hsla(41, 43%, 38%, 1);
-$error: hsla(8, 43%, 38%, 1);
-$info: hsla(198, 43%, 38%, 1);
-$other: hsla(288, 43%, 38%, 1);
+$semantic-colors: (
+  success: hsla(89, 43%, 38%, 1),
+  warning: hsla(41, 43%, 38%, 1),
+  error: hsla(8, 43%, 38%, 1),
+  info: hsla(198, 43%, 38%, 1),
+  other: hsla(288, 43%, 38%, 1),
+);
 
-.success {
-  color: $success;
-}
-.warning {
-  color: $warning;
-}
-.error {
-  color: $error;
-}
-.info {
-  color: $info;
-}
-.other {
-  color: $other;
+@each $name, $color in $semantic-colors {
+  .#{$name} {
+    color: $color;
+  }
 }
 
 html {
