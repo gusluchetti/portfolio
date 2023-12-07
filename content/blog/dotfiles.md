@@ -14,9 +14,16 @@ I've come to love the 'keyboard-centric' way of computing, and I do believe that
 Let's backtrack a bit. What are dotfiles anyway?
 Dot files are user-specific configuration files, and they, unsurprisingly, usually start with a dot. Think `.gitconfig`, the `.config` directory on Linux, or even VSCode's `settings.json`. These are all files that define how a user will experience a certain program or command line utility.
 
-Unfortunately, not all programs have sensible defaults, and when they do, you might not like them, which is totally fine. Everytime I boot a new game, I go straight to 'settings' to configure things the way I like them (disabling motion blur first and foremost), and so if I use a program for long enough, it usually ends up getting its config file(s) saved on source control.
+Unfortunately, not all programs have sensible defaults, and when they do, you might not like them. Everytime I boot a new game, I go straight to 'settings' to configure things the way I like them (disabling motion blur first and foremost), and so if I use a program for long enough, it usually ends up getting its config file(s) saved on source control.
 
 "Why take the time though?" 
+
+To get better. Getting stuck in the 'this can be more productive' hole is a real issue, but at the same time, it shouldn't take much for you to figure out if any of the things that you do on a daily basis can be made faster and/or less error-prone.
+You might come to realize that everyday when you turn on your PC you manually
+close all those programs that auto start on boot up. Wouldn't it be better to just
+disable them?
+
+I'm not saying my way of doing it good is great, either. I'd rather have a config file written down, even if I'll never look at it again, so I can avoid wasting time in case my computer goes bad.
 
 My dotfiles manager of choice is [chezmoi](https://www.chezmoi.io/). 
 It touts itself as a 'personal home directory' manager, and comes with a LOT of bells and whistles. It has been a pleasure to use and it's documentation is very good.
