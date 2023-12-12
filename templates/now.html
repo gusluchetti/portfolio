@@ -1,14 +1,17 @@
 {% extends "base.html" %} {% block content %}
 <div class="flex flex-column items-center">
-  <h2 class="fw9 mv1 b text">nowadays</h2>
+  <h2 class="fw9 mv1 b text">{{page.title}}</h2>
   <div class="lh-copy flex flex-column items-center markdown">
     {{page.content | safe}}
   </div>
   <div class="flex flex-column i text monofont self-end f5-ns f7">
     <p class="bg2 ma0 mt1">
-      last updated <strong>{{page.updated}}</strong>
+      {{ trans(key='last_updated', lang=lang) }}
+      <strong>{{page.updated}}</strong>
     </p>
-    <a class="link accent b self-end" href="https://sive.rs/nowff">what's a now page?</a>
+    <a class="link accent b self-end" href="https://sive.rs/nowff">
+      {{ trans(key='now_page', lang=lang) }}
+    </a>
   </div>
 </div>
 {% endblock content %}

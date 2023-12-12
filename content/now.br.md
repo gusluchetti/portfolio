@@ -1,5 +1,5 @@
 +++
-title = "agora"
+title = "hoje em dia..."
 template = "now.html"
 date = 2023-06-05
 updated = 2023-10-24

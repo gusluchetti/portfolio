@@ -14,6 +14,8 @@ feed_limit = 10
 nav_blog = "blog"
 nav_now = "now"
 footer_other = "other places"
+last_updated = "last updated"
+now_page = "what's a 'now' page?"
 
 title = "luchetti's blog"
 description = "a place for my ramblings and discoveries"
@@ -26,6 +28,8 @@ build_search_index = true
 nav_blog = "blog"
 nav_now = "agora"
 footer_other = "outras redes"
+last_updated = "atualizado"
+now_page = "página 'agora'?"
 
 title = "blog do luchetti"
 description = "compartilhando ideias e projetos"

@@ -1,8 +1,6 @@
 +++
 title = "home"
 template = "index.html"
-[languages.br.translations]
-title = "home"
 +++
 
 ## bio
@@ -11,7 +9,7 @@ full-stack trabalhando de São Paulo, Brasil. Além disso, já pude trabalhar co
 integração de dados, e estudei Inteligência Artificial, como parte de um mestrado na
 Holanda, por um ano.
 
-Como é de se esperar de alguem que trabalha com T.I., gosto bastante de jogar! Faço
+Como é de se esperar de alguém que trabalha com T.I., gosto bastante de jogar! Faço
 bouldering sempre que possível, e faço um ótimo cookie de chocolate.
 
 ## objetivo
