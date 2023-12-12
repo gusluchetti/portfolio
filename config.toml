@@ -8,10 +8,13 @@ smart_punctuation = true
 minify_html = true
 
 generate_feed = true
-feed_filename = "rss.xml"
 feed_limit = 10
 
 [translations]
+nav_blog = "blog"
+nav_now = "now"
+footer_other = "other places"
+
 title = "luchetti's blog"
 description = "a place for my ramblings and discoveries"
 
@@ -20,6 +23,10 @@ generate_feed = true
 build_search_index = true
 
 [languages.br.translations]
+nav_blog = "blog"
+nav_now = "agora"
+footer_other = "outras redes"
+
 title = "blog do luchetti"
 description = "compartilhando ideias e projetos"
 
