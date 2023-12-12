@@ -1,0 +1,17 @@
+<h1 class="f2-ns f3">
+  <a class="link fw4" href="/" style="letter-spacing: -0.37em">
+    <span>t</span>
+    <span style="letter-spacing: 0em">ti</span>
+  </a>
+</h1>
+<ul class="flex list accent justify-center f3-ns f4">
+  <li>
+    {% set blog = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
+    <a class="link accent ph2" href="{{blog.path}}"> {{ blog.title}} </a>
+  </li>
+  <li>|</li>
+  <li>
+    {% set now = get_page(path="now.md", lang=lang, metadata_only=true) %}
+    <a class="link accent ph2" href="{{now.path}}"> {{now.title}} </a>
+  </li>
+</ul>
