@@ -1,26 +1,31 @@
 base_url = "https://luchetti.dev"
-title = "luchetti's blog"
-description = "a place for my ramblings and discoveries"
 default_language = "en"
+author = "Gustavo Luís Luchetti"
 
 compile_sass = true
 build_search_index = true
+smart_punctuation = true
+minify_html = true
+
+generate_feed = true
+feed_filename = "rss.xml"
+feed_limit = 10
+
+[translations]
+title = "luchetti's blog"
+description = "a place for my ramblings and discoveries"
+
+[languages.br]
+generate_feed = true
+build_search_index = true
+
+[languages.br.translations]
+title = "blog do luchetti"
+description = "compartilhando ideias e projetos"
 
 [markdown]
 highlight_code = true
 highlight_theme = "gruvbox-dark"
 
-[translations]
-# Additional languages definition
-# You can define language specific config values and translations: 
-# title, description, generate_feed, feed_filename, taxonomies, build_search_index
-# as well as its own search configuration and translations (see above for details on those)
-
-# You can put any kind of data here. The data
-# will be accessible in all templates
-# Example:
-#     [extra]
-#     author = "Famous author"
-#
-# author value will be available using {{ config.extra.author }} in templates
+# available at {{ config.extra.value }}
 [extra]
