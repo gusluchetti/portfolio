@@ -1,4 +1,4 @@
-@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+@import 'tachyons.min.css';
 
 // neutrals
 $primary-900: hsla(36, 11%, 9%, 1); //main bg color
@@ -108,6 +108,13 @@ pre code {
   }
 }
 
+// apply style on landing page
+.landing h2 {
+  font-weight: 900;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .accent {
   color: $accent-green !important;
 }
@@ -124,8 +131,6 @@ pre code {
   opacity: 0.5;
 }
 
-
-// TODO: how do I decrease page.summary margin otherwise?
 .summary p {
   margin: 0 auto;
 }
