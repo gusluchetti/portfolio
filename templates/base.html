@@ -2,6 +2,17 @@
 <html lang={{ config.default_language }}>
 
 <head>
+  <script>
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+    }
+  </script>
+
 {% block head %} 
   <title>luche(tti).dev</title>
   <meta charset="utf-8" />
@@ -10,6 +21,9 @@
 
   {% set setup = get_url(path="setup.js") %}
   <script src="{{setup}}"></script>
+
+  {% set tachyons = get_url(path="tachyons.min.css") %}
+  <link rel="stylesheet" href="{{tachyons}}">
 
   {% set style = get_url(path="custom.css") %}
   <link rel="stylesheet" href="{{style}}">

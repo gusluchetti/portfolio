@@ -1,18 +1,6 @@
-const theme = localStorage.getItem("theme");
-if (theme) {
-	document.documentElement.setAttribute("data-theme", theme);
-}
-
-const prefersDarkMode = window.matchMedia(
-	"(prefers-color-scheme: dark)",
-).matches;
-if (prefersDarkMode) {
-	document.documentElement.setAttribute("data-theme", "dark");
-} else {
-	document.documentElement.setAttribute("data-theme", "light");
-}
-
 const lang = localStorage.getItem("lang");
+const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 document.addEventListener("DOMContentLoaded", function () {
 	const themeSelect = document.getElementById("theme");
 	if (theme) {
@@ -50,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				"$1",
 			);
 			const newURL = window.location.origin + newPathname;
-			console.log(newURL);
 			window.location.assign(newURL);
 		}
 	});
