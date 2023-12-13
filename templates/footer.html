@@ -14,26 +14,28 @@
       <p class="b">links:</p>
     </li>
     <li>
-      <a class="link ph2 i" href="https://github.com/gusluchetti">github</a>
+      <a class="link ph1 ph2-ns i" href="https://github.com/gusluchetti">github</a>
     </li>
     <li>|</li>
     <li>
-      <a class="link ph2 i" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+      <a class="link ph1 ph2-ns i" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
     </li>
     <li>|</li>
     <li>
-      <a class="link ph2 i" href="mailto:gustavo@luchetti.dev">email</a>
+      <a class="link ph1 ph2-ns i" href="mailto:gustavo@luchetti.dev">email</a>
     </li>
   </ul>
 </div>
 
 <script>
-  let forceChange = new Event('change');
-
   const lang = localStorage.getItem("lang")
   const langSelect = document.getElementById("lang")
   if (lang) {
     langSelect.value = lang;
+    if (lang != "en" && !window.location.href.includes(lang)) {
+      const newURL = window.location.origin + `/${lang}` + window.location.pathname
+      window.location.assign(newURL)
+    }
   } else {
     langSelect.value = "en";
     localStorage.setItem("lang", "en")
