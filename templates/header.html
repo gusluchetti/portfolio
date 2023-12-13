@@ -1,5 +1,6 @@
 <h1 class="f2-ns f3">
-  <a class="link fw4" href="/" style="letter-spacing: -0.37em">
+  {% set home = get_url(path="@/_index.md", lang=lang) %}
+  <a class="link fw4" href="{{home}}" style="letter-spacing: -0.37em">
     <span>t</span>
     <span style="letter-spacing: 0em">ti</span>
   </a>

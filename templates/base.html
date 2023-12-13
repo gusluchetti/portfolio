@@ -16,20 +16,20 @@
 </head>
 
 <body class="flex justify-center">
-<div class="main flex flex-column items-center">
-  <header class="w-100 flex items-center justify-between monofont ph4-ns ph3 ba">
-    {% include 'header.html' %}
-  </header>
+  <div class="main flex flex-column items-center">
+    <header class="w-100 flex items-center justify-between monofont ph4-ns ph3 ba">
+      {% include 'header.html' %}
+    </header>
 
-  <main class="flex justify-center h-100 w-100 pv3 ph4 bl br">
-      <div class="measure-wide">
-          {% block content %} {% endblock %}
-      </div>
-  </main>
+    <main class="flex justify-center h-100 w-100 pv3 ph4 bl br">
+        <div class="measure-wide w-100">
+            {% block content %} {% endblock %}
+        </div>
+    </main>
 
-  <footer class="w-100 flex flex-column monofont pv2 ph4-ns ph3 ba">
-    {% include 'footer.html' %}
-  </footer>
-</div>
+    <footer class="w-100 flex flex-column monofont pv2 ph4 ba">
+      {% include 'footer.html' %}
+    </footer>
+  </div>
 </body>
 </html>

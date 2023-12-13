@@ -135,8 +135,8 @@ pre code {
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
+[data-theme="dark"] {
+  body, select {
     background-color: $primary-900;
     color: $primary-200;
   }
@@ -149,8 +149,8 @@ pre code {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  body {
+[data-theme="light"] {
+  body, select {
     background-color: $primary-200;
     color: $primary-900;
   }

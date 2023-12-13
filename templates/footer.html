@@ -1,16 +1,78 @@
 <div class="flex flex-row-ns flex-column justify-between f5-ns f6 items-center">
-<p class="mv1">{{ trans(key="footer_other", lang=lang) }}:</p>
-  <ul class="mv1 flex list justify-center items-center">
+  <div class="f7 flex flex-column-ns flex-row">
+    <select class="m1" id="theme">
+      <option value="dark">dark</option>
+      <option value="light">light</option>
+    </select>
+    <select class="m1" id="lang">
+      <option value="en">en-us</option>
+      <option value="br">pt-br</option>
+    </select>
+  </div>
+  <ul class="flex list justify-center items-center">
     <li>
-      <a class="link ph2" href="https://github.com/gusluchetti">github</a>
+      <p class="b">links:</p>
+    </li>
+    <li>
+      <a class="link ph2 i" href="https://github.com/gusluchetti">github</a>
     </li>
     <li>|</li>
     <li>
-      <a class="link ph2" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+      <a class="link ph2 i" href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
     </li>
     <li>|</li>
     <li>
-      <a class="link ph2" href="mailto:gustavo@luchetti.dev">email</a>
+      <a class="link ph2 i" href="mailto:gustavo@luchetti.dev">email</a>
     </li>
   </ul>
 </div>
+
+<script>
+  let forceChange = new Event('change');
+
+  const lang = localStorage.getItem("lang")
+  const langSelect = document.getElementById("lang")
+  if (lang) {
+    langSelect.value = lang;
+  } else {
+    langSelect.value = "en";
+    localStorage.setItem("lang", "en")
+  }
+
+  langSelect.addEventListener('change', function (e) {
+    localStorage.setItem("lang", e.target.value)
+    if (e.target.value != "en") {
+      const newURL = window.location.origin + `/${e.target.value}` + window.location.pathname
+      window.location.assign(newURL)
+    } else {
+      const newPathname = window.location.pathname.replace(/^\/[^\/]+(\/.*)/, '$1');
+      const newURL = window.location.origin + newPathname
+      console.log(newURL)
+      window.location.assign(newURL)
+    }
+  });
+
+  const theme = localStorage.getItem("theme")
+  const themeSelect = document.getElementById("theme")
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  if (theme) {
+    themeSelect.value = theme;
+    document.documentElement.setAttribute('data-theme', theme)
+  } else if (prefersDarkMode) {
+    themeSelect.value = 'dark';
+    document.documentElement.setAttribute('data-theme', 'dark')
+  } else {
+    themeSelect.value = 'light';
+    document.documentElement.setAttribute('data-theme', 'light')
+  }
+
+  themeSelect.addEventListener('change', function (e) {
+    localStorage.setItem("theme", e.target.value)
+    if (e.target.value == "dark") {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light')
+    }
+  });
+
+</script>
