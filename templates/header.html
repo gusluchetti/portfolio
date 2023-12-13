@@ -1,0 +1,18 @@
+<h1 class="f2-ns f3">
+  {% set home = get_url(path="@/_index.md", lang=lang) %}
+  <a class="link fw4" href="{{home}}" style="letter-spacing: -0.37em">
+    <span>t</span>
+    <span style="letter-spacing: 0em">ti</span>
+  </a>
+</h1>
+<ul class="flex list accent justify-center f3-ns f4">
+  <li>
+    {% set blog = get_url(path="@/blog/_index.md", lang=lang) %}
+    <a class="link accent ph2" href="{{blog}}"> {{ trans(key="nav_blog", lang=lang) }} </a>
+  </li>
+  <li>|</li>
+  <li>
+    {% set now = get_url(path="@/now.md", lang=lang) %}
+    <a class="link accent ph2" href="{{now}}"> {{ trans(key="nav_now", lang=lang) }} </a>
+  </li>
+</ul>
