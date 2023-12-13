@@ -14,34 +14,6 @@ $accent-purple: hsla(244, 17%, 52%, 1);
 $accent-lightpurple: hsla(246, 50%, 80%, 1);
 $accent-green: hsla(89, 17%, 52%, 1);
 
-[data-theme="dark"] {
-  body, select {
-    background-color: $primary-900;
-    color: $primary-200;
-  }
-
-  * {
-    border-color: $primary-850;
-  }
-  .bg2 {
-    color: $primary-700;
-  }
-}
-
-[data-theme="light"] {
-  body, select {
-    background-color: $primary-200;
-    color: $primary-900;
-  }
-
-  * {
-    border-color: $primary-300;
-  }
-  .bg2 {
-    color: $primary-700;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   body, select {
     background-color: $primary-900;
@@ -57,6 +29,34 @@ $accent-green: hsla(89, 17%, 52%, 1);
 }
 
 @media (prefers-color-scheme: light) {
+  body, select {
+    background-color: $primary-200;
+    color: $primary-900;
+  }
+
+  * {
+    border-color: $primary-300;
+  }
+  .bg2 {
+    color: $primary-700;
+  }
+}
+
+[data-theme="dark"] {
+  body, select {
+    background-color: $primary-900;
+    color: $primary-200;
+  }
+
+  * {
+    border-color: $primary-850;
+  }
+  .bg2 {
+    color: $primary-700;
+  }
+}
+
+[data-theme="light"] {
   body, select {
     background-color: $primary-200;
     color: $primary-900;
