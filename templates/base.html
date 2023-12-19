@@ -2,53 +2,54 @@
 <html lang={{ config.default_language }}>
 
 <head>
-  <script>
-    function setTheme(theme) {
-        document.documentElement.setAttribute("data-theme", theme)
-    }
+    <script>
+        function setTheme(theme) {
+            document.documentElement.setAttribute("data-theme", theme)
+        }
 
-    let theme = localStorage.getItem("theme")
-    if (theme) {
-      setTheme(theme)
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        setTheme("dark")
-    } else { setTheme("light") }
-  </script>
+        let theme = localStorage.getItem("theme")
+        if (theme) {
+            setTheme(theme)
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            setTheme("dark")
+        } else {setTheme("light")}
+    </script>
 
-{% block head %} 
-  <title>luche(tti).dev</title>
-  <meta charset="utf-8" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block head %}
+    <title>luche(tti).dev</title>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {% set setup = get_url(path="setup.js") %}
-  <script src="{{setup}}"></script>
+    {% set setup = get_url(path="setup.js") %}
+    <script src="{{setup}}"></script>
 
-  {% set tachyons = get_url(path="tachyons.min.css") %}
-  <link rel="stylesheet" href="{{tachyons}}">
+    {% set tachyons = get_url(path="tachyons.min.css") %}
+    <link rel="stylesheet" href="{{tachyons}}">
 
-  {% set style = get_url(path="custom.css") %}
-  <link rel="stylesheet" href="{{style}}">
-  {% set fonts = get_url(path="fonts.css") %}
-  <link rel="stylesheet" href="{{fonts}}">
-{% endblock %}
+    {% set style = get_url(path="custom.css") %}
+    <link rel="stylesheet" href="{{style}}">
+    {% set fonts = get_url(path="fonts.css") %}
+    <link rel="stylesheet" href="{{fonts}}">
+    {% endblock %}
 </head>
 
 <body class="flex justify-center">
-  <div class="main flex flex-column items-center">
-    <header class="w-100 flex items-center justify-between monofont ph4-ns ph3 ba">
-      {% include 'header.html' %}
-    </header>
+    <div class="main flex flex-column items-center">
+        <header class="w-100 flex items-center justify-between monofont ba ph4-ns ph3">
+            {% include 'header.html' %}
+        </header>
 
-    <main class="flex justify-center h-100 w-100 pv3 ph4 bl br">
-        <div class="measure-wide w-100">
-            {% block content %} {% endblock %}
-        </div>
-    </main>
+        <main class="flex justify-center h-100 w-100 bl br pv3 ph4-ns ph3">
+            <div class="measure-wide w-100">
+                {% block content %} {% endblock %}
+            </div>
+        </main>
 
-    <footer class="w-100 flex flex-column monofont pv2 ph4 ba">
-      {% include 'footer.html' %}
-    </footer>
-  </div>
+        <footer class="w-100 flex flex-column monofont ba pv2 ph4-ns ph3">
+            {% include 'footer.html' %}
+        </footer>
+    </div>
 </body>
+
 </html>
