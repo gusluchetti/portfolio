@@ -26,3 +26,5 @@ development.
 
 HTML, calls a js script, said script runs, and brings back more html. Ok.
 
+Glossary:
+- HMR: Hot Module Replacement
