@@ -21,7 +21,7 @@ description = "a place for my ramblings and discoveries"
 
 [languages.br]
 generate_feed = true
-build_search_index = true
+build_search_index = false
 
 [languages.br.translations]
 nav_blog = "blog"
