@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title></title>
+    <link href="https://luchetti.dev/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://luchetti.dev"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-12-07T00:00:00+00:00</updated>
+    <id>https://luchetti.dev/atom.xml</id>
+    <entry xml:lang="en">
+        <title>configuration galore (dotfiles)</title>
+        <published>2023-12-07T00:00:00+00:00</published>
+        <updated>2023-12-07T00:00:00+00:00</updated>
+        <author>
+          <name>Gustavo Luís Luchetti</name>
+        </author>
+        <link rel="alternate" href="https://luchetti.dev/blog/dotfiles/" type="text/html"/>
+        <id>https://luchetti.dev/blog/dotfiles/</id>
+        
+        <summary type="html">&lt;p&gt;I enjoy consistency. When we strive to do our best, the less you have to worry about, the easier it is to focus on the actually challenging part.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>getting over it</title>
+        <published>2023-11-13T00:00:00+00:00</published>
+        <updated>2023-12-05T00:00:00+00:00</updated>
+        <author>
+          <name>Gustavo Luís Luchetti</name>
+        </author>
+        <link rel="alternate" href="https://luchetti.dev/blog/getting-over-it/" type="text/html"/>
+        <id>https://luchetti.dev/blog/getting-over-it/</id>
+        
+        <summary type="html">&lt;p&gt;So you&#x27;re working on a project, and you&#x27;re almost done! Great work.
+Just need to touch this up, review this piece of code, update this css file, test a new font, etc.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>nowadays...</title>
+        <published>2023-06-05T00:00:00+00:00</published>
+        <updated>2023-10-24T00:00:00+00:00</updated>
+        <author>
+          <name>Gustavo Luís Luchetti</name>
+        </author>
+        <link rel="alternate" href="https://luchetti.dev/now/" type="text/html"/>
+        <id>https://luchetti.dev/now/</id>
+        
+        <content type="html">&lt;p&gt;I&#x27;m doing &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gusluchetti&#x2F;advent-of-code-2023&quot;&gt;Advent of Code 2023&lt;&#x2F;a&gt; 
+in Python! Let me know if you&#x27;re also doing it this year. So far (at day 7 now), it 
+hasn&#x27;t been too hard, except day 5 part 2, which I still haven&#x27;t quite figured it out. &lt;&#x2F;p&gt;
+&lt;p&gt;These days (mid-2023), I&#x27;m employed at &lt;a href=&quot;https:&#x2F;&#x2F;agro.nitro.com.br&#x2F;&quot;&gt;Nitro Agro&lt;&#x2F;a&gt; as a
+&#x27;Data and Digital Business Analyst&#x27;. It&#x27;s been very rewarding to work on a product at
+a company that doesn&#x27;t have much (internal) IT infrastructure set in stone, so there&#x27;s
+a lot to work on when it comes to setting up new stacks and processes. Very exciting!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
