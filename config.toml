@@ -20,7 +20,7 @@ title = "luchetti's blog"
 description = "a place for my ramblings and discoveries"
 
 [languages.br]
-generate_feed = true
+generate_feed = false
 build_search_index = false
 
 [languages.br.translations]
