@@ -20,8 +20,8 @@ title = "luchetti's blog"
 description = "a place for my ramblings and discoveries"
 
 [languages.br]
-generate_feed = true
-build_search_index = true
+generate_feed = false
+build_search_index = false
 
 [languages.br.translations]
 nav_blog = "blog"
