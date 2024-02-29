@@ -19,7 +19,7 @@ export const links: LinksFunction = () => [
 
 export function Header() {
     return (
-        <header className="flex flex-row gap-5">
+        <header className="flex flex-row gap-5 border-stone-900">
             <NavLink to="/"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
@@ -44,7 +44,7 @@ export function Header() {
 
 export function Footer() {
     return (
-        <footer>
+        <footer className="border-stone-900">
         </footer>
     )
 }
@@ -58,7 +58,7 @@ export default function App() {
                 <Meta />
                 <Links />
             </head>
-            <body className="font-sans leading-6">
+            <body className="p-1 h-dvh font-sans leading-6">
                 <Header />
                 <Outlet />
                 <Footer />
