@@ -1,53 +1,23 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
     Links,
     LiveReload,
     Meta,
-    NavLink,
     Outlet,
     Scripts,
     ScrollRestoration,
 } from "@remix-run/react";
 
+import { cssBundleHref } from "@remix-run/css-bundle";
 import tailwind from '~/tailwind.css'
+
+import { Header } from "./header";
+import { Footer } from "./footer";
 
 export const links: LinksFunction = () => [
     { rel: "stylesheet", href: tailwind },
     ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
-
-export function Header() {
-    return (
-        <header className="flex flex-row gap-5 border-stone-900">
-            <NavLink to="/"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }>
-                tti.dev
-            </NavLink>
-            <NavLink to="/blog"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }>
-                blog
-            </NavLink>
-            <NavLink to="/now"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }>
-                now
-            </NavLink>
-        </header>
-    )
-}
-
-export function Footer() {
-    return (
-        <footer className="border-stone-900">
-        </footer>
-    )
-}
 
 export default function App() {
     return (
