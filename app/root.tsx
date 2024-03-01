@@ -1,4 +1,4 @@
-import type { LinksFunction, LoaderFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
+import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import {
     Links,
     LiveReload,
