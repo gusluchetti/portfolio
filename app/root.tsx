@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, LoaderFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import {
     Links,
     LiveReload,
@@ -23,7 +23,7 @@ export type LoaderData = {
     theme: Theme | null;
 }
 
-export const loader: LoaderFunction = async ({ request }) => {
+export async function loader({ request, }: LoaderFunctionArgs) {
     const themeSession = await getThemeSession(request);
 
     const data: LoaderData = {
