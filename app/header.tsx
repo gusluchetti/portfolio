@@ -2,7 +2,7 @@ import { NavLink } from "@remix-run/react";
 
 export function Header() {
     return (
-        <header className="flex flex-row gap-5 border-stone-900">
+        <header className="flex flex-row gap-5">
             <NavLink to="/"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""

@@ -8,7 +8,7 @@ export function Footer() {
     };
 
     return (
-        <footer className="border-stone-900">
+        <footer className="">
             <button onClick={toggleTheme}>toggle</button>
         </footer>
     )
