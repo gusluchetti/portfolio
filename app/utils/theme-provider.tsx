@@ -22,21 +22,38 @@ const getPreferredScheme = () => {
 
 const clientThemeCode = `
 ;(() => {
-  const theme = window.matchMedia(${JSON.stringify(prefersDark)}).matches
-    ? 'dark'
-    : 'light';
-  const cl = document.documentElement.classList;
-  const themeAlreadyApplied = cl.contains('light') || cl.contains('dark');
-  if (themeAlreadyApplied) {
-    console.warn("this shouldn't be possible. hi!")
-  } else {
-    cl.add(theme);
-  }
+    const theme = window.matchMedia(${JSON.stringify(prefersDark)}).matches
+        ? 'dark'
+        : 'light';
+    const cl = document.documentElement.classList;
+    const themeAlreadyApplied = cl.contains('light') || cl.contains('dark');
+        if (themeAlreadyApplied) {
+            console.warn("this shouldn't be possible. hi!")
+        } else {
+            cl.add(theme);
+        }
+
+    const meta = document.querySelector('meta[name=color-scheme]');
+        if (meta) {
+            if (theme === 'dark') {
+                meta.content = 'dark light';
+            } else if (theme === 'light') {
+                meta.content = 'light dark';
+            }
+            } else {
+                console.warn("this shouldn't be possible. hi!")
+        }
 })();
 `;
 
-function ThemeScriptTag({ ssrTheme }): { ssrTheme: boolean } {
-    return <>{ssrTheme ? null : <script dangerouslySetInnerHTML={{ __html: clientThemeCode }} />}</>
+function ThemeScriptTag({ ssrTheme }: { ssrTheme: boolean }) {
+    const [theme] = useTheme();
+    return (
+        <>
+            <meta name="color-scheme" content={theme === 'light' ? 'light dark' : 'dark light'} />
+            {ssrTheme ? null : <script dangerouslySetInnerHTML={{ __html: clientThemeCode }} />}
+        </>
+    )
 }
 
 function ThemeProvider({
@@ -85,6 +102,16 @@ function ThemeProvider({
             { action: '/set-theme', method: 'post' }
         );
     }, [theme]);
+
+    // handling if user changed preference while using website
+    useEffect(() => {
+        const mediaQuery = window.matchMedia(prefersDark);
+        const handleChange = () => {
+            setTheme(mediaQuery.matches ? Theme.DARK : Theme.LIGHT);
+        };
+        mediaQuery.addEventListener('change', handleChange);
+        return () => mediaQuery.removeEventListener('change', handleChange);
+    }, []);
 
     return (
         <ThemeContext.Provider value={[theme, setTheme]}>
