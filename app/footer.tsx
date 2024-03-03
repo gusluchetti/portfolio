@@ -1,7 +1,7 @@
 import { Theme, useTheme } from '~/utils/theme-provider';
 
 export function Footer() {
-  const [, setTheme] = useTheme();
+  const [theme, setTheme] = useTheme();
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT));
@@ -9,7 +9,9 @@ export function Footer() {
 
   return (
     <footer className="">
-      <button onClick={toggleTheme}>toggle</button>
+      <button onClick={toggleTheme}>
+        toggle theme
+      </button>
     </footer>
   )
 }
