@@ -9,11 +9,11 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <>
       <h2 className="text-lg font-bold">bio</h2>
       <p>this is a test!</p>
       <h2 className="text-lg font-bold">purpose</h2>
       <p>another test. wow!</p>
-    </div>
+    </>
   );
 }

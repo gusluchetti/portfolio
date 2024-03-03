@@ -2,15 +2,15 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "now" },
-    { name: "description", content: "what i've been doing lately!" },
+    { title: "my resume" },
+    { name: "description", content: "print this if you'd like!" },
   ];
 };
 
-export default function Now() {
+export default function CV() {
   return (
     <>
-      <h1>nowadays</h1>
+      <h1>CV</h1>
     </>
   )
 }
