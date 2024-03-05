@@ -1,5 +1,3 @@
-import { ServerBuild } from "@remix-run/node";
-
 export type Frontmatter = {
   title: string;
   description: string;
@@ -28,22 +26,6 @@ export const getPosts = async (): Promise<PostMeta[]> => {
       frontmatter: post.frontmatter,
     };
   });
-  return sortBy(posts, (post) => post.frontmatter.published, "desc");
+
+  return posts;
 };
-
-function sortBy<T>(
-  arr: T[],
-  key: (item: T) => any,
-  dir: "asc" | "desc" = "asc"
-) {
-  return arr.sort((a, b) => {
-    const res = compare(key(a), key(b));
-    return dir === "asc" ? res : -res;
-  });
-}
-
-function compare<T>(a: T, b: T): number {
-  if (a < b) return -1;
-  if (a > b) return 1;
-  return 0;
-}
