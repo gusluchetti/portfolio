@@ -48,7 +48,7 @@ function TempApp() {
         <Meta />
         <Links />
       </head>
-      <body className="theme font-sans leading-6 flex flex-col items-center">
+      <body className="theme font-mono leading-6 flex flex-col items-center">
         <div className="border-all h-dvh lg:w-1/2 md:w-3/4 w-full">
           <Header />
           <main>
