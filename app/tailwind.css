@@ -13,3 +13,9 @@
     @apply border border-cod-gray-950/30 dark:border-cod-gray-50/30 p-2;
   }
 }
+
+.blogpost {
+  ul {
+    margin: 5rem;
+  }
+}
