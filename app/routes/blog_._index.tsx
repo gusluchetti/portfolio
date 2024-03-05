@@ -22,7 +22,7 @@ export default function Blog() {
     <div>
       <h1>my blog posts:</h1>
       {posts.map((post) => (
-        <ul key={post.slug} className="p-5">
+        <ul key={post.slug}>
           <Post {...post} />
         </ul>
       ))}
