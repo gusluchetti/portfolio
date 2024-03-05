@@ -48,12 +48,10 @@ function TempApp() {
         <Meta />
         <Links />
       </head>
-      <body className="p-1 h-dvh font-sans leading-6 flex flex-col items-center 
-              bg-cod-gray-100 text-cod-gray-950 
-              dark:bg-cod-gray-950 dark:text-cod-gray-50">
-        <div className="lg:w-1/2 md:w-3/4 w-full">
+      <body className="theme font-sans leading-6 flex flex-col items-center">
+        <div className="border-all h-dvh lg:w-1/2 md:w-3/4 w-full">
           <Header />
-          <main className="border border-cod-gray-950/30 dark:border-cod-gray-50/30 p-2">
+          <main>
             <Outlet />
           </main>
           <Footer />

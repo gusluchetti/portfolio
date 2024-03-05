@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .theme {
+    @apply bg-cod-gray-100 text-cod-gray-950 dark:bg-cod-gray-950 dark:text-cod-gray-50;
+  }
+}
+
+@layer components {
+  .border-all {
+    @apply border border-cod-gray-950/30 dark:border-cod-gray-50/30 p-2;
+  }
+}
