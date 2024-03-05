@@ -10,8 +10,7 @@ export const meta: MetaFunction = () => {
 
 export default function SingleBlog() {
   return (
-    <div>
-      <p>test</p>
+    <div className="prose">
       <Outlet />
     </div>
   )

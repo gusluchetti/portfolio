@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { NavLink } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,8 +10,9 @@ export const meta: MetaFunction = () => {
 
 export default function Blog() {
   return (
-    <>
+    <div>
       <h1>my blog posts:</h1>
-    </>
+      <NavLink to="test-post">test</NavLink>
+    </div>
   )
 }
