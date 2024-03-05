@@ -6,19 +6,21 @@ const navClass = ({ isActive, isPending }: { isActive: boolean, isPending: boole
 
 export function Header() {
   return (
-    <header className="flex flex-row gap-5">
-      <NavLink to="/">
-        tti.dev
-      </NavLink>
-      <NavLink to="/blog" className={navClass}>
-        blog
-      </NavLink>
-      <NavLink to="/cv" className={navClass}>
-        cv
-      </NavLink>
-      <NavLink to="/now" className={navClass}>
-        now
-      </NavLink>
+    <header>
+      <nav className="flex flex-row gap-5">
+        <NavLink to="/" className={navClass}>
+          tti.dev
+        </NavLink>
+        <NavLink to="/blog" className={navClass}>
+          blog
+        </NavLink>
+        <NavLink to="/cv" className={navClass}>
+          cv
+        </NavLink>
+        <NavLink to="/now" className={navClass}>
+          now
+        </NavLink>
+      </nav>
     </header>
   )
 }
