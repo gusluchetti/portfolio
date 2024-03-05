@@ -9,8 +9,8 @@
 }
 
 @layer components {
-  .border-all {
-    @apply border border-cod-gray-950/30 dark:border-cod-gray-50/30;
+  .border-style {
+    @apply border-cod-gray-950/30 dark:border-cod-gray-50/30;
   }
 }
 
