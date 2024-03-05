@@ -7,14 +7,12 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
-
 import clsx from 'clsx';
-import { Theme, ThemeProvider, ThemeScriptTag, useTheme } from "./utils/theme-provider";
 
 import tailwind from '~/tailwind.css?url'
-
 import { Header } from "./header";
 import { Footer } from "./footer";
+import { Theme, ThemeProvider, ThemeScriptTag, useTheme } from "./utils/theme-provider";
 import { getThemeSession } from "./utils/theme.server";
 
 export type LoaderData = {
@@ -49,7 +47,7 @@ function TempApp() {
         <Links />
       </head>
       <body className="theme font-mono leading-6 flex flex-col items-center">
-        <div className="border-all h-dvh lg:w-1/2 md:w-3/4 w-full">
+        <div className="border-all min-h-dvh lg:w-1/2 md:w-3/4 w-full">
           <Header />
           <main>
             <Outlet />
