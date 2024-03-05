@@ -1,7 +1,6 @@
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -12,8 +11,7 @@ import {
 import clsx from 'clsx';
 import { Theme, ThemeProvider, ThemeScriptTag, useTheme } from "./utils/theme-provider";
 
-import { cssBundleHref } from "@remix-run/css-bundle";
-import tailwind from '~/tailwind.css'
+import tailwind from '~/tailwind.css?url'
 
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -35,7 +33,6 @@ export async function loader({ request, }: LoaderFunctionArgs) {
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwind },
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
 function TempApp() {
@@ -64,7 +61,6 @@ function TempApp() {
 
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );
