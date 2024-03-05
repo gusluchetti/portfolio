@@ -1,7 +1,7 @@
 import { NavLink } from "@remix-run/react";
 
 const navClass = ({ isActive, isPending }: { isActive: boolean, isPending: boolean }) =>
-  isPending ? "pending" : isActive ? "font-bold" : ""
+  isPending ? "pending" : isActive ? "font-bold underline" : ""
 
 
 export function Header() {

@@ -10,12 +10,19 @@
 
 @layer components {
   .border-all {
-    @apply border border-cod-gray-950/30 dark:border-cod-gray-50/30 p-2;
+    @apply border border-cod-gray-950/30 dark:border-cod-gray-50/30;
   }
 }
 
-.blogpost {
+.cv {
+  h1 {
+    font-weight: 900;
+  }
+  h2 {
+    font-weight: 700;
+    margin: 1vh 0;
+  }
   ul {
-    margin: 5rem;
+    margin: 2vh 0;
   }
 }
