@@ -47,9 +47,9 @@ function TempApp() {
         <Links />
       </head>
       <body className="theme font-mono leading-6 flex flex-col items-center">
-        <div className="border-all min-h-dvh lg:w-1/2 md:w-3/4 w-full">
+        <div className="border-x border-style min-h-dvh lg:w-1/2 md:w-3/4 w-full px-3">
           <Header />
-          <main>
+          <main className="border-y border-style">
             <Outlet />
           </main>
           <Footer />
