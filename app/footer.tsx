@@ -9,8 +9,8 @@ export function Footer() {
 
   return (
     <footer className="">
-      <button onClick={toggleTheme}>
-        toggle theme
+      <button className='hover:underline' onClick={toggleTheme}>
+        {theme === Theme.LIGHT ? 'light' : 'dark'}
       </button>
     </footer>
   )
