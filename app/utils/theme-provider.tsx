@@ -3,8 +3,8 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import type { Dispatch, ReactNode, SetStateAction } from 'react';
 
 enum Theme {
-    DARK = 'dark',
-    LIGHT = 'light',
+  DARK = 'dark',
+  LIGHT = 'light',
 }
 
 type ThemeContextType = [Theme | null, Dispatch<SetStateAction<Theme | null>>];
@@ -13,11 +13,11 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const prefersDark = '(prefers-color-scheme: dark)';
 const getPreferredScheme = () => {
-    if (window.matchMedia(prefersDark).matches) {
-        return Theme.DARK
-    } else {
-        return Theme.LIGHT
-    }
+  if (window.matchMedia(prefersDark).matches) {
+    return Theme.DARK
+  } else {
+    return Theme.LIGHT
+  }
 }
 
 const clientThemeCode = `
@@ -47,91 +47,91 @@ const clientThemeCode = `
 `;
 
 function ThemeScriptTag({ ssrTheme }: { ssrTheme: boolean }) {
-    const [theme] = useTheme();
-    return (
-        <>
-            <meta name="color-scheme" content={theme === 'light' ? 'light dark' : 'dark light'} />
-            {ssrTheme ? null : <script dangerouslySetInnerHTML={{ __html: clientThemeCode }} />}
-        </>
-    )
+  const [theme] = useTheme();
+  return (
+    <>
+      <meta name="color-scheme" content={theme === 'light' ? 'light dark' : 'dark light'} />
+      {ssrTheme ? null : <script dangerouslySetInnerHTML={{ __html: clientThemeCode }} />}
+    </>
+  )
 }
 
 function ThemeProvider({
-    children,
-    specifiedTheme, }: {
-        children: ReactNode,
-        specifiedTheme: Theme | null,
-    }) {
-    const [theme, setTheme] = useState<Theme | null>(() => {
-        if (specifiedTheme) {
-            if (themes.includes(specifiedTheme)) {
-                return specifiedTheme;
-            } else {
-                return null;
-            }
-        }
+  children,
+  specifiedTheme, }: {
+    children: ReactNode,
+    specifiedTheme: Theme | null,
+  }) {
+  const [theme, setTheme] = useState<Theme | null>(() => {
+    if (specifiedTheme) {
+      if (themes.includes(specifiedTheme)) {
+        return specifiedTheme;
+      } else {
+        return null;
+      }
+    }
 
-        if (typeof window !== 'object') {
-            return null;
-        }
+    if (typeof window !== 'object') {
+      return null;
+    }
 
-        return getPreferredScheme();
-    });
+    return getPreferredScheme();
+  });
 
-    const persistTheme = useFetcher();
+  const persistTheme = useFetcher();
 
-    // TODO: remove this when persistTheme is memoized properly
-    const persistThemeRef = useRef(persistTheme);
-    useEffect(() => {
-        persistThemeRef.current = persistTheme;
-    }, [persistTheme]);
+  // TODO: remove this when persistTheme is memoized properly
+  const persistThemeRef = useRef(persistTheme);
+  useEffect(() => {
+    persistThemeRef.current = persistTheme;
+  }, [persistTheme]);
 
-    const mountRun = useRef(false);
+  const mountRun = useRef(false);
 
-    useEffect(() => {
-        if (!mountRun.current) {
-            mountRun.current = true;
-            return;
-        }
-        if (!theme) {
-            return;
-        }
+  useEffect(() => {
+    if (!mountRun.current) {
+      mountRun.current = true;
+      return;
+    }
+    if (!theme) {
+      return;
+    }
 
-        persistThemeRef.current.submit(
-            { theme },
-            { action: '/set-theme', method: 'post' }
-        );
-    }, [theme]);
+    persistThemeRef.current.submit(
+      { theme },
+      { action: '/set-theme', method: 'post' }
+    );
+  }, [theme]);
 
-    // handling if user changed preference while using website
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(prefersDark);
-        const handleChange = () => {
-            setTheme(mediaQuery.matches ? Theme.DARK : Theme.LIGHT);
-        };
-        mediaQuery.addEventListener('change', handleChange);
-        return () => mediaQuery.removeEventListener('change', handleChange);
-    }, []);
+  // handling if user changed preference while using website
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(prefersDark);
+    const handleChange = () => {
+      setTheme(mediaQuery.matches ? Theme.DARK : Theme.LIGHT);
+    };
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
-    return (
-        <ThemeContext.Provider value={[theme, setTheme]}>
-            {children}
-        </ThemeContext.Provider>
-    )
+  return (
+    <ThemeContext.Provider value={[theme, setTheme]}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }
 
 function useTheme() {
-    const context = useContext(ThemeContext);
-    if (context === undefined) {
-        throw new Error('useTheme must be used within a ThemeProvider');
-    }
-    return context;
+  const context = useContext(ThemeContext);
+  if (context === undefined) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
 }
 
 const themes: Array<Theme> = Object.values(Theme);
 
 function isTheme(value: unknown): value is Theme {
-    return typeof value === 'string' && themes.includes(value as Theme);
+  return typeof value === 'string' && themes.includes(value as Theme);
 }
 
 export { isTheme, ThemeScriptTag, Theme, ThemeProvider, useTheme };
