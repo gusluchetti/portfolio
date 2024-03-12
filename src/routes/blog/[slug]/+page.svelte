@@ -11,4 +11,6 @@
 
 <h1>{title}</h1>
 <p>published: <time datetime={date}>{date}</time></p>
-<Content />
+<section class="max-w-prose">
+	<Content />
+</section>
