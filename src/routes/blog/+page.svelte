@@ -14,7 +14,8 @@
 	{#each posts as post}
 		<li>
 			<a class="hover:font-bold" href={post.path}>
-				> {post.meta.title} | {post.meta.date}
+				&gt; {#if post.meta.draft}<span class="text-red-400">(draft)</span>{/if}
+				{post.meta.title} | {post.meta.date}
 			</a>
 		</li>
 	{/each}
