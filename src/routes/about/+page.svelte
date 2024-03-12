@@ -16,7 +16,13 @@
 </p>
 <h2>find me at:</h2>
 <ul>
-	<li>email</li>
-	<li>linkedin</li>
-	<li>github</li>
+	<li>
+		<a href="mailto:gustavo@luchetti.dev">email</a>
+	</li>
+	<li>
+		<a href="https://github.com/gusluchetti">github</a>
+	</li>
+	<li>
+		<a href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+	</li>
 </ul>
