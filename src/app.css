@@ -4,7 +4,7 @@
 
 @layer base {
   h2 {
-    @apply text-xl mt-2 mb-3;
+    @apply text-xl mb-2;
   }
   
   footer {
@@ -15,6 +15,10 @@
 @layer components {
   .active {
     @apply font-bold;
+  }
+
+  .link {
+    @apply dark:text-lime-200 text-lime-600 italic;
   }
 
   .navlink {

@@ -11,7 +11,7 @@
 	</nav>
 </header>
 
-<main class="p-3">
+<main class="p-3 lh-copy">
 	<slot />
 </main>
 

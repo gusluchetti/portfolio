@@ -5,5 +5,5 @@
 
 <h2>welcome!</h2>
 <p>i code and game a lot</p>
-<p>i have <a href="/blog">some things</a>i'd like to share</p>
+<p>i have <a class="link" href="/blog">some things</a> i'd like to share</p>
 <p>and i'm always learning! :)</p>
