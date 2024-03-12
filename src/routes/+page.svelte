@@ -1,2 +1,3 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>luchetti.dev</h1>
+<p>built with svelte</p>
+<a href="/blog">blog posts</a>
