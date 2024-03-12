@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  main {
+    @apply p-5 max-w-prose;
+  }
+
+  h2 {
+    @apply text-xl mt-2 mb-3;
+  }
+}
+
+@layer components {
+  .active {
+    @apply font-bold;
+  }
+}
