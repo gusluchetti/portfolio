@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>about</title>
+	<meta name="description" content="an about page describing a bit more about myself" />
+</svelte:head>
+
 <h2>bio</h2>
 <p>
 	Hi! My name is Gustavo Luchetti, a 23 year-old full-stack developer currently based in São Paulo,
