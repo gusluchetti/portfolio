@@ -15,6 +15,6 @@
 	<slot />
 </main>
 
-<footer class="italic flex flex-row gap-5 border border-white">
+<footer>
 	<a href="https://github.com/gusluchetti/portfolio">view source</a>
 </footer>

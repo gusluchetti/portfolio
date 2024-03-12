@@ -6,6 +6,10 @@
   h2 {
     @apply text-xl mt-2 mb-3;
   }
+  
+  footer {
+    @apply italic flex flex-row gap-5 border dark:border-white border-black;
+  }
 }
 
 @layer components {
@@ -14,6 +18,6 @@
   }
 
   .navlink {
-    @apply px-3 border border-white hover:font-bold;
+    @apply px-3 border dark:border-white border-black hover:font-bold;
   }
 }
