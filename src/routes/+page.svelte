@@ -3,7 +3,7 @@
 	<meta name="description" content="a collection of all blog posts i've made so far" />
 </svelte:head>
 
-<h2>hi! i code for a living as a full-stack dev</h2>
-<p>currently based in São Paulo, Brazil</p>
-<br />
-<p>i'm always trying to make my workflow better/more reliable</p>
+<h2>welcome!</h2>
+<p>i code and game a lot</p>
+<p>i have <a href="/blog">some things</a>i'd like to share</p>
+<p>and i'm always learning! :)</p>
