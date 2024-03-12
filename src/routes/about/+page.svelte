@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>about</title>
+	<meta name="description" content="an about page describing a bit more about myself" />
+</svelte:head>
+
 <h2>bio</h2>
 <p>
 	Hi! My name is Gustavo Luchetti, a 23 year-old full-stack developer currently based in São Paulo,
@@ -16,7 +21,13 @@
 </p>
 <h2>find me at:</h2>
 <ul>
-	<li>email</li>
-	<li>linkedin</li>
-	<li>github</li>
+	<li>
+		<a href="mailto:gustavo@luchetti.dev">email</a>
+	</li>
+	<li>
+		<a href="https://github.com/gusluchetti">github</a>
+	</li>
+	<li>
+		<a href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+	</li>
 </ul>
