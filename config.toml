@@ -1,0 +1,40 @@
+base_url = "https://luchetti.dev"
+default_language = "en"
+author = "Gustavo Luís Luchetti"
+
+compile_sass = true
+build_search_index = true
+smart_punctuation = true
+minify_html = true
+
+generate_feed = true
+feed_limit = 10
+
+[translations]
+nav_blog = "blog"
+nav_now = "now"
+last_updated = "last updated"
+now_page = "what's a 'now' page?"
+
+title = "luchetti's blog"
+description = "a place for my ramblings and discoveries"
+
+[languages.br]
+generate_feed = true
+build_search_index = false
+
+[languages.br.translations]
+nav_blog = "blog"
+nav_now = "agora"
+last_updated = "atualizado"
+now_page = "página 'agora'?"
+
+title = "blog do luchetti"
+description = "compartilhando ideias e projetos"
+
+[markdown]
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
+# available at {{ config.extra.value }}
+[extra]
