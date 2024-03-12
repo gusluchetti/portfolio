@@ -5,5 +5,5 @@
 </script>
 
 <h1>{title}</h1>
-<p>published: {date}</p>
+<p>published: <time datetime={date}>{date}</time></p>
 <Content />
