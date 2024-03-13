@@ -20,14 +20,19 @@
 	to that schedule.
 </p>
 <h2>find me at:</h2>
-<ul>
-	<li>
-		<a href="mailto:gustavo@luchetti.dev">email</a>
-	</li>
-	<li>
-		<a href="https://github.com/gusluchetti">github</a>
-	</li>
-	<li>
-		<a href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
-	</li>
-</ul>
+<div>
+	<ul class="flex flex-row flex-wrap gap-3">
+		<li>
+			<a href="mailto:gustavo@luchetti.dev">email</a>
+		</li>
+		<li>
+			<a href="https://github.com/gusluchetti">github</a>
+		</li>
+		<li>
+			<a href="https://twitter.com/dev_sushii">twitter/x</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a>
+		</li>
+	</ul>
+</div>
