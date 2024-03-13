@@ -3,11 +3,12 @@
 	export const active = false;
 </script>
 
-<header class="italic flex flex-row gap-5">
-	<nav class="*:navlink">
-		<a class:active href="/">home</a>
-		<a class:active href="/blog">posts</a>
-		<a class:active href="/about">about</a>
+<header>
+	<nav class="flex flex-row flex-wrap md:gap-3 italic">
+		<a class="navlink" class:active href="/">home</a>
+		<a class="navlink" class:active href="/blog">posts</a>
+		<a class="navlink" class:active href="/about">about</a>
+		<a class="navlink" class:active href="/cv">cv</a>
 	</nav>
 </header>
 
@@ -16,5 +17,5 @@
 </main>
 
 <footer>
-	<a href="https://github.com/gusluchetti/portfolio">view source</a>
+	<a class="navlink" href="https://github.com/gusluchetti/portfolio">view source</a>
 </footer>
