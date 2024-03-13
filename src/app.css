@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark light;
+}
+
 @layer base {
+  html, .navlink {
+    @apply bg-cod-gray-50 text-cod-gray-900;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html, .navlink {
+      @apply bg-cod-gray-950 text-cod-gray-100;
+    }
+  }
+
   h2 {
     @apply text-xl my-1 font-semibold;
   }
@@ -14,13 +28,13 @@
   }
 
   .link {
-    @apply dark:text-lime-200 text-lime-600 italic;
+    @apply dark:text-ship-green-300 text-ship-green-800 italic;
   }
 
   .navlink {
-    @apply px-3 border dark:border-white border-black 
-    hover:bg-slate-200 dark:hover:bg-slate-900
-    md:flex-grow-0 flex-grow;
+    @apply px-3 text-center md:flex-grow-0 flex-grow italic 
+    border dark:border-cod-gray-50 border-cod-gray-950
+    hover:invert transition-all;
   }
 }
 
