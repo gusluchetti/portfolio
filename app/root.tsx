@@ -34,14 +34,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <>
+    <div className="wrapper">
       <nav>
         <ul>
-          <NavLink to="/">home</NavLink>
-          <NavLink to="/about">about</NavLink>
+          <li>
+            <NavLink to="/">home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">about</NavLink>
+          </li>
+          <li>
+            <NavLink to="/resume">resume</NavLink>
+          </li>
         </ul>
       </nav>
       <Outlet />
-    </>
+    </div>
   )
 }
