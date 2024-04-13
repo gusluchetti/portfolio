@@ -15,6 +15,7 @@ export default function Index() {
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Welcome!</h1>
       <p>once again...</p>
+      <p>a new beginning</p>
     </div>
   );
 }
