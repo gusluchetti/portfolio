@@ -18,24 +18,48 @@ export default function Index() {
       <div>
         <h3>Work Experience</h3>
         <section>
-          <h4>Nitro Química - São Paulo, Brazil</h4>
+          <h4 className="job-detail">
+            <span>Nitro Química - São Paulo, Brazil</span>
+            <span>2023 - Present</span>
+          </h4>
           <p>Junior Data and Digital Business Analyst</p>
-          <p>Digitalizing internal tooling, elevating day-to-day productivity for our partners out in the field.</p>
+          <ul>
+            <li>Digitalizing internal tooling, elevating day-to-day productivity for our partners out in the field.</li>
+          </ul>
         </section>
         <section>
-          <h4>Source.ag - Amsterdam, Netherlands</h4>
+          <h4 className="job-detail">
+            <span>Source.ag - Amsterdam, Netherlands</span>
+            <span>Aug/2022 - Feb/2023</span>
+          </h4>
           <p>Implementation Analyst</p>
-          <p>Integration and onboarding of new clients into the company (Excel, PostgreSQL), working alongside the data platform team, automation and improvement of existing processes (Python w/ Pandas, Web APIs).</p>
+          <ul>
+            <li>
+              Integration and onboarding of new clients into the company (Excel, PostgreSQL), working alongside the data platform team, automation and improvement of existing processes (Python w/ Pandas, Web APIs).
+            </li>
+          </ul>
         </section>
         <section>
-          <h4>BTG Pactual Digital - São Paulo, Brazil</h4>
-          <p>Assitant Analyst, Intern Developer</p>
-          <p>Web development for back-office applications, front-end using Angular, back-end API and services using .NET CORE with AWS Lambda, according to micro-services architecture.</p>
+          <h4 className="job-detail">
+            <span>BTG Pactual Digital - São Paulo, Brazil</span>
+            <span>Jun/2021 - Jan/2022</span>
+          </h4>
+          <p>Assistant Analyst, Intern Developer</p>
+          <ul>
+            <li>
+              Web development for back-office applications, front-end using Angular, back-end API and services using .NET CORE with AWS Lambda, according to micro-services architecture.
+            </li>
+          </ul>
         </section>
         <section>
-          <h4>Valemobi Consultoria Empresarial S/A - São Paulo, Brazil</h4>
+          <h4 className="job-detail">
+            <span>Valemobi Consultoria Empresarial S/A - São Paulo, Brazil</span>
+            <span>Mar/2020 - Mar/2021</span>
+          </h4>
           <p>Intern Full-Stack Developer</p>
-          <p>Development of software for the stock market, prototyping of interfaces, creation of pages using Angular, web services and maintenance of batch jobs on Kotlin and PostgreSQL, all according to object-oriented programming.</p>
+          <ul>
+            <li>Development of software for the stock market, prototyping of interfaces, creation of pages using Angular, web services and maintenance of batch jobs on Kotlin and PostgreSQL, all according to object-oriented programming.</li>
+          </ul>
         </section>
       </div>
       <div>
@@ -53,7 +77,7 @@ export default function Index() {
       </div>
       <div>
         <h3>Skills</h3>
-        <p>Driven</p>
+        <p>funny and pretty and smart!</p>
       </div>
     </div>
   );
