@@ -37,15 +37,11 @@ export default function App() {
     <div className="wrapper">
       <nav>
         <ul>
-          <li>
-            <NavLink to="/">home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">about</NavLink>
-          </li>
-          <li>
-            <NavLink to="/resume">resume</NavLink>
-          </li>
+          <li><NavLink to="/">home</NavLink></li>
+          <li><NavLink to="/about">about</NavLink></li>
+          <li><NavLink to="/resume">resume</NavLink></li>
+          <li><NavLink to="/blog">blog</NavLink></li>
+          <li><NavLink to="/now">now</NavLink></li>
         </ul>
       </nav>
       <Outlet />
