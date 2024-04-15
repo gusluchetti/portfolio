@@ -5,17 +5,16 @@ export const meta: MetaFunction = () => {
     { title: "luchetti.dev" },
     {
       name: "description",
-      content: "trying cloudflare workers",
+      content: "landing page for the best website ever! luchetti.dev",
     },
   ];
 };
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div>
       <h1>Welcome!</h1>
-      <p>once again...</p>
-      <p>a new beginning</p>
+      <p>i might know what i'm doing!</p>
     </div>
   );
 }
