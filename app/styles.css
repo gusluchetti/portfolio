@@ -57,11 +57,16 @@ ul {
   isolation: isolate;
 }
 
+
 .wrapper {
   padding: 0.5em 1em;
 }
 
-nav ul {
+main {
+  height: 60dvh;
+}
+
+header nav ul {
   padding-inline-start: 0;
   display: flex;
   flex-direction: row;
@@ -70,16 +75,39 @@ nav ul {
   text-decoration: none;
 }
 
-.job-detail {
-  display: flow-root;
+.resume section {
+  padding: 0.25rem 0rem;
 }
 
-.job-detail span:nth-child(1) {
+.resume h3 {
+  margin-top: 0.5rem;
+}
+
+/* resume page */
+.resume__header {
+  text-align: center;
+}
+
+.job__detail {
+  display: flow-root;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.job__detail p span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.job__detail p:nth-child(1) {
   float: left;
 }
 
-.job-detail span:nth-child(2) {
-  font-weight: 400;
+.job__detail p:nth-child(2) {
   font-style: italic;
   float: right;
+}
+
+.job__title {
+  font-style: italic;
 }
