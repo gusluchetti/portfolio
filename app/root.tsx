@@ -35,16 +35,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <div className="wrapper">
-      <nav>
+      <header>
+        <nav>
+          <ul>
+            <li><NavLink to="/">home</NavLink></li>
+            <li><NavLink to="/about">about</NavLink></li>
+            <li><NavLink to="/resume">resume</NavLink></li>
+            <li><NavLink to="/blog">blog</NavLink></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <footer>
         <ul>
-          <li><NavLink to="/">home</NavLink></li>
-          <li><NavLink to="/about">about</NavLink></li>
-          <li><NavLink to="/resume">resume</NavLink></li>
-          <li><NavLink to="/blog">blog</NavLink></li>
           <li><NavLink to="/now">now</NavLink></li>
         </ul>
-      </nav>
-      <Outlet />
+      </footer>
     </div>
   )
 }
