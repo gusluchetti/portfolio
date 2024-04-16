@@ -15,7 +15,7 @@ export default function Index() {
     <div className="resume">
       <div className="resume__header">
         <h2>Gustavo Luís Rodrigues Luchetti</h2>
-        <h4>São Paulo, Brazil | <a href="mailto:gustavo@luchetti.dev">gustavo@luchetti.dev</a> </h4>
+        <h4><a href="mailto:gustavo@luchetti.dev">gustavo@luchetti.dev</a> </h4>
       </div>
       <div>
         <h3>WORK EXPERIENCE</h3>
