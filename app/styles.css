@@ -63,7 +63,8 @@ ul {
 }
 
 main {
-  height: 60dvh;
+  min-height: 50dvh;
+  padding: 1rem 0rem;
 }
 
 header nav ul {
