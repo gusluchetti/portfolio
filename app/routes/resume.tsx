@@ -12,27 +12,29 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
-      <h1>Gustavo Luís Rodrigues Luchetti</h1>
-      <h2>São Paulo, Brazil | gustavo@luchetti.dev | <a href="https://www.linkedin.com/in/gustaluchetti/">linkedin</a></h2>
+    <div className="resume">
+      <div className="resume__header">
+        <h2>Gustavo Luís Rodrigues Luchetti</h2>
+        <h4>São Paulo, Brazil | <a href="mailto:gustavo@luchetti.dev">gustavo@luchetti.dev</a> </h4>
+      </div>
       <div>
-        <h3>Work Experience</h3>
+        <h3>WORK EXPERIENCE</h3>
         <section>
-          <h4 className="job-detail">
-            <span>Nitro Química - São Paulo, Brazil</span>
-            <span>2023 - Present</span>
+          <h4 className="job__detail">
+            <p><span>Nitro Química</span> | 2023 - Present</p>
+            <p>São Paulo, Brazil</p>
           </h4>
-          <p>Junior Data and Digital Business Analyst</p>
+          <p className="job__title">Junior Data and Digital Business Analyst</p>
           <ul>
             <li>Digitalizing internal tooling, elevating day-to-day productivity for our partners out in the field.</li>
           </ul>
         </section>
         <section>
-          <h4 className="job-detail">
-            <span>Source.ag - Amsterdam, Netherlands</span>
-            <span>Aug/2022 - Feb/2023</span>
+          <h4 className="job__detail">
+            <p><span>Source.ag</span> | Aug/2022 - Feb/2023</p>
+            <p>Amsterdam, Netherlands</p>
           </h4>
-          <p>Implementation Analyst</p>
+          <p className="job__title">Implementation Analyst</p>
           <ul>
             <li>
               Integration and onboarding of new clients into the company (Excel, PostgreSQL), working alongside the data platform team, automation and improvement of existing processes (Python w/ Pandas, Web APIs).
@@ -40,11 +42,11 @@ export default function Index() {
           </ul>
         </section>
         <section>
-          <h4 className="job-detail">
-            <span>BTG Pactual Digital - São Paulo, Brazil</span>
-            <span>Jun/2021 - Jan/2022</span>
+          <h4 className="job__detail">
+            <p><span>BTG Pactual Digital</span> | Jun/2021 - Jan/2022</p>
+            <p>São Paulo, Brazil</p>
           </h4>
-          <p>Assistant Analyst, Intern Developer</p>
+          <p className="job__title">Assistant Analyst, Intern Developer</p>
           <ul>
             <li>
               Web development for back-office applications, front-end using Angular, back-end API and services using .NET CORE with AWS Lambda, according to micro-services architecture.
@@ -52,31 +54,35 @@ export default function Index() {
           </ul>
         </section>
         <section>
-          <h4 className="job-detail">
-            <span>Valemobi Consultoria Empresarial S/A - São Paulo, Brazil</span>
-            <span>Mar/2020 - Mar/2021</span>
+          <h4 className="job__detail">
+            <p><span>Valemobi Consultoria Empresarial S/A</span> | Mar/2020 - Mar/2021</p>
+            <p>São Paulo, Brazil</p>
           </h4>
-          <p>Intern Full-Stack Developer</p>
+          <p className="job__title">Intern Full-Stack Developer</p>
           <ul>
             <li>Development of software for the stock market, prototyping of interfaces, creation of pages using Angular, web services and maintenance of batch jobs on Kotlin and PostgreSQL, all according to object-oriented programming.</li>
           </ul>
         </section>
       </div>
       <div>
-        <h3>Education</h3>
+        <h3>EDUCATION</h3>
         <section>
-          <h4>Utrecht University - Utrecht, Netherlands</h4>
-          <p><b>Masters</b> in Artificial Intelligence</p>
-          <p>Graduation Date: Incomplete</p>
+          <h4 className="job__detail">
+            <p><span>Utrecht University</span></p>
+            <p>Utrecht, Netherlands</p>
+          </h4>
+          <p><i>Masters</i>, Artificial Intelligence - Graduation: Incomplete</p>
         </section>
         <section>
-          <h4>Escola Superior de Propaganda e Marketing - São Paulo, Brazil</h4>
-          <p><b>Bachelors</b> in Information Systems</p>
-          <p>Graduation Date: Dec/2021</p>
+          <h4 className="job__detail">
+            <p><span>Escola Superior de Propaganda e Marketing</span></p>
+            <p>São Paulo, Brazil</p>
+          </h4>
+          <p><i>Bachelors</i>, Information Systems - Graduation: Dec/2021</p>
         </section>
       </div>
       <div>
-        <h3>Skills</h3>
+        <h3>SKILLS</h3>
         <p>funny and pretty and smart!</p>
       </div>
     </div>
