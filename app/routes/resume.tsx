@@ -10,7 +10,6 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-// TODO: READ BTG NOTEBOOK!!!
 export default function Index() {
   return (
     <div className="resume">
@@ -27,8 +26,8 @@ export default function Index() {
           </h4>
           <p className="job__title">Junior Data and Digital Business Analyst</p>
           <ul>
-            <li>Upgraded internal spreadsheet tooling (was crucial in a number of sales that amounted to ~R$20MM in 2023) into full-fledged web application, enabling better access control, metrics and easier maintenance.</li>
-            <li>Incremental automation and streamlining of the onboarding process for new sales representatives, decreasing mistakes and increasing visibility of the process company-wide.</li>
+            <li>Upgraded internal spreadsheet tooling (crucial in sales that amounted to ~R$20MM in 2023) into full-fledged web application, enabling better access control, metrics and easier maintenance.</li>
+            <li>Incremental automation and streamlining of the onboarding process for new sales representatives, increasing visibility of the process company-wide.</li>
           </ul>
         </section>
         <section>
@@ -38,7 +37,8 @@ export default function Index() {
           </h4>
           <p className="job__title">Implementation Analyst</p>
           <ul>
-            <li>Integrating onboarding steps into CLI client, decreasing time until farmers were completely onboard.</li>
+            <li>Transformed onboarding steps into internal CLI functions, decreasing errors and time to completion</li>
+            <li>Made possible for non-technical teams of the company to do day-to-day fixes using a web interface (Retool)</li>
           </ul>
         </section>
         <section>
@@ -48,9 +48,8 @@ export default function Index() {
           </h4>
           <p className="job__title">Assistant Analyst, Intern Developer</p>
           <ul>
-            <li>
-              Web development for back-office applications, front-end using Angular, back-end API and services using .NET CORE with AWS Lambda, according to micro-services architecture.
-            </li>
+            <li>Developed new pages and better views for backoffice web application</li>
+            <li>Maintenance of cloud endpoints, updated logging and added new functionalities</li>
           </ul>
         </section>
         <section>
@@ -60,7 +59,8 @@ export default function Index() {
           </h4>
           <p className="job__title">Intern Full-Stack Developer</p>
           <ul>
-            <li>Development of software for the stock market, prototyping of interfaces, creation of pages using Angular, web services and maintenance of batch jobs on Kotlin and PostgreSQL, all according to object-oriented programming.</li>
+            <li>Prototype and created new pages on the backoffice website</li>
+            <li>Maintained recurring batch jobs that dealt with client payments</li>
           </ul>
         </section>
       </div>
@@ -83,7 +83,7 @@ export default function Index() {
       </div>
       <div>
         <h3>SKILLS</h3>
-        <p>3+ years as a full-stack developer, experienced in process automation and data engineering.</p>
+        <p>3+ years as a full-stack developer, most experienced in web development and process automation.</p>
       </div>
     </div>
   );
