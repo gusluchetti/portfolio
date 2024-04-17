@@ -24,7 +24,7 @@ export default function Index() {
             <p><span>Nitro Química</span> | 2023 - Present</p>
             <p>São Paulo, Brazil</p>
           </h4>
-          <p className="job__title">Junior Data and Digital Business Analyst</p>
+          <p className="job__title">Junior Data Analyst</p>
           <ul>
             <li>Upgraded internal spreadsheet tooling (crucial in sales that amounted to ~R$20MM in 2023) into full-fledged web application, enabling better access control, metrics and easier maintenance.</li>
             <li>Incremental automation and streamlining of the onboarding process for new sales representatives, increasing visibility of the process company-wide.</li>
@@ -52,6 +52,7 @@ export default function Index() {
             <li>Maintenance of cloud endpoints, updated logging and added new functionalities</li>
           </ul>
         </section>
+        {/*
         <section>
           <h4 className="job__detail">
             <p><span>Valemobi Consultoria Empresarial S/A</span> | Mar/2020 - Mar/2021</p>
@@ -63,6 +64,7 @@ export default function Index() {
             <li>Maintained recurring batch jobs that dealt with client payments</li>
           </ul>
         </section>
+        */}
       </div>
       <div>
         <h3>EDUCATION</h3>
