@@ -2,6 +2,14 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
+
+:root {
+  --w-900: #fafafa;
+  --w-500: #7c7c7c;
+  --w-300: #3d3d3d;
+  --w-100: #1a1a1a;
+}
+
 *,
 *::before,
 *::after {
@@ -50,8 +58,8 @@ ul {
 html {
   line-height: 1.8;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #1a1a1a;
-  color: #fafafa;
+  background-color: var(--w-100);
+  color: var(--w-900);
 }
 
 body {
@@ -63,12 +71,20 @@ body {
 
 main {
   min-height: 100dvh;
-  width: 66%;
+  width: min(100ch, 100%);
   display: flex;
   flex-direction: column;
-  padding: 0rem 0.5rem;
-  border: 0.5px solid #fafafa;
+  padding: 0rem 2rem;
+  border-right: 0.5px solid var(--w-300);
+  border-left: 0.5px solid var(--w-300);
 }
+
+@media (max-width: 900px) {
+  main {
+    padding: 0rem 0.25rem;
+  }
+}
+
 
 .content {
   height: 100%;
@@ -78,7 +94,7 @@ footer {
   margin-top: auto;
 }
 
-header nav ul {
+nav ul {
   padding-inline-start: 0;
   display: flex;
   flex-direction: row;
@@ -97,12 +113,22 @@ a:hover {
   transition: 0.05s ease-in;
 }
 
+.landing {
+  margin: auto 0;
+}
+
+.landing p {
+  padding: 0.5rem 0rem;
+  font-size: 130%;
+}
+
 .resume section {
   padding: 0.25rem 0rem;
 }
 
 .resume h3 {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
+  border-bottom: 0.5px solid var(--w-300);
 }
 
 .resume__header {
