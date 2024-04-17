@@ -39,9 +39,10 @@ export default function App() {
         <nav>
           <ul>
             <li><NavLink to="/">luchetti.dev</NavLink></li>
-            <li><NavLink to="/about">about</NavLink></li>
-            <li><NavLink to="/resume">resume</NavLink></li>
             <li><NavLink to="/blog">blog</NavLink></li>
+            <li><NavLink to="/about">about</NavLink></li>
+            <li><NavLink to="/resume">cv</NavLink></li>
+            <li><NavLink to="/now">now</NavLink></li>
           </ul>
         </nav>
       </header>
@@ -52,9 +53,8 @@ export default function App() {
         <nav>
           <ul>
             <li>extras:</li>
-            <li><NavLink to="/now">now</NavLink></li>
-            <li><NavLink to="/inspirations">inspirations</NavLink></li>
             <li><a href="https://github.com/gusluchetti">github</a></li>
+            <li><NavLink to="/inspirations"><i>inspirations</i></NavLink></li>
           </ul>
         </nav>
       </footer>
