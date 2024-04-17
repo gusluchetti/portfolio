@@ -51,6 +51,7 @@ export default function App() {
       <footer>
         <ul>
           <li><NavLink to="/now">now</NavLink></li>
+          <li><NavLink to="/inspirations">inspirations</NavLink></li>
         </ul>
       </footer>
     </div>
