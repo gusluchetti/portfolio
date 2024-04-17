@@ -10,6 +10,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+// TODO: READ BTG NOTEBOOK!!!
 export default function Index() {
   return (
     <div className="resume">
@@ -26,7 +27,8 @@ export default function Index() {
           </h4>
           <p className="job__title">Junior Data and Digital Business Analyst</p>
           <ul>
-            <li>Digitalizing internal tooling, elevating day-to-day productivity for our partners out in the field.</li>
+            <li>Upgraded internal spreadsheet tooling (was crucial in a number of sales that amounted to ~R$20MM in 2023) into full-fledged web application, enabling better access control, metrics and easier maintenance.</li>
+            <li>Incremental automation and streamlining of the onboarding process for new sales representatives, decreasing mistakes and increasing visibility of the process company-wide.</li>
           </ul>
         </section>
         <section>
@@ -36,9 +38,7 @@ export default function Index() {
           </h4>
           <p className="job__title">Implementation Analyst</p>
           <ul>
-            <li>
-              Integration and onboarding of new clients into the company (Excel, PostgreSQL), working alongside the data platform team, automation and improvement of existing processes (Python w/ Pandas, Web APIs).
-            </li>
+            <li>Integrating onboarding steps into CLI client, decreasing time until farmers were completely onboard.</li>
           </ul>
         </section>
         <section>
@@ -83,7 +83,7 @@ export default function Index() {
       </div>
       <div>
         <h3>SKILLS</h3>
-        <p>funny and pretty and smart!</p>
+        <p>3+ years as a full-stack developer, experienced in process automation and data engineering.</p>
       </div>
     </div>
   );
