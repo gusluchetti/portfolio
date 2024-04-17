@@ -14,7 +14,7 @@ export default function Index() {
   return (
     <div>
       <h1>about</h1>
-      <p>hi! i'm just a guy</p>
+      <p>i'm 23. that pretty much covers it.</p>
     </div>
   );
 }
