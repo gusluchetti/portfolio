@@ -49,10 +49,14 @@ export default function App() {
         <Outlet />
       </div>
       <footer>
-        <ul>
-          <li><NavLink to="/now">now</NavLink></li>
-          <li><NavLink to="/inspirations">inspirations</NavLink></li>
-        </ul>
+        <nav>
+          <ul>
+            <li>extras:</li>
+            <li><NavLink to="/now">now</NavLink></li>
+            <li><NavLink to="/inspirations">inspirations</NavLink></li>
+            <li><a href="https://github.com/gusluchetti">github</a></li>
+          </ul>
+        </nav>
       </footer>
     </main>
   )
