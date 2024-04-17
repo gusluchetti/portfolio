@@ -12,9 +12,14 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>i might know what i'm doing!</p>
+    <div className="landing">
+      <h1>hi!</h1>
+      <p>glad to have you! this is my blog/portfolio.</p>
+      <p>i like to share things i've learned about over the years, not only as a developer,
+        but as someone that has always wanted to get to the bottom of things.</p>
+      {/*
+      <p>if you'd like to keep up with updates/new blog posts, do signup for the newsletter below:</p>
+      */}
     </div>
   );
 }
