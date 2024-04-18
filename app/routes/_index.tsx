@@ -26,7 +26,7 @@ export default function Index() {
         </p>
       </section>
       <section>
-        23, :)
+        23, terminal fiend, cat owner
       </section>
     </div>
   );
