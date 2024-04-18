@@ -38,11 +38,10 @@ export default function App() {
       <header>
         <nav>
           <ul>
-            <li><NavLink to="/">luchetti.dev</NavLink></li>
+            <li><NavLink to="/">home</NavLink></li>
             <li><NavLink to="/blog">blog</NavLink></li>
-            <li><NavLink to="/about">about</NavLink></li>
-            <li><NavLink to="/resume">cv</NavLink></li>
             <li><NavLink to="/now">now</NavLink></li>
+            <li><NavLink to="/resume">cv</NavLink></li>
           </ul>
         </nav>
       </header>
