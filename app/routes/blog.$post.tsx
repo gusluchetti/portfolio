@@ -31,9 +31,9 @@ function Post({ code, frontmatter }: { code: any, frontmatter: any }) {
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.description}</p>
       </header>
-      <main>
+      <div>
         <Component />
-      </main>
+      </div>
     </>
   )
 }
