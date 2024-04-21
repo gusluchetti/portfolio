@@ -22,7 +22,7 @@ export const loader = async () => {
 export default function Index() {
   const data = useLoaderData<typeof loader>();
   const posts: [string, unknown][] = Object.entries(data);
-  console.log(posts);
+  console.dir(posts);
 
   return (
     <div>
@@ -32,7 +32,7 @@ export default function Index() {
           const [path, data]: [path: string, frontmatter: any] = p;
           const frontmatter = data.frontmatter;
           const link = path.replace('./posts/', '/blog/').replace('.mdx', '');
-          return <li><NavLink to={link}>{frontmatter.title}</NavLink></li>;
+          return <li key={path}><NavLink to={link}>{frontmatter.title}</NavLink></li>;
         })}
       </ul >
     </div>
