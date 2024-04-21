@@ -1,5 +1,7 @@
 import { bundleMDX } from 'mdx-bundler'
 
+import dotfiles from './posts/dotfiles.mdx'
+
 export const getAllPosts = () => {
   const posts = import.meta.glob(
     "./posts/*.mdx",
@@ -8,32 +10,21 @@ export const getAllPosts = () => {
   return posts;
 }
 
-export const getPost = async (path: string) => {
-  const mdxSource = `
----
-title: hello world!
----
+export const getPostContent = async (path: string) => {
+  console.log(`at server get post, path: ${path}`)
 
-# Wahoo
-
-import Demo from './demo'
-
-Here's a **neat** demo:
-
-<Demo />
-`.trim()
-
+  const mdxSource = ``.trim()
   const result = await bundleMDX({
     source: mdxSource,
     files: {
       './demo.tsx': `
-import * as React from 'react'
+        import * as React from 'react'
 
-function Demo() {
-  return <div>Neat demo!</div>
-}
+        function Demo() {
+          return <div>Neat demo!</div>
+        }
 
-export default Demo
+        export default Demo
     `,
     },
   })
