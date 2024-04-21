@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="landing">
-      <section className="hero">
+      <div className="hero">
         <h1>luchetti.dev</h1>
         <p>hi, glad to have you! this is my blog/portfolio.</p>
         <p>i like to share things i've learned about over the years, not only as a developer,
@@ -24,7 +24,7 @@ export default function Index() {
           what i'm up to <NavLink to="/now">nowadays</NavLink> and
           a (hopefully) up-to-date <NavLink to="/resume">copy of my CV</NavLink>.
         </p>
-      </section>
+      </div>
       <section>
         23, terminal fiend, cat owner
       </section>
