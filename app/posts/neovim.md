@@ -1,15 +1,13 @@
-+++
-title = "vscode -> emacs -> neovim"
-description = "or how I swear I played Witcher 3's starting quest at least 6 times"
-date = 2023-12-06
-draft = true
-+++
+---
+title: "vscode -> emacs -> neovim"
+description: "or how I swear I played Witcher 3's starting quest at least 6 times"
+date: 2023-12-06
+draft: true
+---
 
 So I wanted to get back into learning web dev by trying out React
 for a bit. Cool. An hour in, I get mad I can't auto format, and supposedly
 the installed LSP (emmetls) is being weird.
-
-<!-- more -->
 
 Okay, I'll just download a formatting plugin. Oh, there's like 4 options with no 
 discerning qualities, and their README's are lackluster? (mostly on me since

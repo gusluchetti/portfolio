@@ -1,14 +1,12 @@
-+++
-title = "getting over it"
-description = "or how I finally got this website off the ground"
-date = 2023-11-13
-draft = false
-+++
+---
+title: "getting over it"
+description: "or how I finally got this website off the ground"
+date: 2023-11-13
+draft: false
+---
 
 So you're working on a project, and you're almost done! Great work.
 Just need to touch this up, review this piece of code, update this css file, test a new font, etc.
-
-<!-- more -->
 
 Ah, the dreaded [ninety-ninety rule](https://en.wikipedia.org/wiki/Ninety%e2%80%93ninety_rule).
 How can you feel so close to your goal, yet feel like you're days away at the same time?

@@ -1,13 +1,11 @@
-+++
-title = "configuration galore (dotfiles)"
-description = "or why organizing them is still procrastination"
-date = 2023-12-07
-draft = false
-+++
+---
+title: "configuration galore (dotfiles)"
+description: "or why organizing them is still procrastination"
+date: 2023-12-07
+draft: false
+---
 
 I enjoy consistency. When we strive to do our best, the less you have to worry about, the easier it is to focus on the actually challenging part.
-
-<!-- more -->
 
 I've come to love the 'keyboard-centric' way of computing, and I do believe that your computer can become an extension of yourself, in the sense that all relevant actions are almost second nature. In that vein, I'd like to share why you should care about your own dotfiles, and how I manage mine.
 

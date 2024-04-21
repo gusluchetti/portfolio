@@ -1,14 +1,12 @@
-+++
-title = "my journey getting back into web development"
-description = "or ..."
-date = 2023-12-20
-draft = true
-+++
+---
+title: "my journey getting back into web development"
+description: "or ..."
+date: 2023-12-20
+draft: true
+---
 
 It's time to get serious. What is happening with web development? I leave for a bit
 and when I come back there's SSR, RSC, hydration this, runtime that. Oh boy.
-
-<!-- more -->
 
 This probably won't stop being a draft, and if it does, props to me. This is a way
 to document me actually trying to understand all the terms behind web dev, and my
