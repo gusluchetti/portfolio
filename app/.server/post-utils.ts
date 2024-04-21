@@ -1,6 +1,7 @@
 import { bundleMDX } from 'mdx-bundler'
 
-const mdxSource = `
+export const getPost = async () => {
+  const mdxSource = `
 ---
 title: Example Post
 published: 2021-02-13
@@ -16,10 +17,10 @@ Here's a **neat** demo:
 <Demo />
 `.trim()
 
-const result = await bundleMDX({
-  source: mdxSource,
-  files: {
-    './demo.tsx': `
+  const result = await bundleMDX({
+    source: mdxSource,
+    files: {
+      './demo.tsx': `
 import * as React from 'react'
 
 function Demo() {
@@ -28,11 +29,8 @@ function Demo() {
 
 export default Demo
     `,
-  },
-})
+    },
+  })
 
-const { code, frontmatter } = result
-
-export const getPost = () => {
-  return result;
+  const { code, frontmatter } = result
 }
