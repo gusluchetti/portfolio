@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/react";
-import { NavLink } from "@remix-run/react";
+import { NavLink, useLoaderData } from "@remix-run/react";
+
+import { getAllPosts } from "~/.server/post-utils";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,7 +13,16 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+
+export const loader = async () => {
+  const posts = getAllPosts();
+  console.log('server: ', posts);
+  return posts;
+};
+
 export default function Index() {
+  const data = useLoaderData<typeof loader>();
+  console.log('client: ', data);
   return (
     <div>
       <h1>blog posts</h1>
