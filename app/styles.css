@@ -1,0 +1,202 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+  --w-900: #fafafa;
+  --w-500: #7c7c7c;
+  --w-300: #3d3d3d;
+  --w-100: #1a1a1a;
+  --green: #72a036;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  padding-inline-start: 1rem;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--w-100);
+  color: var(--w-900);
+}
+
+body {
+  display: flex;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+}
+
+header {
+  padding: 0.5rem 0rem 0.25rem 0rem;
+}
+
+footer {
+  padding: 0.25rem 0rem 0.5rem 0rem;
+}
+
+main {
+  min-height: 100dvh;
+  width: min(100ch, 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  border-right: 0.5px solid var(--w-300);
+  border-left: 0.5px solid var(--w-300);
+}
+
+@media (max-width: 900px) {
+  main {
+    padding: 0rem 0.25rem;
+  }
+}
+
+
+.content {
+  height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+nav ul {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  gap: 1rem;
+}
+
+header nav ul {
+  justify-content: space-evenly;
+  gap: 0rem;
+}
+
+header nav ul li {
+  flex-basis: 100%;
+  text-align: center;
+  background-color: var(--w-100);
+  border: 0.5px solid var(--w-300);
+}
+
+header nav ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+header nav ul li:hover {
+  filter: invert();
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+li {
+  transition: all 0.1s ease-in;
+}
+
+.landing {
+  margin: auto 0;
+}
+
+.hero {
+  border-bottom: 0.5px solid var(--w-300);
+}
+
+.landing p {
+  padding: 0.5rem 0rem;
+  font-size: 110%;
+}
+
+.landing a {
+  color: var(--green);
+}
+
+.landing a:hover {
+  filter: brightness(80%);
+}
+
+.resume section {
+  padding: 0.25rem 0rem;
+}
+
+.resume h3 {
+  margin-top: 0.25rem;
+  border-bottom: 0.5px solid var(--w-300);
+}
+
+.resume__header {
+  text-align: center;
+}
+
+.job__detail {
+  display: flow-root;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.job__detail p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.job__detail p:nth-child(1) {
+  float: left;
+}
+
+.job__detail p:nth-child(2) {
+  font-style: italic;
+  float: right;
+}
+
+.job__title {
+  font-style: italic;
+}

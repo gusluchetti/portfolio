@@ -1,10 +1,18 @@
 import {
   Links,
   Meta,
+  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import type { LinksFunction } from "@remix-run/cloudflare";
+
+import styles from './styles.css?url'
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,5 +33,30 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <main>
+      <header>
+        <nav>
+          <ul>
+            <li><NavLink to="/">home</NavLink></li>
+            <li><NavLink to="/blog">blog</NavLink></li>
+            <li><NavLink to="/now">now</NavLink></li>
+            <li><NavLink to="/resume">cv</NavLink></li>
+          </ul>
+        </nav>
+      </header>
+      <div className="content">
+        <Outlet />
+      </div>
+      <footer>
+        <nav>
+          <ul>
+            <li>extras:</li>
+            <li><a href="https://github.com/gusluchetti">github</a></li>
+            <li><NavLink to="/inspirations"><i>inspirations</i></NavLink></li>
+          </ul>
+        </nav>
+      </footer>
+    </main>
+  )
 }
