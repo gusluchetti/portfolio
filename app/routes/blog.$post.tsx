@@ -1,4 +1,4 @@
-import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/react";
+import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/node";
 import * as React from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { getPost } from "~/.server/post-utils";
@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 export async function loader({
   request,
 }: LoaderFunctionArgs) {
-  const post = getPost();
+  const post = await getPost();
   return json({ data: post })
 }
 
