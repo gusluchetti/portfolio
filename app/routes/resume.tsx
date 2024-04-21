@@ -73,14 +73,14 @@ export default function Index() {
             <p><span>Utrecht University</span></p>
             <p>Utrecht, Netherlands</p>
           </h4>
-          <p><i>Masters</i>, Artificial Intelligence - Graduation: Incomplete</p>
+          <p><i>Masters</i>, Artificial Intelligence | Feb/2022 - Paused</p>
         </section>
         <section>
           <h4 className="job__detail">
             <p><span>Escola Superior de Propaganda e Marketing</span></p>
             <p>São Paulo, Brazil</p>
           </h4>
-          <p><i>Bachelors</i>, Information Systems - Graduation: Dec/2021</p>
+          <p><i>Bachelors</i>, Information Systems | Graduated Dec/2021</p>
         </section>
       </div>
       <div>
