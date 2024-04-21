@@ -1,5 +1,13 @@
 import { bundleMDX } from 'mdx-bundler'
 
+export const getAllPosts = () => {
+  const posts = import.meta.glob(
+    "../posts/*.mdx",
+    { eager: true }
+  );
+  return posts;
+}
+
 export const getPost = async () => {
   const mdxSource = `
 ---
