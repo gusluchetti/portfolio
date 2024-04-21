@@ -19,9 +19,7 @@ export async function loader() {
 }
 
 export default function Index() {
-  const data = useLoaderData<typeof loader>();
-  const posts: [string, unknown][] = Object.entries(data);
-  console.dir(posts);
+  const posts = useLoaderData<typeof loader>();
 
   return (
     <div>
