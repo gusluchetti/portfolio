@@ -1,33 +1,31 @@
 import { bundleMDX } from 'mdx-bundler'
-
-import dotfiles from './posts/dotfiles.mdx'
+import fs from 'node:fs/promises';
+import path from 'path';
 
 export const getAllPosts = () => {
-  const posts = import.meta.glob(
+  const fileData = import.meta.glob(
     "./posts/*.mdx",
     { eager: true }
   );
+  let posts: [string, unknown][] = Object.entries(fileData);
+  posts = posts.filter((p) => {
+    const [path, data]: [path: string, data: any] = p;
+    return data.frontmatter.draft === false
+  })
   return posts;
 }
 
-export const getPostContent = async (path: string) => {
-  console.log(`at server get post, path: ${path}`)
+export const getPostContent = async (filename: string) => {
+  console.log(`at server get post, path: ${filename}`)
 
-  const mdxSource = ``.trim()
-  const result = await bundleMDX({
-    source: mdxSource,
-    files: {
-      './demo.tsx': `
-        import * as React from 'react'
-
-        function Demo() {
-          return <div>Neat demo!</div>
-        }
-
-        export default Demo
-    `,
-    },
-  })
-
-  return result;
+  const relativePath = path.join(process.cwd(), `app/.server/posts/${filename}.mdx`);
+  try {
+    const fileContent = await fs.readFile(relativePath, { encoding: 'utf8' });
+    const bundleResult = await bundleMDX({
+      source: fileContent
+    })
+    return bundleResult;
+  } catch (err) {
+    console.error(err);
+  }
 }
