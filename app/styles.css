@@ -8,7 +8,7 @@
   --w-500: #7c7c7c;
   --w-300: #3d3d3d;
   --w-100: #1a1a1a;
-  --green: #8dc159;
+  --green: #72a036;
 }
 
 *,
@@ -106,9 +106,31 @@ nav ul {
   padding-inline-start: 0;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
   list-style: none;
   text-decoration: none;
+  gap: 1rem;
+}
+
+header nav ul {
+  justify-content: space-evenly;
+  gap: 0rem;
+}
+
+header nav ul li {
+  flex-basis: 100%;
+  text-align: center;
+  background-color: var(--w-100);
+  border: 0.5px solid var(--w-300);
+}
+
+header nav ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+header nav ul li:hover {
+  filter: invert();
 }
 
 a {
@@ -116,14 +138,13 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  transition: 0.05s ease-in;
-  text-decoration: underline;
+a,
+li {
+  transition: all 0.1s ease-in;
 }
 
 .landing {
   margin: auto 0;
-  font-size: 110%;
 }
 
 .hero {
@@ -132,10 +153,15 @@ a:hover {
 
 .landing p {
   padding: 0.5rem 0rem;
+  font-size: 110%;
 }
 
 .landing a {
   color: var(--green);
+}
+
+.landing a:hover {
+  filter: brightness(80%);
 }
 
 .resume section {
