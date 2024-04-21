@@ -32,5 +32,5 @@ export default Demo
     },
   })
 
-  const { code, frontmatter } = result
+  return result;
 }
