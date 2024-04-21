@@ -1,8 +1,8 @@
 import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/node";
-import * as React from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { getPost } from "~/.server/post-utils";
 import { useLoaderData } from "@remix-run/react";
+import * as React from 'react';
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,10 +14,9 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export async function loader({
-  request,
-}: LoaderFunctionArgs) {
-  const post = await getPost();
+export async function loader({ params, }: LoaderFunctionArgs) {
+  console.log(params);
+  const post = await getPost('test');
   return json({ data: post })
 }
 
@@ -39,11 +38,10 @@ function Post({ code, frontmatter }: { code: any, frontmatter: any }) {
 }
 
 export default function Index() {
-  const loaded = useLoaderData<typeof loader>();
-  const post = loaded.data;
+  const { data } = useLoaderData<typeof loader>();
   return (
     <div>
-      <Post code={post.code} frontmatter={post.frontmatter} />
+      <Post code={data.code} frontmatter={data.frontmatter} />
     </div>
   );
 }
