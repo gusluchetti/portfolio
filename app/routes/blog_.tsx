@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
+import { NavLink } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,14 +11,12 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-// TODO: BLOG POSTS!
 export default function Index() {
   return (
     <div>
       <h1>blog posts</h1>
       <ul>
-        <li>post 1</li>
-        <li>post 2</li>
+        <li><NavLink to="/blog/test">test blog post</NavLink></li>
       </ul>
     </div>
   );
