@@ -1,4 +1,4 @@
-import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/cloudflare";
+import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/react";
 import * as React from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { getPost } from "~/.server/post-utils";

@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+import type { MetaFunction } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,7 +10,6 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-// TODO: BLOG POSTS!
 export default function Index() {
   return (
     <div>
