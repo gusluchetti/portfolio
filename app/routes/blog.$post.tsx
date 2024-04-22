@@ -22,10 +22,9 @@ export default function Index() {
     const PostContent = useMemo(() => getMDXComponent(data?.code), [data.code])
     return (
       <>
-        <NavLink to='..'>&lt;- back</NavLink>
         <div className="blog__post">
           <h2>{data.frontmatter.title}</h2>
-          <h4>{data.frontmatter.description}</h4>
+          <h4 className="blog__subtitle">{data.frontmatter.description}</h4>
           <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
             <PostContent />
           </div>
