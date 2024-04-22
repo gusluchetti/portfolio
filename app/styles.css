@@ -273,6 +273,15 @@ label[for=email] {
   margin-left: 0.25rem;
 }
 
+.inspirations ul {
+  padding: 1rem 0rem;
+}
+
+.inspirations ul li {
+  list-style: inside;
+  list-style-type: '- ';
+}
+
 /* media queries */
 @media screen and (max-width: 700px) {
   main {
