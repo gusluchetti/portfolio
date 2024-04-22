@@ -140,7 +140,6 @@ li {
   margin-bottom: 0.5rem;
 }
 
-.landing>div,
 .landing>section {
   padding: 0.5rem 0rem;
 }
@@ -168,7 +167,7 @@ li {
 }
 
 .resume section {
-  padding: 0.25rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .resume h3 {
@@ -204,15 +203,27 @@ li {
   font-style: italic;
 }
 
-.blog__index ul li span {
-  transition: all 0.4s ease;
-  display: none;
-  visibility: hidden;
+.blog__index ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.blog__index ul li:hover span {
-  display: inline;
-  visibility: visible;
+.blog__index ul li {
+  width: fit-content;
+  list-style: inside;
+  list-style-type: "- ";
+}
+
+.blog__index ul li:hover {
+  font-weight: bold;
+  list-style-type: "> ";
+}
+
+.blog__index p {
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 0.5px solid var(--w-300);
 }
 
 .blog__post {
@@ -232,20 +243,20 @@ li {
 .now__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
   margin-top: 1.5rem;
-  gap: 0.5rem;
-}
-
-.now__grid section {
-  padding: 0.25rem 1rem;
 }
 
 .now__grid section:not(:last-child) {
   border-right: 0.5px solid var(--w-300);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   main {
     padding: 0rem 0.75rem;
+  }
+
+  .now__grid {
+    grid-template-columns: 1fr;
   }
 }
