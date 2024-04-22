@@ -3,9 +3,9 @@ my phone width: 380px
 
 new website! new technologies!
 
-hosting: fly.io
-domain: cloudflare
-frontend: react and plain css
-backend: node
+hosting: fly.io 
+domain: cloudflare 
+frontend: react and plain css 
+backend: node 
 some cool things hapenning with mdx so that my blog posts are effectively markdown
 files. still have to figure out if they're being bundled properly.
