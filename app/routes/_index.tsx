@@ -29,22 +29,22 @@ export default function Index() {
         <h3>some tidbits:</h3>
         23, keyboard-centered, cat owner, CS:GO (and now CS2) fan, rarely bouldering
       </section>
-      <div>
+      <section>
         <form
           action="https://buttondown.email/api/emails/embed-subscribe/gusluchetti"
           method="post"
           target="popupwindow"
           className="embeddable-buttondown-form">
-          <label htmlFor="email">newsletter: </label>
+          <label htmlFor="email">newsletter:</label>
           <input
             type="email"
             name="email"
             placeholder="you@example.com"
           />
           <input type="hidden" value="1" name="embed" />
-          <input type="submit" value="Subscribe" />
+          <input className="newsletter__btn" type="submit" value="Subscribe" />
         </form>
-      </div>
+      </section>
     </div>
   );
 }
