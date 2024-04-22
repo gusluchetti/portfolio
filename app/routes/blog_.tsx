@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/react";
-import { NavLink, json, useLoaderData } from "@remix-run/react";
+import { Link, NavLink, json, useLoaderData } from "@remix-run/react";
 
 import { getAllPosts } from "~/.server/post-utils";
 
@@ -27,11 +27,13 @@ export default function Index() {
       <ul>
         {posts.map(p => {
           const [path, post]: [path: string, post: any] = p;
-          const link = path.replace('./posts/', '/blog/').replace('.mdx', '');
+          const link: string = path.replace('./posts/', '/blog/').replace('.mdx', '');
           return (
-            <li key={path}><NavLink to={link}>
-              {post.frontmatter.title}
-            </NavLink></li>
+            <li key={path}>
+              <Link to={link} prefetch="intent">
+                {post.frontmatter.title}
+              </Link>
+            </li>
           );
         })}
       </ul >
