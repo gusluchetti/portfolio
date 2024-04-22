@@ -140,7 +140,8 @@ a {
 
 a,
 li {
-  transition: all 0.1s ease-in;
+  transition: 0.2s ease-out;
+  transition-property: filter;
 }
 
 .landing {
