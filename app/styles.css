@@ -19,6 +19,12 @@
 
 * {
   margin: 0;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+li {
+  list-style: none;
 }
 
 img,
@@ -47,20 +53,16 @@ h6 {
   overflow-wrap: break-word;
 }
 
-ul {
-  padding-inline-start: 1rem;
-}
-
 #root,
 #__next {
   isolation: isolate;
 }
 
 html {
-  line-height: 1.6;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Writer', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--w-100);
   color: var(--w-900);
+  line-height: 1.6;
 }
 
 body {
@@ -69,33 +71,19 @@ body {
   justify-content: center;
 }
 
-header {
-  padding: 0.5rem 0rem 0.25rem 0rem;
-}
-
-footer {
-  padding: 0.25rem 0rem 0.5rem 0rem;
-}
-
 main {
   min-height: 100dvh;
-  width: min(100ch, 100%);
+  width: min(95ch, 100%);
   display: flex;
   flex-direction: column;
-  padding: 0rem 2rem;
+  padding: 0.5rem 1.5rem;
   border-right: 0.5px solid var(--w-300);
   border-left: 0.5px solid var(--w-300);
 }
 
-@media (max-width: 900px) {
-  main {
-    padding: 0rem 0.25rem;
-  }
-}
-
-
 .content {
   height: 100%;
+  padding: 0.5rem 0rem;
 }
 
 footer {
@@ -125,8 +113,12 @@ header nav ul li {
 
 header nav ul li a {
   display: inline-block;
+  padding-top: 0.18rem;
   width: 100%;
-  height: 100%;
+}
+
+ul li a {
+  color: inherit;
 }
 
 header nav ul li:hover {
@@ -134,38 +126,52 @@ header nav ul li:hover {
 }
 
 a {
-  color: inherit;
+  color: var(--green);
   text-decoration: none;
 }
 
 a,
 li {
-  transition: all 0.1s ease-in;
+  transition: 0.2s ease-out;
+  transition-property: filter;
 }
 
 .landing {
   margin: auto 0;
 }
 
-.hero {
-  border-bottom: 0.5px solid var(--w-300);
+.landing .hero p {
+  margin-bottom: 0.5rem;
 }
 
-.landing p {
+.landing>section {
   padding: 0.5rem 0rem;
-  font-size: 110%;
-}
-
-.landing a {
-  color: var(--green);
 }
 
 .landing a:hover {
   filter: brightness(80%);
 }
 
+.landing__tidbits {
+  border-top: 0.5px solid var(--w-300);
+  border-bottom: 0.5px solid var(--w-300);
+}
+
+.resume {
+  font-size: 85%;
+}
+
+.resume a {
+  color: inherit;
+}
+
+.resume ul li {
+  list-style: inside;
+  list-style-type: square;
+}
+
 .resume section {
-  padding: 0.25rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .resume h3 {
@@ -185,7 +191,7 @@ li {
 
 .job__detail p span {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .job__detail p:nth-child(1) {
@@ -199,4 +205,90 @@ li {
 
 .job__title {
   font-style: italic;
+}
+
+.blog__index ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blog__index ul li {
+  width: fit-content;
+  list-style: inside;
+  list-style-type: "- ";
+}
+
+.blog__index ul li:hover {
+  font-weight: bold;
+  list-style-type: "> ";
+}
+
+.blog__index p {
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 0.5px solid var(--w-300);
+}
+
+.blog__post {
+  font-size: 90%;
+  line-height: 1.6;
+}
+
+.blog__post p {
+  margin-bottom: 1rem;
+}
+
+.blog__subtitle {
+  font-weight: 400;
+  color: var(--w-500);
+}
+
+.now__title {
+  padding: 1rem 0rem;
+}
+
+.now__grid {
+  display: none;
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin-top: 1.5rem;
+}
+
+.now__grid section:not(:last-child) {
+  border-right: 0.5px solid var(--w-300);
+}
+
+label[for=email] {
+  margin-right: 0.25rem;
+}
+
+.newsletter__btn {
+  border: 0.5px solid var(--w-900);
+  background-color: var(--w-100);
+  color: var(--w-900);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.125rem;
+  margin-left: 0.25rem;
+}
+
+.inspirations ul {
+  padding: 1rem 0rem;
+}
+
+.inspirations ul li {
+  list-style: inside;
+  list-style-type: '- ';
+}
+
+/* media queries */
+@media screen and (max-width: 700px) {
+  main {
+    padding: 0rem 0.75rem;
+  }
+
+  .now__grid {
+    grid-template-columns: 1fr;
+  }
 }
