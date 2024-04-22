@@ -11,18 +11,22 @@ import type { LinksFunction } from "@remix-run/node";
 import styles from './styles.css?url'
 import fonts from './fonts.css?url'
 
+import writerItalic from '/assets/fonts/Writer-Italic.woff2?url'
+import writerRegular from '/assets/fonts/Writer-Regular.woff2?url'
+import writerBold from '/assets/fonts/Writer-Bold.woff2?url'
+
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: fonts },
   {
-    rel: "preload", href: 'assets/fonts/Writer-Italic.woff2',
+    rel: "preload", href: writerItalic,
     as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
   },
   {
-    rel: "preload", href: 'assets/fonts/Writer-Regular.woff2',
+    rel: "preload", href: writerRegular,
     as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
   },
   {
-    rel: "preload", href: 'assets/fonts/Writer-Bold.woff2',
+    rel: "preload", href: writerBold,
     as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
   },
   { rel: "stylesheet", href: styles },
