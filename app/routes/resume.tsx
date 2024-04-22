@@ -26,7 +26,7 @@ export default function Index() {
           </h4>
           <p className="job__title">Junior Data Analyst</p>
           <ul>
-            <li>Upgraded internal spreadsheet tooling (crucial in sales that amounted to ~R$20MM in 2023) into full-fledged web application, enabling better access control, metrics and easier maintenance.</li>
+            <li>Upgraded internal spreadsheet tooling (crucial in sales that amounted to <b>~R$20MM</b> in 2023) into full-fledged web application, enabling better access control, metrics and easier maintenance.</li>
             <li>Incremental automation and streamlining of the onboarding process for new sales representatives, increasing visibility of the process company-wide.</li>
           </ul>
         </section>
@@ -38,7 +38,7 @@ export default function Index() {
           <p className="job__title">Implementation Analyst</p>
           <ul>
             <li>Transformed onboarding steps into internal CLI functions, decreasing errors and time to completion</li>
-            <li>Made possible for non-technical teams of the company to do day-to-day fixes using a web interface (Retool)</li>
+            <li>Made possible for non-technical teams of the company to do day-to-day database-related fixes through a web interface (Retool)</li>
           </ul>
         </section>
         <section>

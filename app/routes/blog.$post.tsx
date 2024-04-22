@@ -1,5 +1,5 @@
 import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/node";
-import { NavLink, useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
 import { useMemo } from "react";
 
 import { getMDXComponent } from 'mdx-bundler/client'

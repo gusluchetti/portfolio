@@ -26,6 +26,7 @@ export default function Index() {
         </p>
       </div>
       <section>
+        <h3>tidbits about me:</h3>
         23, keyboard-centered, always in the terminal, cat owner
       </section>
     </div>

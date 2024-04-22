@@ -23,7 +23,6 @@
   padding-inline: 0;
 }
 
-ul,
 li {
   list-style: none;
 }
@@ -161,8 +160,16 @@ li {
   filter: brightness(80%);
 }
 
+.landing section {
+  padding: 0.5rem 0rem;
+}
+
 .resume {
   font-size: 85%;
+}
+
+.resume ul li {
+  list-style: inside;
 }
 
 .resume section {
@@ -231,6 +238,11 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.now__grid section {
+  padding: 0.25rem 1rem;
 }
 
 .now__grid section:not(:last-child) {
