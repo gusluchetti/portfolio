@@ -12,9 +12,6 @@ import styles from './styles.css?url'
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
-  { rel: "stylesheet", href: 'https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet' },
-  { rel: "preconnect", href: 'https://fonts.googleapis.com' },
-  { rel: "preconnect", href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
