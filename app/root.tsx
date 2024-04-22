@@ -11,6 +11,10 @@ import type { LinksFunction } from "@remix-run/node";
 import styles from './styles.css?url'
 
 export const links: LinksFunction = () => [
+  {
+    rel: "preload", href: './assets/Writer-Bold.woff2',
+    as: 'font', type: 'font/woff2', crossOrigin: 'use-credentials'
+  },
   { rel: "stylesheet", href: styles },
 ];
 
