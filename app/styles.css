@@ -19,6 +19,13 @@
 
 * {
   margin: 0;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 img,
@@ -45,10 +52,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-ul {
-  padding-inline-start: 1rem;
 }
 
 #root,
@@ -96,6 +99,7 @@ main {
 
 .content {
   height: 100%;
+  padding: 0.5rem 0rem;
 }
 
 footer {
@@ -200,4 +204,12 @@ li {
 
 .job__title {
   font-style: italic;
+}
+
+.blog__index ul li::before {
+  content: '  ';
+}
+
+.blog__index ul li:hover::before {
+  content: '> ';
 }

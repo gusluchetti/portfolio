@@ -22,7 +22,7 @@ export default function Index() {
   const posts = useLoaderData<typeof loader>();
 
   return (
-    <div>
+    <div className="blog__index">
       <h1>blog posts</h1>
       <ul>
         {posts.map(p => {
