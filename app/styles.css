@@ -216,3 +216,13 @@ li {
   display: inline;
   visibility: visible;
 }
+
+.now__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
+}
+
+.now__grid section:not(:last-child) {
+  border-right: 0.5px solid var(--w-300);
+}

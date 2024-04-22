@@ -14,7 +14,21 @@ export default function Index() {
   return (
     <div>
       <h1>now</h1>
-      <p>these are the fun things i've been doing!</p>
+      <p>
+        so, i spent quite a bit of time reworking the website. i don't think the time spent was worth it, but i'm just glad
+        that i managed to finally finish it.
+      </p>
+      <div className="now__grid">
+        <section>
+          <h2>books</h2>
+        </section>
+        <section>
+          <h2>media</h2>
+        </section>
+        <section>
+          <h2>others?</h2>
+        </section>
+      </div>
     </div>
   );
 }
