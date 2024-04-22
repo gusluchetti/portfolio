@@ -9,11 +9,17 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import styles from './styles.css?url'
+import fonts from './fonts.css?url'
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: fonts },
   {
-    rel: "preload", href: './assets/Writer-Bold.woff2',
-    as: 'font', type: 'font/woff2', crossOrigin: 'use-credentials'
+    rel: "preload", href: 'assets/fonts/Writer-Regular.woff2',
+    as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
+  },
+  {
+    rel: "preload", href: 'assets/fonts/Writer-Bold.woff2',
+    as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
   },
   { rel: "stylesheet", href: styles },
 ];
