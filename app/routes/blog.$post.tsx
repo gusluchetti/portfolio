@@ -21,21 +21,17 @@ export default function Index() {
   if (data) {
     const PostContent = useMemo(() => getMDXComponent(data?.code), [data.code])
     return (
-      <div>
+      <>
         <NavLink to='..'>&lt;- back</NavLink>
-        <h2>{data.frontmatter.title}</h2>
-        <h4>{data.frontmatter.description}</h4>
-
-        <br />
-        <div>
-          <PostContent />
+        <div className="blog__post">
+          <h2>{data.frontmatter.title}</h2>
+          <h4>{data.frontmatter.description}</h4>
+          <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+            <PostContent />
+          </div>
+          <p>posted {data.frontmatter.date}</p>
         </div>
-        <br />
-
-        <p>
-          posted <strong>{data.frontmatter.date}</strong>
-        </p>
-      </div>
+      </>
     );
   }
 }
