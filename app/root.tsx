@@ -14,6 +14,10 @@ import fonts from './fonts.css?url'
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: fonts },
   {
+    rel: "preload", href: 'assets/fonts/Writer-Italic.woff2',
+    as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
+  },
+  {
     rel: "preload", href: 'assets/fonts/Writer-Regular.woff2',
     as: 'font', type: 'font/woff2', crossOrigin: 'anonymous'
   },
@@ -63,7 +67,8 @@ export default function App() {
           <ul>
             <li>extras:</li>
             <li><a href="https://github.com/gusluchetti">github</a></li>
-            <li><NavLink to="/inspirations"><i>inspirations</i></NavLink></li>
+            <li>|</li>
+            <li><NavLink to="/inspirations">inspirations</NavLink></li>
           </ul>
         </nav>
       </footer>
