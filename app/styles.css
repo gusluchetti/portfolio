@@ -71,20 +71,12 @@ body {
   justify-content: center;
 }
 
-header {
-  padding: 0.5rem 0rem 0.25rem 0rem;
-}
-
-footer {
-  padding: 0.25rem 0rem 0.5rem 0rem;
-}
-
 main {
   min-height: 100dvh;
   width: min(95ch, 100%);
   display: flex;
   flex-direction: column;
-  padding: 0rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-right: 0.5px solid var(--w-300);
   border-left: 0.5px solid var(--w-300);
 }
@@ -230,6 +222,7 @@ li {
 
 .blog__post p {
   margin-bottom: 1rem;
+  font-size: 90%;
 }
 
 .blog__subtitle {
@@ -253,7 +246,7 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 125%;
+  main {
+    padding: 0rem 0.75rem;
   }
 }
