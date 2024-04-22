@@ -161,6 +161,10 @@ li {
   font-size: 85%;
 }
 
+.resume a {
+  color: inherit;
+}
+
 .resume ul li {
   list-style: inside;
   list-style-type: square;
@@ -256,6 +260,20 @@ li {
   border-right: 0.5px solid var(--w-300);
 }
 
+label[for=email] {
+  margin-right: 0.25rem;
+}
+
+.newsletter__btn {
+  border: 0.5px solid var(--w-900);
+  background-color: var(--w-100);
+  color: var(--w-900);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.125rem;
+  margin-left: 0.25rem;
+}
+
+/* media queries */
 @media screen and (max-width: 700px) {
   main {
     padding: 0rem 0.75rem;
