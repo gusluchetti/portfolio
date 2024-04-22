@@ -25,10 +25,26 @@ export default function Index() {
           a (hopefully) up-to-date <NavLink to="/resume">copy of my CV</NavLink>.
         </p>
       </div>
-      <section>
+      <div className="landing__tidbits">
         <h3>tidbits about me:</h3>
         23, keyboard-centered, always in the terminal, cat owner
-      </section>
+      </div>
+      <div>
+        <form
+          action="https://buttondown.email/api/emails/embed-subscribe/gusluchetti"
+          method="post"
+          target="popupwindow"
+          className="embeddable-buttondown-form">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+          />
+          <input type="hidden" value="1" name="embed" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
     </div>
   );
 }
