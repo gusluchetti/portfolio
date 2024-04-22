@@ -216,13 +216,12 @@ li {
 }
 
 .blog__post {
-  font-size: 16px;
+  font-size: 90%;
   line-height: 1.6;
 }
 
 .blog__post p {
   margin-bottom: 1rem;
-  font-size: 90%;
 }
 
 .blog__subtitle {
