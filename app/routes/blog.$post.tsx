@@ -20,6 +20,7 @@ export default function Index() {
   const data = useLoaderData<typeof loader>();
   if (data) {
     const PostContent = useMemo(() => getMDXComponent(data?.code), [data.code])
+    const formattedDate = new Date(data.frontmatter.date).toLocaleDateString();
     return (
       <>
         <div className="blog__post">
@@ -28,7 +29,7 @@ export default function Index() {
           <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
             <PostContent />
           </div>
-          <p>posted {data.frontmatter.date}</p>
+          <p>posted {formattedDate}</p>
         </div>
       </>
     );

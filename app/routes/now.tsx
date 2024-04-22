@@ -20,13 +20,13 @@ export default function Index() {
       </p>
       <div className="now__grid">
         <section>
-          <h2>books</h2>
+          <h3>books</h3>
         </section>
         <section>
-          <h2>media</h2>
+          <h3>media</h3>
         </section>
         <section>
-          <h2>others?</h2>
+          <h3>others?</h3>
         </section>
       </div>
     </div>

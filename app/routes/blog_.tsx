@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/react";
-import { Link, NavLink, json, useLoaderData } from "@remix-run/react";
+import { Link, json, useLoaderData } from "@remix-run/react";
 
 import { getAllPosts } from "~/.server/post-utils";
 
@@ -24,14 +24,15 @@ export default function Index() {
   return (
     <div className="blog__index">
       <h1>blog posts</h1>
+      <p>this is where you'll find all my blog posts.</p>
       <ul>
         {posts.map(p => {
           const [path, post]: [path: string, post: any] = p;
           const link: string = path.replace('./posts/', '/blog/').replace('.mdx', '');
+          const isDraft = post.frontmatter.draft as boolean;
           return (
-            <li key={path}>
+            <li key={path} style={{ color: isDraft ? 'var(--w-500)' : "inherit" }}>
               <Link to={link} prefetch="intent">
-                <span>&gt; </span>
                 {post.frontmatter.title}
               </Link>
             </li>
