@@ -29,7 +29,7 @@ export default function Index() {
           <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
             <PostContent />
           </div>
-          <p>posted {formattedDate}</p>
+          <p className="blog__subtitle">posted <i>{formattedDate}</i></p>
         </div>
       </>
     );
