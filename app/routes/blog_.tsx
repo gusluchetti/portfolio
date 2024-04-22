@@ -31,6 +31,7 @@ export default function Index() {
           return (
             <li key={path}>
               <Link to={link} prefetch="intent">
+                <span>&gt; </span>
                 {post.frontmatter.title}
               </Link>
             </li>

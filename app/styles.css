@@ -206,10 +206,13 @@ li {
   font-style: italic;
 }
 
-.blog__index ul li::before {
-  content: '  ';
+.blog__index ul li span {
+  transition: all 0.4s ease;
+  display: none;
+  visibility: hidden;
 }
 
-.blog__index ul li:hover::before {
-  content: '> ';
+.blog__index ul li:hover span {
+  display: inline;
+  visibility: visible;
 }
