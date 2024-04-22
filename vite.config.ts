@@ -14,20 +14,12 @@ installGlobals();
 
 export default defineConfig({
   plugins: [
-    mdx({
-      remarkPlugins: [
-        remarkFrontmatter,
-        remarkMdxFrontmatter,
-      ]
-    }),
-    remix(),
-    tsconfigPaths(),
     Unfonts({
       custom: {
         families: [{
           name: 'Writer',
           local: 'Writer',
-          src: './public/assets/fonts/*.woff2',
+          src: './assets/fonts/*.ttf',
         }],
         display: 'auto',
         preload: true,
@@ -40,6 +32,12 @@ export default defineConfig({
         injectTo: 'head-prepend',
       },
     }),
-
-  ],
+    mdx({
+      remarkPlugins: [
+        remarkFrontmatter,
+        remarkMdxFrontmatter,
+      ]
+    }),
+    remix(),
+    tsconfigPaths()],
 });
