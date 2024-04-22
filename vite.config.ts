@@ -8,30 +8,10 @@ import mdx from '@mdx-js/rollup';
 import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 
-import Unfonts from 'unplugin-fonts/vite';
-
 installGlobals();
 
 export default defineConfig({
   plugins: [
-    Unfonts({
-      custom: {
-        families: [{
-          name: 'Writer',
-          local: 'Writer',
-          src: './assets/fonts/*.ttf',
-        }],
-        display: 'auto',
-        preload: true,
-        prefetch: false,
-        /**
-         * define where the font load tags should be inserted
-         * default: 'head-prepend'
-         *   values: 'head' | 'body' | 'head-prepend' | 'body-prepend'
-         */
-        injectTo: 'head-prepend',
-      },
-    }),
     mdx({
       remarkPlugins: [
         remarkFrontmatter,
@@ -39,5 +19,6 @@ export default defineConfig({
       ]
     }),
     remix(),
-    tsconfigPaths()],
+    tsconfigPaths(),
+  ],
 });

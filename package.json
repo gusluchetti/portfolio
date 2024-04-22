@@ -37,7 +37,6 @@
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^4.0.0",
     "typescript": "^5.1.6",
-    "unplugin-fonts": "^1.1.1",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^4.2.1"
   },
