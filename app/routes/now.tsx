@@ -26,7 +26,7 @@ export default function Index() {
         although i'm not super happy with having spent 20+ hours on this project (again), i'm very happy with the initial results,
         and i'm glad that i got acquainted with the 'latest' ways of developing and hosting a website.
         there's more info on the technical details of the overhaul on the <a href="https://github.com/gusluchetti/portfolio">repo's</a> README.
-        might even write something up later. for now, i'd rather close this page and work on something new.
+        might even write something up later. for now, i'd rather close this chapter and work on something new.
       </p>
       <br />
       <p>
