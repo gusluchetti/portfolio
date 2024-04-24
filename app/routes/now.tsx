@@ -13,11 +13,11 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <section className="now__title">
+      <div className="now__title">
         <h1>nowadays</h1>
         <h4 className="blog__subtitle">last_update: 2024-04-22 | <a style={{ opacity: '40%' }} href="https://sive.rs/nowff">what's a now page?</a>
         </h4>
-      </section>
+      </div>
       <p>
         so, the keen-eyed among you might notice the website's looking a bit different.
         no surprise that i managed to go down the web dev rabbit hole, and pretty much remade the website.
