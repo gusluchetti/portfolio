@@ -21,7 +21,7 @@ export default function Index() {
         <h3>WORK EXPERIENCE</h3>
         <section>
           <h4 className="job__detail">
-            <p><span>Nitro Química</span> | 2023 - Present</p>
+            <p><span>Nitro Química</span> | Jul/2023 - Present</p>
             <p>São Paulo, Brazil</p>
           </h4>
           <p className="job__title">Junior Data Analyst</p>
@@ -73,7 +73,7 @@ export default function Index() {
             <p><span>Utrecht University</span></p>
             <p>Utrecht, Netherlands</p>
           </h4>
-          <p><i>Masters</i>, Artificial Intelligence | Feb/2022 - Paused</p>
+          <p><i>Masters</i>, Artificial Intelligence | Feb/2022 - Incomplete</p>
         </section>
         <section>
           <h4 className="job__detail">
