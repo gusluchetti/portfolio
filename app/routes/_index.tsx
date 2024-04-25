@@ -27,7 +27,7 @@ export default function Index() {
       </div>
       <section className="landing__tidbits">
         <h3>some tidbits:</h3>
-        23, keyboard-centered, cat owner, CS:GO (and now CS2) fan, rarely bouldering
+        23, keyboard-centered, cat owner, CS:GO (and now CS2) fan, pilates sometimes, rarely bouldering
       </section>
       <section>
         <form
