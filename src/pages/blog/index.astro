@@ -5,16 +5,21 @@ const allEntries = await getCollection("blog");
 ---
 
 <MainLayout title="blog collection">
-  <p>this is the blog page</p>
-  <ul>
-    {
-      allEntries.map((post: any) => {
-        return (
-          <li>
-            <a href={`/blog/${post.slug}`}>{post.data.title}</a>
-          </li>
-        );
-      })
-    }
-  </ul>
+  <div class="blog__index">
+    <h1>blog posts</h1>
+    <p>this is where you'll find all my blog posts.</p>
+    <ul>
+      {
+        allEntries.map((post: any) => {
+          return (
+            <li>
+              <a href={`/blog/${post.slug}`} data-astro-prefetch>
+                {post.data.title}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
 </MainLayout>

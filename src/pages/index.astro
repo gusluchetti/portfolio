@@ -1,7 +1,42 @@
 ---
- import MainLayout from '../layouts/main-layout.astro'
+import MainLayout from "../layouts/main-layout.astro";
 ---
 
-<MainLayout title="homepage">
-  <p>this is the index</p>
+<MainLayout title="luchetti.dev">
+  <div class="landing">
+    <div class="hero">
+      <h1>luchetti.dev</h1>
+      <p>hi, glad to have you! this is my blog/portfolio.</p>
+      <p>
+        i like to share things i've learned about over the years, not only as a
+        developer, but as someone that has always wanted to get to the bottom of
+        things.
+      </p>
+      <p>
+        here you'll find my <a href="/blog">ramblings</a>, what i'm up to <a
+          href="/now">nowadays</a
+        > and a (hopefully) up-to-date <a href="/resume">copy of my CV</a>.
+      </p>
+    </div>
+    <section class="landing__tidbits">
+      <h3>some tidbits:</h3>
+      <p>
+        23, keyboard-centered, cat owner, CS:GO (and now CS2) fan, pilates
+        sometimes, rarely bouldering
+      </p>
+    </section>
+    <section>
+      <form
+        action="https://buttondown.email/api/emails/embed-subscribe/gusluchetti"
+        method="post"
+        target="popupwindow"
+        class="embeddable-buttondown-form"
+      >
+        <label for="email">newsletter:</label>
+        <input type="email" name="email" placeholder="you@example.com" />
+        <input type="hidden" value="1" name="embed" />
+        <input class="newsletter__btn" type="submit" value="Subscribe" />
+      </form>
+    </section>
+  </div>
 </MainLayout>
