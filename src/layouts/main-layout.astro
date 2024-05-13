@@ -1,0 +1,50 @@
+---
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+---
+
+<html lang="en" transition:animate="none">
+  <head>
+    <ViewTransitions />
+
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">home</a>
+            <a href="/blog/">blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>{title}</h1>
+    <main transition:animate="slide">
+      <slot />
+    </main>
+
+    <footer></footer>
+    <style>
+      * {
+        margin: 0 auto;
+      }
+
+      header {
+        background-color: #d0d0d0;
+        height: 10dvh;
+      }
+
+      footer {
+        background-color: #d0d0d0;
+        height: max-content;
+      }
+    </style>
+  </body>
+</html>
