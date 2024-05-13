@@ -1,0 +1,272 @@
+/* Josh's Custom CSS Reset - https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  padding-inline: 0;
+}
+
+:root {
+  --primary-100: #1A1716;
+  --primary-500: #807870;
+  --primary-900: #E6D8CA;
+  --green: #6a9b42;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--primary-100);
+  color: var(--primary-900);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* my custom styling */
+
+
+header,
+footer,
+main {
+  padding: 0 1.5dvh;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+footer {
+  margin-top: auto;
+  border-top: 1px solid black;
+}
+
+main {
+  min-height: 90dvh;
+  width: min(95ch, 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  height: 100%;
+  padding: .5rem 0rem
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  flex-basis: 100%;
+  text-align: center;
+  border: .5px solid var(--primary-500);
+}
+
+header nav ul li a {
+  display: inline-block;
+}
+
+header nav ul li:hover {
+  filter: invert();
+}
+
+a {
+  color: var(--green);
+  text-decoration: none
+}
+
+a,
+li {
+  transition: .2s ease-out;
+  transition-property: filter
+}
+
+.landing .hero p {
+  margin-bottom: .5rem
+}
+
+.landing>section {
+  padding: .5rem 0rem
+}
+
+.landing a:hover {
+  filter: brightness(80%)
+}
+
+.landing__tidbits {
+  border-top: .5px solid var(--primary-500);
+  border-bottom: .5px solid var(--primary-500)
+}
+
+.resume {
+  font-size: 85%
+}
+
+.resume a {
+  color: inherit
+}
+
+.resume ul li {
+  list-style: inside;
+  list-style-type: square
+}
+
+.resume section {
+  padding: .5rem 0rem
+}
+
+.resume h3 {
+  margin-top: .25rem;
+  border-bottom: .5px solid var(--primary-500)
+}
+
+.resume__header {
+  text-align: center
+}
+
+.job__detail {
+  display: flow-root;
+  font-size: 1rem;
+  font-weight: 400
+}
+
+.job__detail p span {
+  font-size: 1.2rem;
+  font-weight: 700
+}
+
+.job__detail p:nth-child(1) {
+  float: left
+}
+
+.job__detail p:nth-child(2) {
+  font-style: italic;
+  float: right
+}
+
+.job__title {
+  font-style: italic
+}
+
+.blog__index ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem
+}
+
+.blog__index ul li {
+  width: fit-content;
+  list-style: inside;
+  list-style-type: "- "
+}
+
+.blog__index ul li:hover {
+  font-weight: 700;
+  list-style-type: "> "
+}
+
+.blog__index p {
+  margin: 0rem 0rem 1rem;
+  padding: .5rem 0rem;
+  border-bottom: .5px solid var(--primary-500)
+}
+
+.blog__post {
+  font-size: 90%;
+}
+
+.blog__post p {
+  margin-bottom: 1rem
+}
+
+.blog__subtitle {
+  font-weight: 400;
+  color: var(--primary-500)
+}
+
+.now__title {
+  padding-bottom: 1rem
+}
+
+.now__grid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin-top: 1.5rem
+}
+
+.now__grid section:not(:last-child) {
+  border-right: .5px solid var(--primary-500)
+}
+
+.newsletter__btn {
+  border: .5px solid var(--primary-900);
+  color: var(--primary-900);
+  padding: .125rem .5rem;
+  border-radius: .125rem;
+  margin-left: .25rem;
+}
+
+.inspirations ul {
+  padding: 1rem 0rem
+}
+
+.inspirations ul li {
+  list-style: inside;
+  list-style-type: "- "
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    padding: 0rem .75rem
+  }
+
+  .now__grid {
+    grid-template-columns: 1fr
+  }
+}
