@@ -20,12 +20,12 @@ const { title } = Astro.props;
   </head>
 
   <body>
-    <Header />
-
-    <main transition:animate="slide">
-      <slot />
-    </main>
-
-    <Footer />
+    <div class="wrapper">
+      <Header />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
