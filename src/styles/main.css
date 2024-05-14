@@ -12,13 +12,15 @@
 }
 
 :root {
-  --primary-100: #1A1716;
-  --primary-500: #807870;
-  --primary-900: #E6D8CA;
-  --green: #6a9b42;
+  --primary-900: hsl(50, 05%, 95%);
+  --primary-700: hsl(40, 05%, 70%);
+  --primary-500: hsl(40, 05%, 50%);
+  --primary-300: hsl(40, 05%, 30%);
+  --primary-100: hsl(50, 10%, 10%);
+  --green: hsl(87, 66%, 63%);
 }
 
-body {
+html {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -104,7 +106,8 @@ header nav ul {
 header nav ul li {
   flex-basis: 100%;
   text-align: center;
-  border: .5px solid var(--primary-500);
+  border: .5px solid var(--primary-300);
+  background-color: var(--primary-100);
 }
 
 header nav ul li a {
@@ -139,8 +142,8 @@ li {
 }
 
 .landing__tidbits {
-  border-top: .5px solid var(--primary-500);
-  border-bottom: .5px solid var(--primary-500)
+  border-top: .5px solid var(--primary-300);
+  border-bottom: .5px solid var(--primary-300)
 }
 
 .resume {
@@ -162,7 +165,7 @@ li {
 
 .resume h3 {
   margin-top: .25rem;
-  border-bottom: .5px solid var(--primary-500)
+  border-bottom: .5px solid var(--primary-300)
 }
 
 .resume__header {
@@ -213,7 +216,7 @@ li {
 .blog__index p {
   margin: 0rem 0rem 1rem;
   padding: .5rem 0rem;
-  border-bottom: .5px solid var(--primary-500)
+  border-bottom: .5px solid var(--primary-300)
 }
 
 .blog__post {
@@ -241,7 +244,7 @@ li {
 }
 
 .now__grid section:not(:last-child) {
-  border-right: .5px solid var(--primary-500)
+  border-right: .5px solid var(--primary-300)
 }
 
 .newsletter__btn {
