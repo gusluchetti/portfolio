@@ -15,8 +15,11 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<MainLayout title={entry.title}>
+<MainLayout title={entry.data.title}>
   <article>
-    <Content><Content/>
+    <a href="/blog">&lt;= back to posts</a>
+    <h2>{entry.data.title}</h2>
+    <h4>{entry.data.subtitle}</h4>
+    <Content />
   </article>
 </MainLayout>
