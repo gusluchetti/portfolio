@@ -2,6 +2,16 @@
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main-layout.astro";
 const allEntries = await getCollection("blog");
+
+function dateSort(a: any, b: any) {
+  if (a.data.pub_date > b.data.pub_date) {
+    return -1;
+  } else if (a.data.pub_date < b.data.pub_date) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
 ---
 
 <MainLayout title="blog collection">
@@ -10,10 +20,15 @@ const allEntries = await getCollection("blog");
     <p>this is where you'll find all my blog posts.</p>
     <ul>
       {
-        allEntries.map((post: any) => {
+        allEntries.sort(dateSort).map((post) => {
           return (
             <li>
-              <a href={`/blog/${post.slug}`} data-astro-prefetch>
+              <a
+                style={post.data.draft ? "color: cyan" : ""}
+                href={`/blog/${post.slug}`}
+                data-astro-prefetch
+              >
+                {post.data.pub_date.toISOString().split("T")[0]} -{" "}
                 {post.data.title}
               </a>
             </li>
