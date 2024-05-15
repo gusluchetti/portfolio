@@ -6,3 +6,7 @@ code {
   font-size: 1rem;
   color: white;
 }
+
+h4 {
+  color: var(--primary-500);
+}
