@@ -1,7 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main-layout.astro";
+
+const isDEV = import.meta.env.DEV;
 const allEntries = await getCollection("blog");
+const entries = allEntries.filter((e) => (isDEV ? true : !e.data.draft));
 
 function dateSort(a: any, b: any) {
   if (a.data.pub_date > b.data.pub_date) {
@@ -20,7 +23,7 @@ function dateSort(a: any, b: any) {
     <p>this is where you'll find all my blog posts.</p>
     <ul>
       {
-        allEntries.sort(dateSort).map((post) => {
+        entries.sort(dateSort).map((post) => {
           return (
             <li>
               <a
