@@ -31,7 +31,7 @@ function dateSort(a: any, b: any) {
                 href={`/blog/${post.slug}`}
                 data-astro-prefetch
               >
-                {post.data.pub_date.toISOString().split("T")[0]} -{" "}
+                {post.data.pub_date.toISOString().split("T")[0]} |{" "}
                 {post.data.title}
               </a>
             </li>
