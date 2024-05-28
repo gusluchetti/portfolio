@@ -181,6 +181,10 @@ header nav ul li:hover {
   text-align: center
 }
 
+#skills__excerpt {
+  padding: 0.5rem 0rem;
+}
+
 .job__detail {
   display: flow-root;
   font-size: 1rem;
@@ -246,8 +250,6 @@ header nav ul li:hover {
 }
 
 .newsletter__btn {
-  border: .5px solid var(--primary-900);
-  color: var(--primary-900);
   padding: .125rem .5rem;
   border-radius: .125rem;
   margin-left: .25rem;
