@@ -95,6 +95,8 @@ main a {
 
 /* my custom styling */
 .wrapper {
+  display: flex;
+  flex-direction: column;
   width: min(95ch, 100%);
   min-height: 100dvh;
   padding: 0 1dvw;
@@ -109,9 +111,7 @@ footer {
 }
 
 main {
-  width: min(95ch, 100%);
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   padding: 1dvh 0;
 }
 
