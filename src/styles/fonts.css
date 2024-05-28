@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer Medium'), local('Writer-Medium'),
-    url('../assets/fonts/Writer-Medium.woff2') format('woff2');
+    url('/fonts/Writer-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer Medium Italic'), local('Writer-MediumItalic'),
-    url('../assets/fonts/Writer-MediumItalic.woff2') format('woff2');
+    url('/fonts/Writer-MediumItalic.woff2') format('woff2');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer Italic'), local('Writer-Italic'),
-    url('../assets/fonts/Writer-Italic.woff2') format('woff2');
+    url('/fonts/Writer-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer SemiBold'), local('Writer-SemiBold'),
-    url('../assets/fonts/Writer-SemiBold.woff2') format('woff2');
+    url('/fonts/Writer-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer Bold'), local('Writer-Bold'),
-    url('../assets/fonts/Writer-Bold.woff2') format('woff2');
+    url('/fonts/Writer-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer Bold Italic'), local('Writer-BoldItalic'),
-    url('../assets/fonts/Writer-BoldItalic.woff2') format('woff2');
+    url('/fonts/Writer-BoldItalic.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -55,7 +55,7 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer Regular'), local('Writer-Regular'),
-    url('../assets/fonts/Writer-Regular.woff2') format('woff2');
+    url('/fonts/Writer-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -64,8 +64,9 @@
 @font-face {
   font-family: 'Writer';
   src: local('Writer SemiBold Italic'), local('Writer-SemiBoldItalic'),
-    url('../assets/fonts/Writer-SemiBoldItalic.woff2') format('woff2');
+    url('/fonts/Writer-SemiBoldItalic.woff2') format('woff2');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
+

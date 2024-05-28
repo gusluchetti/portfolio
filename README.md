@@ -1,7 +1,7 @@
-hosting: fly.io  
-domain: cloudflare   
-frontend: react and plain css   
-backend: node  
+## portfolio/blog 
 
-some cool things happening with mdx so that my blog posts are effectively markdown
-files. still have to figure out if they're being bundled properly though.
+- domain: cloudflare
+- hosting: cloudflare pages 
+- libraries: astro
+
+blog posts are markdown files.
