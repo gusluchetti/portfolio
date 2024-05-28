@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main-layout.astro";
-import '../../styles/blog_post.css'
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -23,3 +22,18 @@ const { Content } = await entry.render();
     <Content />
   </article>
 </MainLayout>
+
+<style>
+  p {
+    margin: 1.25rem 0rem;
+  }
+
+  code {
+    font-size: 1rem;
+    color: white;
+  }
+
+  h4 {
+    color: var(--primary-500);
+  }
+</style>
