@@ -1,0 +1,8 @@
+[tasks."cv:html"]
+run = "pandoc public/cv.tex -o src/pages/_cv.html"
+
+[tasks."cv:pdf"]
+run = "latexmk -pdf -outdir=public/. public/cv.tex && latexmk -c -outdir=public/. public/cv.tex"
+
+[tasks.cv]
+depends = ["cv:*"]
