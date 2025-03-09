@@ -1,7 +1,17 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
----
 
+const isDarkMode = true
+const pdfPath = isDarkMode ? '/dark-cv.pdf' : '/light-cv.pdf';
+---
+<head>
+  <link rel="preload" href={pdfPath} as="fetch" type="application/pdf" crossorigin="anonymous">
+</head>
 <MainLayout title="resume/cv">
-  <embed src="/cv.pdf" type="application/pdf" width="100%" height="800px">
+  <embed 
+    src={pdfPath} 
+    type="application/pdf" 
+    width="100%" 
+    height="100%"
+  />
 </MainLayout>
