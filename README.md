@@ -2,7 +2,7 @@
 
 - domain: cloudflare
 - hosting: cloudflare pages 
-- libraries: astro
+- libs: astro
 
 blog posts are markdown files.
 
