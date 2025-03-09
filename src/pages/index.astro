@@ -1,5 +1,10 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
+import { differenceInYears } from 'date-fns';
+
+const birthDate = new Date('2000-06-09');
+const today = new Date();
+const age = differenceInYears(today, birthDate);
 ---
 
 <MainLayout title="luchetti.dev">
@@ -8,8 +13,8 @@ import MainLayout from "../layouts/main-layout.astro";
       <h1>luchetti.dev</h1>
       <p>hi, glad to have you! this is my blog/portfolio.</p>
       <p>
-        i like to share things i've learned about over the years, not only as a
-        developer, but as someone that has always wanted to get to the bottom of
+        i like to share things i've learned over the years, as a
+        developer, a gamer, and as someone that has always wanted to get to the bottom of
         things.
       </p>
       <p>
@@ -21,8 +26,7 @@ import MainLayout from "../layouts/main-layout.astro";
     <section class="landing__tidbits">
       <h3>some tidbits:</h3>
       <p>
-        23, keyboard-centered, cat owner, CS:GO (and now CS2) fan, pilates
-        sometimes, rarely bouldering
+        {age}, terminal-fiend, keyboard-centered, cat owner, CS2 afficionado
       </p>
     </section>
     <section>
