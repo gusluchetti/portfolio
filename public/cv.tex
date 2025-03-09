@@ -1,0 +1,103 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\newif\ifdarkmode
+\darkmodefalse  % Default to light mode
+
+% Color definitions based on mode
+\ifdarkmode
+  \definecolor{background}{HTML}{121212}
+  \definecolor{text}{HTML}{FFFFFF}
+  \definecolor{accent}{HTML}{BB86FC}
+\else
+  \definecolor{background}{HTML}{FFFFFF}
+  \definecolor{text}{HTML}{000000}
+  \definecolor{accent}{HTML}{6200EE}
+\fi
+
+\newcommand\myname{Gustavo Luís Luchetti}
+
+\pagecolor{background}
+\color{text}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0em}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{\myname}}\\[0.5em]
+  \href{mailto:gustavo@luchetti.dev}{gustavo@luchetti.dev}\\
+  \href{https://linkedin.com/in/gustaluchetti}{linkedin.com/in/gustaluchetti}
+\end{center}
+
+
+\section*{Experience}
+
+\noindent
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l r }
+  {\large\textbf{Nitro Química} | Jul/2023 - Present} & {\textit{São Paulo, Brazil}} \\
+\end{tabular*}\\[0.2em]
+\noindent\textbf{Digital Analyst}, Junior Digital Analyst
+\begin{itemize}[leftmargin=*]
+  \item Upgrade internal spreadsheet tooling (crucial in sales that amounted to
+  \textbf{\textasciitilde R\$20MM} in 2023) into full-fledged web applications, enabling better
+  access control, metrics and improved feature set.
+  \item Incremental automation and streamlining of the onboarding process for new sales representatives, increasing visibility of the process company-wide.
+\end{itemize}
+
+\noindent
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l r }
+  {\large\textbf{Source.ag} | Aug/2022 - Feb/2023} & {\textit{Amsterdam, Netherlands}} \\
+\end{tabular*}\\[0.2em]
+\noindent Implementation Analyst 
+\begin{itemize}[leftmargin=*]
+  \item Transform onboarding playbook into robust CLI process, decreasing errors and time to completion.
+  \item Made possible for non-technical teams to do day-to-day database-related updates through a web interface (Retool).
+\end{itemize}
+
+\noindent
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l r }
+  {\large\textbf{BTG Pactual Digital} | Jun/2021 - Jan/2022} & {\textit{São Paulo, Brazil}} \\
+\end{tabular*}\\[0.2em]
+\noindent Assistant Analyst, Intern Developer
+\begin{itemize}[leftmargin=*]
+  \item Development of new pages and better views/filters for backoffice web application.
+  \item Maintenance of cloud endpoints, better logging and new functionalities.
+\end{itemize}
+
+
+\section*{Education}
+
+\noindent
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l r }
+  {\large\textbf{Utrecht University}} & {\textit{Utrecht, Netherlands}} \\
+\end{tabular*}\\[0.2em]
+\noindent Masters, Artificial Intelligence | Feb/2022 - Incomplete
+
+\noindent
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l r }
+  {\large\textbf{Escola Superior de Propaganda e Marketing}} & {\textit{São Paulo, Brazil}} \\
+\end{tabular*}\\[0.2em]
+\noindent Bachelors, Information Systems | Graduated Dec/2021 
+
+\section*{Skills}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Full-Stack:} 4+ years of experience as a full-stack dev, having worked with
+  Typescript, React, Angular, Python, and other languages.
+  \item \textbf{DB \& Infrastructure:} Very confortable working with databases/SQL. Keen eye for
+  proper schemas that take into account future growth.
+  \item \textbf{Problem-Solving \& Adaptability:} Quickly adapt to new technologies and improve team
+  workflows with automation. Not afraid to get into the terminal to figure things out.
+  \item \textbf{Languages:} English (Fluent); Portuguese (Native)
+\end{itemize}
+
+\end{document}
