@@ -32,8 +32,7 @@
 </main>
 
 <style>
-  main,
-  input {
+  :root {
     font-family: monospace;
   }
 </style>
