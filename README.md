@@ -27,9 +27,10 @@ You can preview the production build with `bun run preview`.
 your target environment.
 
 ## TODOS:
-- preload data and/or code if user is typing command that is valid to speedup things
-- define routes specified in static route list
+- Berkeley Mono for all, possibly Garamond for CV and/or blog posts (how to preload fonts correctly)
+- define ALL routes specified in static route list (match old website)
 - read cookies to apply dark/light mode and other prefs
+- preload data and/or code if user is typing command that is valid to speedup things
 - style overhaul, actual terminal UI, possibly sounds
 - simplified mode, buttons and all
 - (page) cv as html
